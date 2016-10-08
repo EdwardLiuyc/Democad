@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QG_MirrorOptions</class>
+ <widget class="QWidget" name="QG_MirrorOptions">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>37</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="lbInfo">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>75</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>镜像参数:</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_manual">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>10</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>手动</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_xAxlis">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>10</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>X对称</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_yAxlis">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>10</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Y对称</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_ok">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>8</y>
+     <width>61</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>radioButton_manual</sender>
+   <signal>clicked()</signal>
+   <receiver>QG_MirrorOptions</receiver>
+   <slot>changeSelect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>37</x>
+     <y>9</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>25</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_xAxlis</sender>
+   <signal>clicked()</signal>
+   <receiver>QG_MirrorOptions</receiver>
+   <slot>changeSelect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>96</x>
+     <y>10</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>88</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_yAxlis</sender>
+   <signal>clicked()</signal>
+   <receiver>QG_MirrorOptions</receiver>
+   <slot>changeSelect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>164</x>
+     <y>12</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>171</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_ok</sender>
+   <signal>clicked()</signal>
+   <receiver>QG_MirrorOptions</receiver>
+   <slot>mirrorFixed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>234</x>
+     <y>12</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>222</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>changeSelect()</slot>
+  <slot>mirrorFixed()</slot>
+ </slots>
+</ui>

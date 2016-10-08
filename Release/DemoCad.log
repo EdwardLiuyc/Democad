@@ -1,0 +1,347 @@
+﻿生成启动时间为 7/11/2016 09:15:11。
+     1>项目“d:\documents\visual studio 2010\Projects\DemoCad\DemoCad\DemoCad.vcxproj”在节点 2 上(build 个目标)。
+     1>PrepareForBuild:
+         正在创建目录“d:\documents\visual studio 2010\Projects\DemoCad\Win32\Release\”。
+       InitializeBuildStatus:
+         正在创建“Release\DemoCad.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CustomBuild:
+         Moc'ing democad.h...
+         Uic'ing democad.ui...
+         Moc'ing rs_actionautodrawleadline.h...
+         Moc'ing rs_actionzoompan.h...
+         Moc'ing rs_actionzoomin.h...
+         Moc'ing rs_actionzoomauto.h...
+         Moc'ing rs_actionsizeinitial.h...
+         Moc'ing rs_actionshowposofTP.h...
+         Moc'ing rs_actionshowmindis.h...
+         Moc'ing rs_actionshowangel.h...
+         Moc'ing rs_actionsetOrignal.h...
+         Moc'ing rs_actionsetGridType.h...
+         Moc'ing rs_actionselectinvert.h...
+         Moc'ing rs_actionselectall.h...
+         Moc'ing rs_actionparttaper.h...
+         Moc'ing rs_actionorignalInitial.h...
+         Moc'ing rs_actionmodifytrim.h...
+         Moc'ing rs_actionmodifyscale.h...
+         Moc'ing rs_actionmodifyrotate.h...
+         Moc'ing rs_actionmodifymove.h...
+         Moc'ing rs_actionmodifymirror.h...
+         Moc'ing rs_actionmodifydelete.h...
+         Moc'ing rs_actioneditundo.h...
+         Moc'ing rs_actiondrawlinerectangle.h...
+         Moc'ing rs_actiondrawline.h...
+         Moc'ing rs_actiondrawleadlineside.h...
+         Moc'ing rs_actiondrawleadline.h...
+         Moc'ing rs_actiondrawleadarcline.h...
+         Moc'ing rs_actiondrawcircle.h...
+         Moc'ing rs_actiondrawarc.h...
+         Moc'ing rs_actiondefault.h...
+         Moc'ing rs_actioncaldisofTP.h...
+         Moc'ing rs_actionassignr.h...
+         Moc'ing qg_scrollbar.h...
+         Moc'ing qg_actionhandler.h...
+         Moc'ing qg_actionfactory.h...
+         Moc'ing QPublicSignal.h...
+         Moc'ing graphicview.h...
+         Moc'ing dialogmediator.h...
+         Moc'ing democadSignal.h...
+         Moc'ing rs_actioninterface.h...
+         Moc'ing qg_snaptoolbar.h...
+         Moc'ing qg_snapmiddleoptions.h...
+         Moc'ing qg_snapdistoptions.h...
+         Moc'ing qg_showposofTP.h...
+         Moc'ing qg_showmindis.h...
+         Moc'ing qg_showangel.h...
+         Moc'ing qg_setorignal.h...
+         Moc'ing qg_setgridtype.h...
+         Moc'ing qg_scaleoptions.h...
+         Moc'ing qg_rotateoptions.h...
+         Moc'ing qg_rectoptions.h...
+         Moc'ing qg_moveoptions.h...
+         Moc'ing qg_mirroroptions.h...
+         Moc'ing qg_lineoptions.h...
+         Moc'ing qg_leadarcradiusoptions.h...
+         Moc'ing qg_circleoptions.h...
+         Moc'ing qg_caldisofTP.h...
+         Moc'ing qg_cadtoolbarmain.h...
+         Moc'ing QG_CadToolBar_LeadWire.h...
+         Moc'ing QG_CadToolBar_FSCreen.h...
+         Moc'ing QG_CadToolBar_FileOpt.h...
+         Moc'ing QG_CadToolBar_AssistTool.h...
+         Moc'ing qg_arcoptions.h...
+         Moc'ing getData_Line.h...
+         Moc'ing ErrorMessage.h...
+         Rcc'ing democad.qrc...
+     1>RCC : warning : No resources in 'd:\documents\visual studio 2010\Projects\DemoCad\DemoCad\democad.qrc'.
+         
+         Uic'ing ErrorMessage.ui...
+         Uic'ing ui\forms\getData_Line.ui...
+         Uic'ing ui\forms\qg_arcoptions.ui...
+         Uic'ing ui\forms\QG_CadToolBar_AssistTool.ui...
+         Uic'ing ui\forms\QG_CadToolBar_FileOpt.ui...
+         Uic'ing ui\forms\QG_CadToolBar_FSCreen.ui...
+         Uic'ing ui\forms\QG_CadToolBar_LeadWire.ui...
+         Uic'ing ui\forms\qg_cadtoolbarmain.ui...
+         Uic'ing ui\forms\qg_caldisofTP.ui...
+         Uic'ing ui\forms\qg_circleoptions.ui...
+         Uic'ing ui\forms\qg_leadarcradiusoptions.ui...
+         Uic'ing ui\forms\qg_lineoptions.ui...
+         Uic'ing ui\forms\qg_mirroroptions.ui...
+         Uic'ing ui\forms\qg_moveoptions.ui...
+         Uic'ing ui\forms\qg_rectoptions.ui...
+         Uic'ing ui\forms\qg_rotateoptions.ui...
+         Uic'ing ui\forms\qg_scaleoptions.ui...
+         Uic'ing ui\forms\qg_setgridtype.ui...
+         Uic'ing ui\forms\qg_setorignal.ui...
+         Uic'ing ui\forms\qg_showangel.ui...
+         Uic'ing ui\forms\qg_showmindis.ui...
+         Uic'ing ui\forms\qg_showposofTP.ui...
+         Uic'ing ui\forms\qg_snapdistoptions.ui...
+         Uic'ing ui\forms\qg_snapmiddleoptions.ui...
+         Rcc'ing res\ui\ui.qrc...
+         Rcc'ing res\main\main.qrc...
+         Rcc'ing res\actions\actions.qrc...
+       ClCompile:
+         d:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /ID:\Qt\4.8.4\include /I.\GeneratedFiles\Release /ID:\Qt\4.8.4\include\QtCore /ID:\Qt\4.8.4\include\QtGui /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt actions\rs_actionassignr.cpp actions\rs_actionautodrawleadline.cpp actions\rs_actioncaldisofTP.cpp actions\rs_actiondefault.cpp actions\rs_actiondrawarc.cpp actions\rs_actiondrawcircle.cpp actions\rs_actiondrawleadarcline.cpp actions\rs_actiondrawleadline.cpp actions\rs_actiondrawleadlineside.cpp actions\rs_actiondrawline.cpp actions\rs_actiondrawlinerectangle.cpp actions\rs_actioneditundo.cpp actions\rs_actionmodifydelete.cpp actions\rs_actionmodifymirror.cpp actions\rs_actionmodifymove.cpp actions\rs_actionmodifyrotate.cpp actions\rs_actionmodifyscale.cpp actions\rs_actionmodifytrim.cpp actions\rs_actionorignalInitial.cpp actions\rs_actionparttaper.cpp actions\rs_actionselectall.cpp actions\rs_actionselectinvert.cpp actions\rs_actionsetGridType.cpp actions\rs_actionsetOrignal.cpp actions\rs_actionshowangel.cpp actions\rs_actionshowmindis.cpp actions\rs_actionshowposofTP.cpp actions\rs_actionsizeinitial.cpp actions\rs_actionzoomauto.cpp actions\rs_actionzoomin.cpp actions\rs_actionzoompan.cpp cadextra\democadSignal.cpp cadextra\dialogmediator.cpp cadextra\en_Line.cpp cadextra\functionGraphM.cpp cadextra\global_Operator.cpp cadextra\global_Values.cpp cadextra\graphicview.cpp cadextra\PublicFuction.cpp cadextra\QPublicSignal.cpp cadextra\rs_graphicview.cpp democad.cpp ErrorMessage.cpp GeneratedFiles\Release\moc_democad.cpp GeneratedFiles\Release\moc_democadSignal.cpp GeneratedFiles\Release\moc_dialogmediator.cpp GeneratedFiles\Release\moc_ErrorMessage.cpp GeneratedFiles\Release\moc_getData_Line.cpp GeneratedFiles\Release\moc_graphicview.cpp GeneratedFiles\Release\moc_qg_actionfactory.cpp GeneratedFiles\Release\moc_qg_actionhandler.cpp GeneratedFiles\Release\moc_qg_arcoptions.cpp GeneratedFiles\Release\moc_qg_cadtoolbarmain.cpp GeneratedFiles\Release\moc_QG_CadToolBar_AssistTool.cpp GeneratedFiles\Release\moc_QG_CadToolBar_FileOpt.cpp GeneratedFiles\Release\moc_QG_CadToolBar_FSCreen.cpp GeneratedFiles\Release\moc_QG_CadToolBar_LeadWire.cpp GeneratedFiles\Release\moc_qg_caldisofTP.cpp GeneratedFiles\Release\moc_qg_circleoptions.cpp GeneratedFiles\Release\moc_qg_leadarcradiusoptions.cpp GeneratedFiles\Release\moc_qg_lineoptions.cpp GeneratedFiles\Release\moc_qg_mirroroptions.cpp GeneratedFiles\Release\moc_qg_moveoptions.cpp GeneratedFiles\Release\moc_qg_rectoptions.cpp GeneratedFiles\Release\moc_qg_rotateoptions.cpp GeneratedFiles\Release\moc_qg_scaleoptions.cpp GeneratedFiles\Release\moc_qg_scrollbar.cpp GeneratedFiles\Release\moc_qg_setgridtype.cpp GeneratedFiles\Release\moc_qg_setorignal.cpp GeneratedFiles\Release\moc_qg_showangel.cpp GeneratedFiles\Release\moc_qg_showmindis.cpp GeneratedFiles\Release\moc_qg_showposofTP.cpp GeneratedFiles\Release\moc_qg_snapdistoptions.cpp GeneratedFiles\Release\moc_qg_snapmiddleoptions.cpp GeneratedFiles\Release\moc_qg_snaptoolbar.cpp GeneratedFiles\Release\moc_QPublicSignal.cpp GeneratedFiles\Release\moc_rs_actionassignr.cpp GeneratedFiles\Release\moc_rs_actionautodrawleadline.cpp GeneratedFiles\Release\moc_rs_actioncaldisofTP.cpp GeneratedFiles\Release\moc_rs_actiondefault.cpp GeneratedFiles\Release\moc_rs_actiondrawarc.cpp GeneratedFiles\Release\moc_rs_actiondrawcircle.cpp GeneratedFiles\Release\moc_rs_actiondrawleadarcline.cpp GeneratedFiles\Release\moc_rs_actiondrawleadline.cpp GeneratedFiles\Release\moc_rs_actiondrawleadlineside.cpp GeneratedFiles\Release\moc_rs_actiondrawline.cpp GeneratedFiles\Release\moc_rs_actiondrawlinerectangle.cpp GeneratedFiles\Release\moc_rs_actioneditundo.cpp GeneratedFiles\Release\moc_rs_actioninterface.cpp GeneratedFiles\Release\moc_rs_actionmodifydelete.cpp GeneratedFiles\Release\moc_rs_actionmodifymirror.cpp GeneratedFiles\Release\moc_rs_actionmodifymove.cpp GeneratedFiles\Release\moc_rs_actionmodifyrotate.cpp GeneratedFiles\Release\moc_rs_actionmodifyscale.cpp GeneratedFiles\Release\moc_rs_actionmodifytrim.cpp GeneratedFiles\Release\moc_rs_actionorignalInitial.cpp GeneratedFiles\Release\moc_rs_actionparttaper.cpp GeneratedFiles\Release\moc_rs_actionselectall.cpp GeneratedFiles\Release\moc_rs_actionselectinvert.cpp GeneratedFiles\Release\moc_rs_actionsetGridType.cpp GeneratedFiles\Release\moc_rs_actionsetOrignal.cpp GeneratedFiles\Release\moc_rs_actionshowangel.cpp GeneratedFiles\Release\moc_rs_actionshowmindis.cpp GeneratedFiles\Release\moc_rs_actionshowposofTP.cpp GeneratedFiles\Release\moc_rs_actionsizeinitial.cpp GeneratedFiles\Release\moc_rs_actionzoomauto.cpp GeneratedFiles\Release\moc_rs_actionzoomin.cpp GeneratedFiles\Release\moc_rs_actionzoompan.cpp lib\actions\rs_actioninterface.cpp lib\actions\rs_preview.cpp lib\actions\rs_previewactioninterface.cpp lib\actions\rs_snapper.cpp lib\debug\rs_debug.cpp lib\engine\rs_arc.cpp lib\engine\rs_circle.cpp lib\engine\rs_color.cpp lib\engine\rs_constructionline.cpp lib\engine\rs_document.cpp lib\engine\rs_ellipse.cpp lib\engine\rs_entity.cpp lib\engine\rs_entitycontainer.cpp lib\engine\rs_line.cpp lib\engine\rs_overlaybox.cpp lib\engine\rs_overlayline.cpp lib\engine\rs_pen.cpp lib\engine\rs_settings.cpp lib\engine\rs_undo.cpp lib\engine\rs_undoable.cpp lib\engine\rs_units.cpp lib\engine\rs_vector.cpp lib\filters\rs_filterdxfrw.cpp lib\gui\rs_eventhandler.cpp lib\gui\rs_grid.cpp lib\gui\rs_linetypepattern.cpp lib\gui\rs_painter.cpp lib\gui\rs_painterqt.cpp lib\information\rs_information.cpp lib\math\lc_quadratic.cpp lib\math\rs_math.cpp lib\modification\rs_modification.cpp lib\modification\rs_selection.cpp main.cpp Parameter.cpp rs_spline.cpp ui\forms\getData_Line.cpp ui\forms\qg_arcoptions.cpp ui\forms\qg_baseoptions.cpp ui\forms\qg_cadtoolbarmain.cpp ui\forms\QG_CadToolBar_AssistTool.cpp ui\forms\QG_CadToolBar_FileOpt.cpp ui\forms\QG_CadToolBar_FSCreen.cpp ui\forms\QG_CadToolBar_LeadWire.cpp ui\forms\qg_caldisofTP.cpp ui\forms\qg_circleoptions.cpp ui\forms\qg_leadarcradiusoptions.cpp ui\forms\qg_lineoptions.cpp ui\forms\qg_mirroroptions.cpp ui\forms\qg_moveoptions.cpp ui\forms\qg_rectoptions.cpp ui\forms\qg_rotateoptions.cpp ui\forms\qg_scaleoptions.cpp ui\forms\qg_setgridtype.cpp ui\forms\qg_setorignal.cpp ui\forms\qg_showangel.cpp ui\forms\qg_showmindis.cpp ui\forms\qg_showposofTP.cpp ui\forms\qg_snapdistoptions.cpp ui\forms\qg_snapmiddleoptions.cpp ui\forms\qg_snaptoolbar.cpp ui\qg_actionfactory.cpp ui\qg_actionhandler.cpp
+         rs_actionassignr.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionassignr.h(9): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actionautodrawleadline.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionautodrawleadline.h(6): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actioncaldisofTP.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actioncaldisofTP.h(10): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actiondefault.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondefault.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actiondrawarc.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondrawarc.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actiondrawcircle.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondrawcircle.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actiondrawleadarcline.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondrawleadarcline.h(6): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actiondrawleadline.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondrawleadline.h(6): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actiondrawleadlineside.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondrawleadlineside.h(6): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actiondrawline.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondrawline.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actiondrawlinerectangle.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondrawlinerectangle.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actioneditundo.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actioneditundo.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         rs_actionmodifydelete.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionmodifydelete.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         rs_actionmodifymirror.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionmodifymirror.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actionmodifymove.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionmodifymove.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actionmodifyrotate.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionmodifyrotate.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actionmodifyscale.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionmodifyscale.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actionmodifytrim.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionmodifytrim.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actionorignalInitial.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionorignalInitial.h(10): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actionparttaper.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionparttaper.h(9): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         正在生成代码...
+         正在编译...
+         rs_actionselectall.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionselectall.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         rs_actionselectinvert.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionselectinvert.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         rs_actionsetGridType.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondefault.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actionsetOrignal.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondefault.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actionshowangel.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondefault.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actionshowmindis.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondefault.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actionshowposofTP.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondefault.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         rs_actionsizeinitial.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionsizeinitial.h(11): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         rs_actionzoomauto.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionzoomauto.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         rs_actionzoomin.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionzoomin.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         rs_actionzoompan.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actionzoompan.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         democadSignal.cpp
+         dialogmediator.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\cadextra\dialogmediator.h(6): fatal error C1083: 无法打开包括文件:“qg_cadtoolbarmain.h”: No such file or directory
+         en_Line.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\cadextra\en_Line.h(6): fatal error C1083: 无法打开包括文件:“rs_line.h”: No such file or directory
+         functionGraphM.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\cadextra\QPublicSignal.h(17): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         global_Operator.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\cadextra\global_Operator.h(10): fatal error C1083: 无法打开包括文件:“rs_entitycontainer.h”: No such file or directory
+         global_Values.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\cadextra\global_Values.h(11): fatal error C1083: 无法打开包括文件:“rs_line.h”: No such file or directory
+         graphicview.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\cadextra\graphicview.h(33): fatal error C1083: 无法打开包括文件:“rs_graphicview.h”: No such file or directory
+         PublicFuction.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\cadextra\QPublicSignal.h(17): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         QPublicSignal.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\cadextra\QPublicSignal.h(17): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         正在生成代码...
+         正在编译...
+         rs_graphicview.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\cadextra\rs_graphicview.h(4): fatal error C1083: 无法打开包括文件:“rs_color.h”: No such file or directory
+         democad.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\democad.h(5): fatal error C1083: 无法打开包括文件:“graphicview.h”: No such file or directory
+         ErrorMessage.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\Parameter.h(14): fatal error C1083: 无法打开包括文件:“QPublicSignal.h”: No such file or directory
+         moc_democad.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../democad.h(5): fatal error C1083: 无法打开包括文件:“graphicview.h”: No such file or directory
+         moc_democadSignal.cpp
+         moc_dialogmediator.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../cadextra/dialogmediator.h(6): fatal error C1083: 无法打开包括文件:“qg_cadtoolbarmain.h”: No such file or directory
+         moc_ErrorMessage.cpp
+         moc_getData_Line.cpp
+         moc_graphicview.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../cadextra/graphicview.h(33): fatal error C1083: 无法打开包括文件:“rs_graphicview.h”: No such file or directory
+         moc_qg_actionfactory.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\ui\qg_actionhandler.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         moc_qg_actionhandler.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/qg_actionhandler.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         moc_qg_arcoptions.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_arcoptions.h(30): fatal error C1083: 无法打开包括文件:“rs_actiondrawarc.h”: No such file or directory
+         moc_qg_cadtoolbarmain.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_cadtoolbarmain.h(31): fatal error C1083: 无法打开包括文件:“qg_actionhandler.h”: No such file or directory
+         moc_QG_CadToolBar_AssistTool.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/QG_CadToolBar_AssistTool.h(6): fatal error C1083: 无法打开包括文件:“qg_actionhandler.h”: No such file or directory
+         moc_QG_CadToolBar_FileOpt.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/QG_CadToolBar_FileOpt.h(6): fatal error C1083: 无法打开包括文件:“qg_actionhandler.h”: No such file or directory
+         moc_QG_CadToolBar_FSCreen.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/QG_CadToolBar_FSCreen.h(6): fatal error C1083: 无法打开包括文件:“qg_actionhandler.h”: No such file or directory
+         moc_QG_CadToolBar_LeadWire.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/QG_CadToolBar_LeadWire.h(6): fatal error C1083: 无法打开包括文件:“qg_actionhandler.h”: No such file or directory
+         moc_qg_caldisofTP.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_caldisofTP.h(6): fatal error C1083: 无法打开包括文件:“rs_actioncaldisofTP.h”: No such file or directory
+         moc_qg_circleoptions.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_circleoptions.h(6): fatal error C1083: 无法打开包括文件:“rs_actiondrawcircle.h”: No such file or directory
+         moc_qg_leadarcradiusoptions.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_leadarcradiusoptions.h(5): fatal error C1083: 无法打开包括文件:“rs_actiondrawleadarcline.h”: No such file or directory
+         正在生成代码...
+         正在编译...
+         moc_qg_lineoptions.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_lineoptions.h(6): fatal error C1083: 无法打开包括文件:“rs_actiondrawline.h”: No such file or directory
+         moc_qg_mirroroptions.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_mirroroptions.h(6): fatal error C1083: 无法打开包括文件:“rs_actionmodifymirror.h”: No such file or directory
+         moc_qg_moveoptions.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_moveoptions.h(5): fatal error C1083: 无法打开包括文件:“rs_actionmodifymove.h”: No such file or directory
+         moc_qg_rectoptions.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_rectoptions.h(6): fatal error C1083: 无法打开包括文件:“rs_actiondrawlinerectangle.h”: No such file or directory
+         moc_qg_rotateoptions.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_rotateoptions.h(5): fatal error C1083: 无法打开包括文件:“rs_actionmodifyrotate.h”: No such file or directory
+         moc_qg_scaleoptions.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_scaleoptions.h(6): fatal error C1083: 无法打开包括文件:“rs_actionmodifyscale.h”: No such file or directory
+         moc_qg_scrollbar.cpp
+         moc_qg_setgridtype.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_setgridtype.h(10): fatal error C1083: 无法打开包括文件:“rs_actionsetGridType.h”: No such file or directory
+         moc_qg_setorignal.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_setorignal.h(10): fatal error C1083: 无法打开包括文件:“rs_actionsetOrignal.h”: No such file or directory
+         moc_qg_showangel.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_showangel.h(10): fatal error C1083: 无法打开包括文件:“rs_actionshowangel.h”: No such file or directory
+         moc_qg_showmindis.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_showmindis.h(10): fatal error C1083: 无法打开包括文件:“rs_actionshowmindis.h”: No such file or directory
+         moc_qg_showposofTP.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_showposofTP.h(10): fatal error C1083: 无法打开包括文件:“rs_actionshowposofTP.h”: No such file or directory
+         moc_qg_snapdistoptions.cpp
+     1>.\GeneratedFiles\ui_qg_snapdistoptions.h(23): fatal error C1083: 无法打开包括文件:“rs_circle.h”: No such file or directory
+         moc_qg_snapmiddleoptions.cpp
+     1>.\GeneratedFiles\ui_qg_snapmiddleoptions.h(21): fatal error C1083: 无法打开包括文件:“rs_circle.h”: No such file or directory
+         moc_qg_snaptoolbar.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../ui/forms/qg_snaptoolbar.h(34): fatal error C1083: 无法打开包括文件:“rs_snapper.h”: No such file or directory
+         moc_QPublicSignal.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../cadextra/QPublicSignal.h(17): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         moc_rs_actionassignr.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionassignr.h(9): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actionautodrawleadline.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionautodrawleadline.h(6): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actioncaldisofTP.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actioncaldisofTP.h(10): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actiondefault.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actiondefault.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         正在生成代码...
+         正在编译...
+         moc_rs_actiondrawarc.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actiondrawarc.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actiondrawcircle.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actiondrawcircle.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actiondrawleadarcline.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actiondrawleadarcline.h(6): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actiondrawleadline.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actiondrawleadline.h(6): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actiondrawleadlineside.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actiondrawleadlineside.h(6): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actiondrawline.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actiondrawline.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actiondrawlinerectangle.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actiondrawlinerectangle.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actioneditundo.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actioneditundo.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         moc_rs_actioninterface.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\lib\actions\rs_snapper.h(31): fatal error C1083: 无法打开包括文件:“rs_entitycontainer.h”: No such file or directory
+         moc_rs_actionmodifydelete.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionmodifydelete.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         moc_rs_actionmodifymirror.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionmodifymirror.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actionmodifymove.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionmodifymove.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actionmodifyrotate.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionmodifyrotate.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actionmodifyscale.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionmodifyscale.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actionmodifytrim.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionmodifytrim.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actionorignalInitial.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionorignalInitial.h(10): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actionparttaper.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionparttaper.h(9): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actionselectall.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionselectall.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         moc_rs_actionselectinvert.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionselectinvert.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         moc_rs_actionsetGridType.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondefault.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         正在生成代码...
+         正在编译...
+         moc_rs_actionsetOrignal.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondefault.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actionshowangel.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondefault.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actionshowmindis.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondefault.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actionshowposofTP.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\actions\rs_actiondefault.h(30): fatal error C1083: 无法打开包括文件:“rs_previewactioninterface.h”: No such file or directory
+         moc_rs_actionsizeinitial.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionsizeinitial.h(11): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         moc_rs_actionzoomauto.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionzoomauto.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         moc_rs_actionzoomin.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionzoomin.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         moc_rs_actionzoompan.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\generatedfiles\release\../../actions/rs_actionzoompan.h(30): fatal error C1083: 无法打开包括文件:“rs_actioninterface.h”: No such file or directory
+         rs_actioninterface.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\lib\actions\rs_snapper.h(31): fatal error C1083: 无法打开包括文件:“rs_entitycontainer.h”: No such file or directory
+         rs_preview.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\lib\actions\rs_preview.h(31): fatal error C1083: 无法打开包括文件:“rs_entitycontainer.h”: No such file or directory
+         rs_previewactioninterface.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\lib\actions\rs_snapper.h(31): fatal error C1083: 无法打开包括文件:“rs_entitycontainer.h”: No such file or directory
+         rs_snapper.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\lib\actions\rs_snapper.h(31): fatal error C1083: 无法打开包括文件:“rs_entitycontainer.h”: No such file or directory
+         rs_debug.cpp
+         rs_arc.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\lib\engine\rs_entity.h(34): fatal error C1083: 无法打开包括文件:“rs_math.h”: No such file or directory
+         rs_circle.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\lib\engine\rs_entity.h(34): fatal error C1083: 无法打开包括文件:“rs_math.h”: No such file or directory
+         rs_color.cpp
+     1>d:\documents\visual studio 2010\projects\democad\democad\lib\engine\rs_flags.h(32): fatal error C1083: 无法打开包括文件:“rs_debug.h”: No such file or directory
+         rs_constructionline.cpp
+     1>已完成生成项目“d:\documents\visual studio 2010\Projects\DemoCad\DemoCad\DemoCad.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:40.82

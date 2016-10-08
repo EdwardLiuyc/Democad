@@ -1,0 +1,54 @@
+*{
+ font-family: simhei; 
+	font-size: 13px; 
+} 
+QLineEdit{ 
+	border-radius: 2px; 
+	border-color: #757575; 
+	border-width: 2px; 
+	padding: 0px; 
+	border-style: groove; 
+	background-color: #FFFFFF; 
+} 
+QLineEdit:disabled{ 
+	background-color: #DDDDDD; 
+} 
+QLineEdit:focus{ 
+	border-color: blue; 
+} 
+QScrollBar:vertical{ 
+	width: 14px; 
+	background-color: rgba(0,0,0,0%); 
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+	} 
+QScrollBar:horizontal { 
+	height:14px; 
+	background-color:rgba(0,0,0,0%); 
+	padding-left:10px; padding-right:10px;
+}
+QScrollBar::handle:vertical { 
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B8B8B8, stop:1 #D6D6D6); 
+} 
+QScrollBar::handle:horizontal { 
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B8B8B8, stop:1 #D6D6D6); 
+} 
+QTabBar::tab{ 
+	border-bottom-left-radius:0px; 
+	border-bottom-right-radius:0px; 
+	color: #F0F0F0; 
+	min-width: 60px; 
+	min-height: 20px; 
+	padding: 3px 8px 3px 8px; 
+	margin:1px; 
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B8B8B8, stop:1 #D6D6D6); 
+} 
+QTabBar::tab:selected, QTabBar::tab:hover { 
+	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #454648, stop:1 #7A7A7A); 
+} 
+QGroupBox{ 
+	border-width: 2px; 
+	border-color: #777777; 
+	border-style: inset; 
+	background-color: rgb(255,255,255); 
+}

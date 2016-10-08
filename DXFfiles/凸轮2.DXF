@@ -1,0 +1,18942 @@
+  0
+SECTION
+  2
+HEADER
+  9
+$ACADVER
+  1
+AC1018
+  9
+$ACADMAINTVER
+ 70
+   104
+  9
+$DWGCODEPAGE
+  3
+ANSI_936
+  9
+$LASTSAVEDBY
+  1
+Administrator
+  9
+$INSBASE
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$EXTMIN
+ 10
+-20.81543425902237
+ 20
+-20.81543425902237
+ 30
+-0.0015258207003583
+  9
+$EXTMAX
+ 10
+20.81543425902237
+ 20
+27.0
+ 30
+0.0000000349246037
+  9
+$LIMMIN
+ 10
+0.0
+ 20
+0.0
+  9
+$LIMMAX
+ 10
+267.0
+ 20
+200.0
+  9
+$ORTHOMODE
+ 70
+     1
+  9
+$REGENMODE
+ 70
+     1
+  9
+$FILLMODE
+ 70
+     1
+  9
+$QTEXTMODE
+ 70
+     0
+  9
+$MIRRTEXT
+ 70
+     0
+  9
+$LTSCALE
+ 40
+10.0
+  9
+$ATTMODE
+ 70
+     1
+  9
+$TEXTSIZE
+ 40
+5.0
+  9
+$TRACEWID
+ 40
+0.05
+  9
+$TEXTSTYLE
+  7
+PC_TEXTSTYLE
+  9
+$CLAYER
+  8
+0
+  9
+$CELTYPE
+  6
+ByLayer
+  9
+$CECOLOR
+ 62
+   256
+  9
+$CELTSCALE
+ 40
+1.0
+  9
+$DISPSILH
+ 70
+     0
+  9
+$DIMSCALE
+ 40
+1.0
+  9
+$DIMASZ
+ 40
+2.5
+  9
+$DIMEXO
+ 40
+0.625
+  9
+$DIMDLI
+ 40
+10.0
+  9
+$DIMRND
+ 40
+0.0
+  9
+$DIMDLE
+ 40
+0.0
+  9
+$DIMEXE
+ 40
+1.0
+  9
+$DIMTP
+ 40
+0.0
+  9
+$DIMTM
+ 40
+0.000000001
+  9
+$DIMTXT
+ 40
+3.5
+  9
+$DIMCEN
+ 40
+0.0
+  9
+$DIMTSZ
+ 40
+0.0
+  9
+$DIMTOL
+ 70
+     0
+  9
+$DIMLIM
+ 70
+     0
+  9
+$DIMTIH
+ 70
+     0
+  9
+$DIMTOH
+ 70
+     0
+  9
+$DIMSE1
+ 70
+     0
+  9
+$DIMSE2
+ 70
+     0
+  9
+$DIMTAD
+ 70
+     1
+  9
+$DIMZIN
+ 70
+     8
+  9
+$DIMBLK
+  1
+
+  9
+$DIMASO
+ 70
+     1
+  9
+$DIMSHO
+ 70
+     1
+  9
+$DIMPOST
+  1
+
+  9
+$DIMAPOST
+  1
+
+  9
+$DIMALT
+ 70
+     0
+  9
+$DIMALTD
+ 70
+     2
+  9
+$DIMALTF
+ 40
+25.4
+  9
+$DIMLFAC
+ 40
+1.0
+  9
+$DIMTOFL
+ 70
+     1
+  9
+$DIMTVP
+ 40
+0.0
+  9
+$DIMTIX
+ 70
+     0
+  9
+$DIMSOXD
+ 70
+     0
+  9
+$DIMSAH
+ 70
+     0
+  9
+$DIMBLK1
+  1
+
+  9
+$DIMBLK2
+  1
+
+  9
+$DIMSTYLE
+  2
+TH_GBDIM
+  9
+$DIMCLRD
+ 70
+   130
+  9
+$DIMCLRE
+ 70
+   130
+  9
+$DIMCLRT
+ 70
+     3
+  9
+$DIMTFAC
+ 40
+0.714286
+  9
+$DIMGAP
+ 40
+1.0
+  9
+$DIMJUST
+ 70
+     0
+  9
+$DIMSD1
+ 70
+     0
+  9
+$DIMSD2
+ 70
+     0
+  9
+$DIMTOLJ
+ 70
+     1
+  9
+$DIMTZIN
+ 70
+     8
+  9
+$DIMALTZ
+ 70
+     0
+  9
+$DIMALTTZ
+ 70
+     0
+  9
+$DIMUPT
+ 70
+     0
+  9
+$DIMDEC
+ 70
+     1
+  9
+$DIMTDEC
+ 70
+     1
+  9
+$DIMALTU
+ 70
+     2
+  9
+$DIMALTTD
+ 70
+     2
+  9
+$DIMTXSTY
+  7
+TH_GBDIM
+  9
+$DIMAUNIT
+ 70
+     0
+  9
+$DIMADEC
+ 70
+     0
+  9
+$DIMALTRND
+ 40
+0.0
+  9
+$DIMAZIN
+ 70
+     2
+  9
+$DIMDSEP
+ 70
+    46
+  9
+$DIMATFIT
+ 70
+     3
+  9
+$DIMFRAC
+ 70
+     0
+  9
+$DIMLDRBLK
+  1
+
+  9
+$DIMLUNIT
+ 70
+     2
+  9
+$DIMLWD
+ 70
+    -1
+  9
+$DIMLWE
+ 70
+    -1
+  9
+$DIMTMOVE
+ 70
+     0
+  9
+$LUNITS
+ 70
+     2
+  9
+$LUPREC
+ 70
+     4
+  9
+$SKETCHINC
+ 40
+0.1
+  9
+$FILLETRAD
+ 40
+0.0
+  9
+$AUNITS
+ 70
+     0
+  9
+$AUPREC
+ 70
+     0
+  9
+$MENU
+  1
+.
+  9
+$ELEVATION
+ 40
+0.0
+  9
+$PELEVATION
+ 40
+0.0
+  9
+$THICKNESS
+ 40
+0.0
+  9
+$LIMCHECK
+ 70
+     0
+  9
+$CHAMFERA
+ 40
+0.0
+  9
+$CHAMFERB
+ 40
+0.0
+  9
+$CHAMFERC
+ 40
+0.0
+  9
+$CHAMFERD
+ 40
+0.0
+  9
+$SKPOLY
+ 70
+     0
+  9
+$TDCREATE
+ 40
+2457444.591930139
+  9
+$TDUCREATE
+ 40
+2457444.258596805
+  9
+$TDUPDATE
+ 40
+2457444.613681320
+  9
+$TDUUPDATE
+ 40
+2457444.280347986
+  9
+$TDINDWG
+ 40
+0.0217511806
+  9
+$TDUSRTIMER
+ 40
+0.0217511806
+  9
+$USRTIMER
+ 70
+     1
+  9
+$ANGBASE
+ 50
+0.0
+  9
+$ANGDIR
+ 70
+     0
+  9
+$PDMODE
+ 70
+     0
+  9
+$PDSIZE
+ 40
+0.0
+  9
+$PLINEWID
+ 40
+0.0
+  9
+$SPLFRAME
+ 70
+     0
+  9
+$SPLINETYPE
+ 70
+     6
+  9
+$SPLINESEGS
+ 70
+     8
+  9
+$HANDSEED
+  5
+4D3
+  9
+$SURFTAB1
+ 70
+     6
+  9
+$SURFTAB2
+ 70
+     6
+  9
+$SURFTYPE
+ 70
+     6
+  9
+$SURFU
+ 70
+     6
+  9
+$SURFV
+ 70
+     6
+  9
+$UCSBASE
+  2
+
+  9
+$UCSNAME
+  2
+
+  9
+$UCSORG
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$UCSXDIR
+ 10
+1.0
+ 20
+0.0
+ 30
+0.0
+  9
+$UCSYDIR
+ 10
+0.0
+ 20
+1.0
+ 30
+0.0
+  9
+$UCSORTHOREF
+  2
+
+  9
+$UCSORTHOVIEW
+ 70
+     0
+  9
+$UCSORGTOP
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$UCSORGBOTTOM
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$UCSORGLEFT
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$UCSORGRIGHT
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$UCSORGFRONT
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$UCSORGBACK
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSBASE
+  2
+
+  9
+$PUCSNAME
+  2
+
+  9
+$PUCSORG
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSXDIR
+ 10
+1.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSYDIR
+ 10
+0.0
+ 20
+1.0
+ 30
+0.0
+  9
+$PUCSORTHOREF
+  2
+
+  9
+$PUCSORTHOVIEW
+ 70
+     0
+  9
+$PUCSORGTOP
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSORGBOTTOM
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSORGLEFT
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSORGRIGHT
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSORGFRONT
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PUCSORGBACK
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$USERI1
+ 70
+     0
+  9
+$USERI2
+ 70
+     0
+  9
+$USERI3
+ 70
+     0
+  9
+$USERI4
+ 70
+     0
+  9
+$USERI5
+ 70
+     0
+  9
+$USERR1
+ 40
+0.0
+  9
+$USERR2
+ 40
+0.0
+  9
+$USERR3
+ 40
+0.0
+  9
+$USERR4
+ 40
+0.0
+  9
+$USERR5
+ 40
+0.0
+  9
+$WORLDVIEW
+ 70
+     1
+  9
+$SHADEDGE
+ 70
+     3
+  9
+$SHADEDIF
+ 70
+    70
+  9
+$TILEMODE
+ 70
+     1
+  9
+$MAXACTVP
+ 70
+    64
+  9
+$PINSBASE
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PLIMCHECK
+ 70
+     0
+  9
+$PEXTMIN
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PEXTMAX
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$PLIMMIN
+ 10
+0.0
+ 20
+0.0
+  9
+$PLIMMAX
+ 10
+12.0
+ 20
+9.0
+  9
+$UNITMODE
+ 70
+     0
+  9
+$VISRETAIN
+ 70
+     1
+  9
+$PLINEGEN
+ 70
+     0
+  9
+$PSLTSCALE
+ 70
+     1
+  9
+$TREEDEPTH
+ 70
+  3020
+  9
+$CMLSTYLE
+  2
+Standard
+  9
+$CMLJUST
+ 70
+     0
+  9
+$CMLSCALE
+ 40
+1.0
+  9
+$PROXYGRAPHICS
+ 70
+     1
+  9
+$MEASUREMENT
+ 70
+     1
+  9
+$CELWEIGHT
+370
+    -1
+  9
+$ENDCAPS
+280
+     0
+  9
+$JOINSTYLE
+280
+     0
+  9
+$LWDISPLAY
+290
+     0
+  9
+$INSUNITS
+ 70
+     4
+  9
+$HYPERLINKBASE
+  1
+
+  9
+$STYLESHEET
+  1
+
+  9
+$XEDIT
+290
+     1
+  9
+$CEPSNTYPE
+380
+     0
+  9
+$PSTYLEMODE
+290
+     1
+  9
+$FINGERPRINTGUID
+  2
+{11244135-BE1D-4334-B241-0A624BD23D76}
+  9
+$VERSIONGUID
+  2
+{BE0759F9-C1F7-42B7-9765-966D70285B8E}
+  9
+$EXTNAMES
+290
+     1
+  9
+$PSVPSCALE
+ 40
+0.0
+  9
+$OLESTARTUP
+290
+     0
+  9
+$SORTENTS
+280
+   127
+  9
+$INDEXCTL
+280
+     0
+  9
+$HIDETEXT
+280
+     1
+  9
+$XCLIPFRAME
+290
+     0
+  9
+$HALOGAP
+280
+     0
+  9
+$OBSCOLOR
+ 70
+   257
+  9
+$OBSLTYPE
+280
+     0
+  9
+$INTERSECTIONDISPLAY
+280
+     0
+  9
+$INTERSECTIONCOLOR
+ 70
+   257
+  9
+$DIMASSOC
+280
+     2
+  9
+$PROJECTNAME
+  1
+
+  0
+ENDSEC
+  0
+SECTION
+  2
+CLASSES
+  0
+CLASS
+  1
+ACDBDICTIONARYWDFLT
+  2
+AcDbDictionaryWithDefault
+  3
+ObjectDBX Classes
+ 90
+        0
+ 91
+        1
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+ACDBPLACEHOLDER
+  2
+AcDbPlaceHolder
+  3
+ObjectDBX Classes
+ 90
+        0
+ 91
+        1
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+LAYOUT
+  2
+AcDbLayout
+  3
+ObjectDBX Classes
+ 90
+        0
+ 91
+        3
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+DICTIONARYVAR
+  2
+AcDbDictionaryVar
+  3
+ObjectDBX Classes
+ 90
+        0
+ 91
+       12
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+TABLESTYLE
+  2
+AcDbTableStyle
+  3
+ObjectDBX Classes
+ 90
+     4095
+ 91
+        1
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+MATERIAL
+  2
+AcDbMaterial
+  3
+ObjectDBX Classes
+ 90
+     1153
+ 91
+        3
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+VISUALSTYLE
+  2
+AcDbVisualStyle
+  3
+ObjectDBX Classes
+ 90
+     4095
+ 91
+       19
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+SCALE
+  2
+AcDbScale
+  3
+ObjectDBX Classes
+ 90
+     1153
+ 91
+       33
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+MLEADERSTYLE
+  2
+AcDbMLeaderStyle
+  3
+ACDB_MLEADERSTYLE_CLASS
+ 90
+     4095
+ 91
+        2
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+CELLSTYLEMAP
+  2
+AcDbCellStyleMap
+  3
+ObjectDBX Classes
+ 90
+     1152
+ 91
+        3
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+EXACXREFPANELOBJECT
+  2
+ExAcXREFPanelObject
+  3
+EXAC_ESW
+ 90
+     1025
+ 91
+        0
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+NPOCOLLECTION
+  2
+AcDbImpNonPersistentObjectsCollection
+  3
+ObjectDBX Classes
+ 90
+     1153
+ 91
+        0
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+LAYER_INDEX
+  2
+AcDbLayerIndex
+  3
+ObjectDBX Classes
+ 90
+        0
+ 91
+        0
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+SPATIAL_INDEX
+  2
+AcDbSpatialIndex
+  3
+ObjectDBX Classes
+ 90
+        0
+ 91
+        0
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+IDBUFFER
+  2
+AcDbIdBuffer
+  3
+ObjectDBX Classes
+ 90
+        0
+ 91
+        0
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+TH_PAPERRECORDER
+  2
+TH_PaperRecorder
+  3
+_T("PCCADBAS|Company:TianHe SoftWare,Inc.|WEB Address:www.thsoft.com.cn")
+ 90
+     3071
+ 91
+        3
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+TH_PAPERSIZERECORDER
+  2
+TH_PaperSizeRecorder
+  3
+THPaperSet
+ 90
+     3071
+ 91
+        3
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+TH_CSLRECORDER
+  2
+TH_CSLRecorder
+  3
+_T("PCCADBAS|Company:TianHe SoftWare,Inc.|WEB Address:www.thsoft.com.cn")
+ 90
+     3071
+ 91
+        3
+280
+     0
+281
+     0
+  0
+CLASS
+  1
+TH_WaterMark
+  2
+TH_WaterMark
+  3
+_T("TH_WaterMark|Company:TianHe SoftWare,Inc.|WEB Address:www.thsoft.com.cn")
+ 90
+        2
+ 91
+        3
+280
+     0
+281
+     1
+  0
+CLASS
+  1
+TH_DIMROUGH2010
+  2
+TH_DimRough2010
+  3
+_T("PCCAD|Company:TianHe SoftWare,Inc.|WEB Address:www.thsoft.com.cn")
+ 90
+     3071
+ 91
+        0
+280
+     0
+281
+     1
+  0
+ENDSEC
+  0
+SECTION
+  2
+TABLES
+  0
+TABLE
+  2
+VPORT
+  5
+8
+330
+0
+100
+AcDbSymbolTable
+ 70
+     1
+  0
+VPORT
+  5
+94
+330
+8
+100
+AcDbSymbolTableRecord
+100
+AcDbViewportTableRecord
+  2
+*Active
+ 70
+     0
+ 10
+0.0
+ 20
+0.0
+ 11
+1.0
+ 21
+1.0
+ 12
+-1.795876899328675
+ 22
+5.236046074138641
+ 13
+0.0
+ 23
+0.0
+ 14
+0.5
+ 24
+0.5
+ 15
+0.5
+ 25
+0.5
+ 16
+0.0
+ 26
+0.0
+ 36
+1.0
+ 17
+0.0
+ 27
+0.0
+ 37
+0.0
+ 40
+145.3513854723354
+ 41
+2.222482435597189
+ 42
+50.0
+ 43
+0.0
+ 44
+0.0
+ 50
+0.0
+ 51
+0.0
+ 71
+     0
+ 72
+  1000
+ 73
+     1
+ 74
+     3
+ 75
+     0
+ 76
+     0
+ 77
+     0
+ 78
+     0
+281
+     0
+ 65
+     1
+110
+0.0
+120
+0.0
+130
+0.0
+111
+1.0
+121
+0.0
+131
+0.0
+112
+0.0
+122
+1.0
+132
+0.0
+ 79
+     0
+146
+0.0
+  0
+ENDTAB
+  0
+TABLE
+  2
+LTYPE
+  5
+5
+330
+0
+100
+AcDbSymbolTable
+ 70
+     6
+  0
+LTYPE
+  5
+14
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+ByBlock
+ 70
+     0
+  3
+
+ 72
+    65
+ 73
+     0
+ 40
+0.0
+  0
+LTYPE
+  5
+15
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+ByLayer
+ 70
+     0
+  3
+
+ 72
+    65
+ 73
+     0
+ 40
+0.0
+  0
+LTYPE
+  5
+16
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+Continuous
+ 70
+     0
+  3
+Solid line
+ 72
+    65
+ 73
+     0
+ 40
+0.0
+  0
+LTYPE
+  5
+228
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DASHED
+ 70
+     0
+  3
+Dashed __ __ __ __ __ __ __ __ __ __ __ __ __ _
+ 72
+    65
+ 73
+     2
+ 40
+0.75
+ 49
+0.5
+ 74
+     0
+ 49
+-0.25
+ 74
+     0
+  0
+LTYPE
+  5
+229
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+CENTER
+ 70
+     0
+  3
+Center ____ _ ____ _ ____ _ ____ _ ____ _ ____
+ 72
+    65
+ 73
+     4
+ 40
+2.0
+ 49
+1.25
+ 74
+     0
+ 49
+-0.25
+ 74
+     0
+ 49
+0.25
+ 74
+     0
+ 49
+-0.25
+ 74
+     0
+  0
+LTYPE
+  5
+22A
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+PHANTOM
+ 70
+     0
+  3
+Phantom ______  __  __  ______  __  __  ______
+ 72
+    65
+ 73
+     6
+ 40
+2.5
+ 49
+1.25
+ 74
+     0
+ 49
+-0.25
+ 74
+     0
+ 49
+0.25
+ 74
+     0
+ 49
+-0.25
+ 74
+     0
+ 49
+0.25
+ 74
+     0
+ 49
+-0.25
+ 74
+     0
+  0
+LTYPE
+  5
+2FC
+330
+5
+100
+AcDbSymbolTableRecord
+100
+AcDbLinetypeTableRecord
+  2
+DIVIDE
+ 70
+     0
+  3
+Divide ____ . . ____ . . ____ . . ____ . . ____
+ 72
+    65
+ 73
+     6
+ 40
+1.25
+ 49
+0.5
+ 74
+     0
+ 49
+-0.25
+ 74
+     0
+ 49
+0.0
+ 74
+     0
+ 49
+-0.25
+ 74
+     0
+ 49
+0.0
+ 74
+     0
+ 49
+-0.25
+ 74
+     0
+  0
+ENDTAB
+  0
+TABLE
+  2
+LAYER
+  5
+2
+102
+{ACAD_XDICTIONARY
+360
+346
+102
+}
+330
+0
+100
+AcDbSymbolTable
+ 70
+    18
+  0
+LAYER
+  5
+10
+102
+{ACAD_XDICTIONARY
+360
+E6
+102
+}
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+0
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+22B
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+1轮廓实线层
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+22C
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+轮廓虚线层
+ 70
+     0
+ 62
+     7
+  6
+DASHED
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+22D
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+3中心线层
+ 70
+     0
+ 62
+     1
+  6
+CENTER
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+22E
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+4虚线层
+ 70
+     0
+ 62
+     6
+  6
+DASHED
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+22F
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+2细线层
+ 70
+     0
+ 62
+     4
+  6
+Continuous
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+230
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+5剖面线层
+ 70
+     0
+ 62
+     2
+  6
+Continuous
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+231
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+9双点划线层
+ 70
+     0
+ 62
+     6
+  6
+PHANTOM
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+232
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+6文字层
+ 70
+     0
+ 62
+     3
+  6
+Continuous
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+233
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+7标注层
+ 70
+     0
+ 62
+     4
+  6
+Continuous
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+234
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+图框层
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+235
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+消隐层
+ 70
+     0
+ 62
+    -5
+  6
+Continuous
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+236
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+8符号标注层
+ 70
+     0
+ 62
+    31
+  6
+Continuous
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+237
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+排图层
+ 70
+     0
+ 62
+     5
+  6
+Continuous
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+238
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+用户自定义1
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+239
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+用户自定义3
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+23A
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+用户自定义2
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+370
+    -3
+390
+F
+  0
+LAYER
+  5
+23B
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Defpoints
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+290
+     0
+370
+    -3
+390
+F
+  0
+ENDTAB
+  0
+TABLE
+  2
+STYLE
+  5
+3
+330
+0
+100
+AcDbSymbolTable
+ 70
+     6
+  0
+STYLE
+  5
+11
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+Standard
+ 70
+     0
+ 40
+0.0
+ 41
+0.7070000000000001
+ 50
+0.0
+ 71
+     0
+ 42
+0.2
+  3
+tssdeng.shx
+  4
+tssdchn.shx
+  0
+STYLE
+  5
+DC
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+Annotative
+ 70
+     0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+     0
+ 42
+0.2
+  3
+SimSun.ttf
+  4
+
+1001
+AcadAnnotative
+1000
+AnnotativeData
+1002
+{
+1070
+     1
+1070
+     1
+1002
+}
+1001
+ACAD
+1000
+SimSun
+1071
+       34
+  0
+STYLE
+  5
+23C
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+PC_TEXTSTYLE
+ 70
+     0
+ 40
+0.0
+ 41
+0.8
+ 50
+0.0
+ 71
+     0
+ 42
+5.0
+  3
+tssdeng.shx
+  4
+tssdchn.shx
+  0
+STYLE
+  5
+23D
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+PC_TEXTSTYLE1
+ 70
+     0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+     0
+ 42
+5.0
+  3
+tssdeng.shx
+  4
+tssdchn.shx
+  0
+STYLE
+  5
+23E
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+TH_GBDIM
+ 70
+     0
+ 40
+0.0
+ 41
+0.8
+ 50
+0.0
+ 71
+     0
+ 42
+5.0
+  3
+tssdeng.shx
+  4
+tssdchn.shx
+  0
+STYLE
+  5
+23F
+330
+3
+100
+AcDbSymbolTableRecord
+100
+AcDbTextStyleTableRecord
+  2
+THXuHaoStyle
+ 70
+     0
+ 40
+0.0
+ 41
+0.8
+ 50
+0.0
+ 71
+     0
+ 42
+5.0
+  3
+txt.shx
+  4
+hzfs.shx
+  0
+ENDTAB
+  0
+TABLE
+  2
+VIEW
+  5
+6
+330
+0
+100
+AcDbSymbolTable
+ 70
+     0
+  0
+ENDTAB
+  0
+TABLE
+  2
+UCS
+  5
+7
+330
+0
+100
+AcDbSymbolTable
+ 70
+     0
+  0
+ENDTAB
+  0
+TABLE
+  2
+APPID
+  5
+9
+330
+0
+100
+AcDbSymbolTable
+ 70
+    26
+  0
+APPID
+  5
+12
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+ACAD
+ 70
+     0
+  0
+APPID
+  5
+DD
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+AcadAnnoPO
+ 70
+     0
+  0
+APPID
+  5
+DE
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+AcadAnnotative
+ 70
+     0
+  0
+APPID
+  5
+DF
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+ACAD_DSTYLE_DIMJAG
+ 70
+     0
+  0
+APPID
+  5
+E0
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+ACAD_DSTYLE_DIMTALN
+ 70
+     0
+  0
+APPID
+  5
+107
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+ACAD_MLEADERVER
+ 70
+     0
+  0
+APPID
+  5
+242
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+WBY_PAPERINIT
+ 70
+     0
+  0
+APPID
+  5
+243
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+$WBY_PAPNO_PAPERINIT
+ 70
+     0
+  0
+APPID
+  5
+244
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+TH_PaperSizeRecorder
+ 70
+     0
+  0
+APPID
+  5
+245
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+TH_XDATA_ORDER
+ 70
+     0
+  0
+APPID
+  5
+246
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+TH_XDATA_CODE
+ 70
+     0
+  0
+APPID
+  5
+247
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+TH_XDATA_VTYPE
+ 70
+     0
+  0
+APPID
+  5
+248
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+TH_XDATA_ALIGN
+ 70
+     0
+  0
+APPID
+  5
+249
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+TH_XDATA_EXPRE
+ 70
+     0
+  0
+APPID
+  5
+24A
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+TH_XDATA_ROWDOWITH
+ 70
+     0
+  0
+APPID
+  5
+24B
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+PC_MXBTITLERECORD
+ 70
+     0
+  0
+APPID
+  5
+24C
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+TH_XUHAO
+ 70
+     0
+  0
+APPID
+  5
+24D
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+TH_PaperRecorder
+ 70
+     0
+  0
+APPID
+  5
+24E
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+TH_CSLRecorder
+ 70
+     0
+  0
+APPID
+  5
+24F
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+TH_XDATA_ORIENTION
+ 70
+     0
+  0
+APPID
+  5
+250
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+TH_XDATA_EDITABLE
+ 70
+     0
+  0
+APPID
+  5
+251
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+TH_XDATA_ATTDEFHANDLE
+ 70
+     0
+  0
+APPID
+  5
+252
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+TH_POWERPARA
+ 70
+     0
+  0
+APPID
+  5
+253
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+TH_SUPERTABLEPARA
+ 70
+     0
+  0
+APPID
+  5
+420
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+ACAD_EXEMPT_FROM_CAD_STANDARDS
+ 70
+     0
+  0
+APPID
+  5
+46C
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+ACAD_DSTYLE_DIMRADIAL_EXTENSION
+ 70
+     0
+  0
+ENDTAB
+  0
+TABLE
+  2
+DIMSTYLE
+  5
+A
+330
+0
+100
+AcDbSymbolTable
+ 70
+     5
+100
+AcDbDimStyleTable
+ 71
+     3
+340
+241
+340
+27
+340
+E1
+  0
+DIMSTYLE
+105
+27
+330
+A
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+Standard
+ 70
+     0
+340
+11
+  0
+DIMSTYLE
+105
+E1
+330
+A
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+Annotative
+ 70
+     0
+ 40
+0.0
+340
+11
+1001
+AcadAnnotative
+1000
+AnnotativeData
+1002
+{
+1070
+     1
+1070
+     1
+1002
+}
+1001
+ACAD_DSTYLE_DIMJAG
+1070
+   388
+1040
+1.5
+1001
+ACAD_DSTYLE_DIMTALN
+1070
+   392
+1070
+     0
+  0
+DIMSTYLE
+105
+240
+330
+A
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+TH_GBDIM1
+ 70
+     0
+ 41
+2.5
+ 42
+0.0
+ 43
+10.0
+ 44
+2.0
+ 73
+     0
+ 74
+     0
+ 77
+     1
+140
+3.5
+141
+2.5
+146
+0.714286
+147
+1.5
+172
+     1
+176
+   130
+177
+   130
+178
+     3
+271
+     1
+272
+     1
+283
+     0
+340
+23E
+371
+    -1
+372
+    -1
+  0
+DIMSTYLE
+105
+241
+330
+A
+100
+AcDbSymbolTableRecord
+100
+AcDbDimStyleTableRecord
+  2
+TH_GBDIM
+ 70
+     0
+ 41
+2.5
+ 42
+0.625
+ 43
+10.0
+ 44
+1.0
+ 48
+0.000000001
+ 73
+     0
+ 74
+     0
+ 77
+     1
+ 78
+     8
+ 79
+     2
+140
+3.5
+141
+0.0
+146
+0.714286
+147
+1.0
+172
+     1
+176
+   130
+177
+   130
+178
+     3
+271
+     1
+272
+     1
+284
+     8
+340
+23E
+371
+    -1
+372
+    -1
+1001
+ACAD_DSTYLE_DIMJAG
+1070
+   388
+1040
+1.5
+1001
+ACAD_DSTYLE_DIMTALN
+1070
+   392
+1070
+     0
+  0
+ENDTAB
+  0
+TABLE
+  2
+BLOCK_RECORD
+  5
+1
+330
+0
+100
+AcDbSymbolTable
+ 70
+    10
+  0
+BLOCK_RECORD
+  5
+1F
+102
+{ACAD_XDICTIONARY
+360
+15D
+102
+}
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*Model_Space
+340
+22
+  0
+BLOCK_RECORD
+  5
+58
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*Paper_Space
+340
+59
+  0
+BLOCK_RECORD
+  5
+5D
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+*Paper_Space0
+340
+5E
+  0
+BLOCK_RECORD
+  5
+19B
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+PC_MXB_BLOCK
+340
+0
+  0
+BLOCK_RECORD
+  5
+1B1
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+PC_MXBTITLERECORD
+340
+0
+  0
+BLOCK_RECORD
+  5
+26F
+102
+{ACAD_XDICTIONARY
+360
+270
+102
+}
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+PCCAD_TEMPLATE
+340
+0
+102
+{BLKREFS
+331
+275
+102
+}
+  0
+BLOCK_RECORD
+  5
+27D
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+PC_CSL_BLOCK
+340
+0
+  0
+BLOCK_RECORD
+  5
+2D8
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+PC_FJL_BLOCK
+340
+0
+  0
+BLOCK_RECORD
+  5
+2FE
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+PC_TYDH_BLOCK
+340
+0
+  0
+BLOCK_RECORD
+  5
+392
+330
+1
+100
+AcDbSymbolTableRecord
+100
+AcDbBlockTableRecord
+  2
+PC_TITLE_BLOCK
+340
+0
+  0
+ENDTAB
+  0
+ENDSEC
+  0
+SECTION
+  2
+BLOCKS
+  0
+BLOCK
+  5
+20
+330
+1F
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+*Model_Space
+ 70
+     0
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*Model_Space
+  1
+
+  0
+ENDBLK
+  5
+21
+330
+1F
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+5A
+330
+58
+100
+AcDbEntity
+ 67
+     1
+  8
+0
+100
+AcDbBlockBegin
+  2
+*Paper_Space
+ 70
+     0
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*Paper_Space
+  1
+
+  0
+ENDBLK
+  5
+5B
+330
+58
+100
+AcDbEntity
+ 67
+     1
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+5F
+330
+5D
+100
+AcDbEntity
+ 67
+     1
+  8
+0
+100
+AcDbBlockBegin
+  2
+*Paper_Space0
+ 70
+     0
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+*Paper_Space0
+  1
+
+  0
+ENDBLK
+  5
+60
+330
+5D
+100
+AcDbEntity
+ 67
+     1
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+19C
+330
+19B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+PC_MXB_BLOCK
+ 70
+     2
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+PC_MXB_BLOCK
+  1
+
+  0
+LINE
+  5
+3EA
+330
+19B
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+0.0
+ 30
+0.0
+ 11
+0.0
+ 21
+0.0
+ 31
+0.0
+  0
+ATTDEF
+  5
+3EB
+330
+19B
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-86.43310534086367
+ 20
+1.01034163864881
+ 30
+0.0
+ 40
+4.5
+  1
+
+ 41
+2.943328368291707
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-54.30419914243191
+ 21
+1.01034163864881
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+材料
+  2
+材料
+ 70
+     0
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+5
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Material
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+LINE
+  5
+3EC
+330
+19B
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+8.0
+ 30
+0.0
+ 11
+0.0
+ 21
+8.0
+ 31
+0.0
+  0
+ATTDEF
+  5
+3ED
+330
+19B
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-168.0468040277006
+ 20
+1.348885681267233
+ 30
+0.0
+ 40
+4.5
+  1
+
+ 41
+3.147730039833858
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-134.1074177566207
+ 21
+1.348885681267233
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+代号
+  2
+代号
+ 70
+     0
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+2
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Code
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+LEFT
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+LINE
+  5
+3EE
+330
+19B
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+8.0
+ 30
+0.0
+ 11
+-180.0
+ 21
+0.0
+ 31
+0.0
+  0
+LINE
+  5
+3EF
+330
+19B
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-169.0
+ 20
+8.0
+ 30
+0.0
+ 11
+-169.0
+ 21
+0.0
+ 31
+0.0
+  0
+ATTDEF
+  5
+3F0
+330
+19B
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-178.381729678601
+ 20
+1.348885681267233
+ 30
+0.0
+ 40
+4.5
+  1
+
+ 41
+0.7691821412910099
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-170.0882707492355
+ 21
+1.348885681267233
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+序号
+  2
+序号
+ 70
+     0
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+1
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Order
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+ATTDEF
+  5
+3F1
+330
+19B
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-130.8666991322458
+ 20
+1.19547596701426
+ 30
+0.0
+ 40
+4.5
+  1
+
+ 41
+2.80242433537261
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-100.2758790357279
+ 21
+1.19547596701426
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+名称
+  2
+名称
+ 70
+     0
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+3
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Name
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+LEFT
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+LINE
+  5
+3F2
+330
+19B
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-132.0
+ 20
+8.0
+ 30
+0.0
+ 11
+-132.0
+ 21
+0.0
+ 31
+0.0
+  0
+LINE
+  5
+3F3
+330
+19B
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-88.0
+ 20
+8.0
+ 30
+0.0
+ 11
+-88.0
+ 21
+0.0
+ 31
+0.0
+  0
+LINE
+  5
+3F4
+330
+19B
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-99.0
+ 20
+8.0
+ 30
+0.0
+ 11
+-99.0
+ 21
+0.0
+ 31
+0.0
+  0
+ATTDEF
+  5
+3F5
+330
+19B
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-97.88330074551822
+ 20
+1.19547596701426
+ 30
+0.0
+ 40
+4.5
+  1
+
+ 41
+0.8174486364448815
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-88.99658190575109
+ 21
+1.19547596701426
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+数量
+  2
+数量
+ 70
+     0
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+4
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Quantity
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+Number
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+ATTDEF
+  5
+3F6
+330
+19B
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-28.60888357640226
+ 20
+1.024654073362427
+ 30
+0.0
+ 40
+4.5
+  1
+
+ 41
+2.494074276313303
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-1.161719634597943
+ 21
+1.024654073362427
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+备注
+  2
+备注
+ 70
+     0
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+8
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Remark
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+ATTDEF
+  5
+3F7
+330
+19B
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-52.20750697209507
+ 20
+0.8871421990031365
+ 30
+0.0
+ 40
+4.5
+  1
+
+ 41
+0.8540383451204608
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-42.99911333015268
+ 21
+0.8871421990031365
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+单重
+  2
+单重
+ 70
+     0
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+6
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+SingleWeight
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+Number
+1070
+     2
+1000
+2
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+LINE
+  5
+3F8
+330
+19B
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-53.0
+ 20
+8.0
+ 30
+0.0
+ 11
+-53.0
+ 21
+0.0
+ 31
+0.0
+  0
+LINE
+  5
+3F9
+330
+19B
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-30.0
+ 20
+8.0
+ 30
+0.0
+ 11
+-30.0
+ 21
+0.0
+ 31
+0.0
+  0
+LINE
+  5
+3FA
+330
+19B
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-42.0
+ 20
+8.0
+ 30
+0.0
+ 11
+-42.0
+ 21
+0.0
+ 31
+0.0
+  0
+ATTDEF
+  5
+3FB
+330
+19B
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-41.19507323250888
+ 20
+1.265572583556576
+ 30
+0.0
+ 40
+4.5
+  1
+
+ 41
+0.958887548135068
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-30.85617679766642
+ 21
+1.265572583556576
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+总重
+  2
+总重
+ 70
+     0
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+7
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+TotalWeight
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+Number
+1070
+     2
+1000
+2
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+数量*单重
+  0
+LINE
+  5
+3FC
+330
+19B
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+0.0
+ 20
+8.0
+ 30
+0.0
+ 11
+0.0
+ 21
+0.0
+ 31
+0.0
+  0
+ENDBLK
+  5
+1B0
+330
+19B
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+1B2
+330
+1B1
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+PC_MXBTITLERECORD
+ 70
+     2
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+PC_MXBTITLERECORD
+  1
+
+  0
+TEXT
+  5
+401
+330
+1B1
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-80.25027114496701
+ 20
+3.480314960629921
+ 30
+0.0
+ 40
+5.0
+  1
+材      料
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-71.88651130244733
+ 21
+6.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+402
+330
+1B1
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-158.5581615976254
+ 20
+3.499999999999999
+ 30
+0.0
+ 40
+5.0
+  1
+代     号
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-151.087236400775
+ 21
+6.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+403
+330
+1B1
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-178.1216461196692
+ 20
+3.480314960629921
+ 30
+0.0
+ 40
+5.0
+  1
+序号
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-174.7735161984094
+ 21
+6.0
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+404
+330
+1B1
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+0.0
+ 30
+0.0
+ 11
+-180.0
+ 21
+12.0
+ 31
+0.0
+  0
+LINE
+  5
+405
+330
+1B1
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-169.0
+ 20
+12.0
+ 30
+0.0
+ 11
+-169.0
+ 21
+0.0
+ 31
+0.0
+  0
+TEXT
+  5
+406
+330
+1B1
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-123.6867150348817
+ 20
+3.499999999999999
+ 30
+0.0
+ 40
+5.0
+  1
+名     称
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-116.0582307829132
+ 21
+6.0
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+407
+330
+1B1
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-132.0
+ 20
+12.0
+ 30
+0.0
+ 11
+-132.0
+ 21
+0.0
+ 31
+0.0
+  0
+TEXT
+  5
+408
+330
+1B1
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-97.01512910476077
+ 20
+3.499999999999999
+ 30
+0.0
+ 40
+5.0
+  1
+数量
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-93.70638894728045
+ 21
+6.0
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+409
+330
+1B1
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-88.0
+ 20
+12.0
+ 30
+0.0
+ 11
+-88.0
+ 21
+0.0
+ 31
+0.0
+  0
+LINE
+  5
+40A
+330
+1B1
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-99.0
+ 20
+12.0
+ 30
+0.0
+ 11
+-99.0
+ 21
+0.0
+ 31
+0.0
+  0
+TEXT
+  5
+40B
+330
+1B1
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-23.04285807386551
+ 20
+3.5
+ 30
+0.0
+ 40
+5.0
+  1
+备     注
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-15.57193287701511
+ 21
+6.0
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+40C
+330
+1B1
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-39.3417668884326
+ 20
+6.941041629877986
+ 30
+0.0
+ 40
+4.0
+  1
+总 计
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-35.95949917189717
+ 21
+8.941041629877986
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+40D
+330
+1B1
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-30.0
+ 20
+6.0
+ 30
+0.0
+ 11
+-53.0
+ 21
+6.0
+ 31
+0.0
+  0
+TEXT
+  5
+40E
+330
+1B1
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-47.01897116281223
+ 20
+0.942604395875036
+ 30
+0.0
+ 40
+4.0
+  1
+重    量
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-41.65145935178862
+ 21
+2.942604395875036
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+40F
+330
+1B1
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-53.0
+ 20
+12.0
+ 30
+0.0
+ 11
+-53.0
+ 21
+0.0
+ 31
+0.0
+  0
+TEXT
+  5
+410
+330
+1B1
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-50.76615372743807
+ 20
+6.83762043961633
+ 30
+0.0
+ 40
+4.0
+  1
+单 件
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-47.44690963294988
+ 21
+8.83762043961633
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+411
+330
+1B1
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-42.0
+ 20
+12.0
+ 30
+0.0
+ 11
+-42.0
+ 21
+6.0
+ 31
+0.0
+  0
+LINE
+  5
+412
+330
+1B1
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-30.0
+ 20
+12.0
+ 30
+0.0
+ 11
+-30.0
+ 21
+0.0
+ 31
+0.0
+  0
+LINE
+  5
+413
+330
+1B1
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 11
+0.0
+ 21
+12.0
+ 31
+0.0
+  0
+ATTDEF
+  5
+414
+330
+1B1
+100
+AcDbEntity
+  8
+0
+100
+AcDbText
+ 10
+-53.0
+ 20
+6.0
+ 30
+0.0
+ 40
+0.00000005
+  1
+
+  7
+PC_TEXTSTYLE
+100
+AcDbAttributeDefinition
+  3
+
+  2
+Fo oFShowMe
+ 70
+     1
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+9
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+
+1001
+TH_XDATA_ROWDOWITH
+1070
+     1
+1000
+
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+ENDBLK
+  5
+1C7
+330
+1B1
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+271
+330
+26F
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+PCCAD_TEMPLATE
+ 70
+     0
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+PCCAD_TEMPLATE
+  1
+
+  0
+ENDBLK
+  5
+272
+330
+26F
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+27E
+330
+27D
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+PC_CSL_BLOCK
+ 70
+     0
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+PC_CSL_BLOCK
+  1
+
+  0
+ENDBLK
+  5
+27F
+330
+27D
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+2F2
+330
+2D8
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+PC_FJL_BLOCK
+ 70
+     2
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+PC_FJL_BLOCK
+  1
+
+  0
+LINE
+  5
+2D9
+330
+2D8
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-25.0
+ 20
+0.0
+ 30
+0.0
+ 11
+0.0
+ 21
+0.0
+ 31
+0.0
+  0
+LINE
+  5
+2DA
+330
+2D8
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-25.0
+ 20
+10.0
+ 30
+0.0
+ 11
+0.0
+ 21
+10.0
+ 31
+0.0
+  0
+LINE
+  5
+2DB
+330
+2D8
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-25.0
+ 20
+17.0
+ 30
+0.0
+ 11
+0.0
+ 21
+17.0
+ 31
+0.0
+  0
+LINE
+  5
+2DC
+330
+2D8
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-25.0
+ 20
+27.0
+ 30
+0.0
+ 11
+0.0
+ 21
+27.0
+ 31
+0.0
+  0
+LINE
+  5
+2DD
+330
+2D8
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-25.0
+ 20
+34.0
+ 30
+0.0
+ 11
+0.0
+ 21
+34.0
+ 31
+0.0
+  0
+LINE
+  5
+2DE
+330
+2D8
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-25.0
+ 20
+44.0
+ 30
+0.0
+ 11
+0.0
+ 21
+44.0
+ 31
+0.0
+  0
+LINE
+  5
+2DF
+330
+2D8
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-25.0
+ 20
+51.0
+ 30
+0.0
+ 11
+0.0
+ 21
+51.0
+ 31
+0.0
+  0
+LINE
+  5
+2E0
+330
+2D8
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-25.0
+ 20
+61.0
+ 30
+0.0
+ 11
+0.0
+ 21
+61.0
+ 31
+0.0
+  0
+LINE
+  5
+2E1
+330
+2D8
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-25.0
+ 20
+68.0
+ 30
+0.0
+ 11
+0.0
+ 21
+68.0
+ 31
+0.0
+  0
+ATTDEF
+  5
+2E2
+330
+2D8
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-22.83672096527289
+ 20
+35.67035085177702
+ 30
+0.0
+ 40
+5.0
+  1
+旧底图总号
+ 41
+0.8551676147170883
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-1.86154679327501
+ 21
+35.67035085177702
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+旧底图总号
+  2
+旧底图总号
+ 70
+     0
+  0
+ATTDEF
+  5
+2E3
+330
+2D8
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-22.83672096527289
+ 20
+1.373859241433422
+ 30
+0.0
+ 40
+5.0
+  1
+日期
+ 41
+2.169620290862106
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-2.165535516901627
+ 21
+1.373859241433422
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+日期
+  2
+日期
+ 70
+     0
+  0
+ATTDEF
+  5
+2E4
+330
+2D8
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-23.14070968889939
+ 20
+18.37035077403232
+ 30
+0.0
+ 40
+5.0
+  1
+签字
+ 41
+2.313130901094723
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-1.55755915506279
+ 21
+18.37035077403232
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+签字
+  2
+签字
+ 70
+     0
+  0
+ATTDEF
+  5
+2E5
+330
+2D8
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-23.74868605073812
+ 20
+52.05982479391377
+ 30
+0.0
+ 40
+5.0
+  1
+校图
+ 41
+2.45225723918568
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-1.253570431436401
+ 21
+52.05982479391377
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+校图
+  2
+校图
+ 70
+     0
+  0
+TEXT
+  5
+2E6
+330
+2D8
+100
+AcDbEntity
+  8
+6文字层
+ 62
+     3
+100
+AcDbText
+ 10
+-21.00818897637795
+ 20
+45.0
+ 30
+0.0
+ 40
+5.0
+  1
+旧底图总号
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-12.5
+ 21
+47.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+2E7
+330
+2D8
+100
+AcDbEntity
+  8
+6文字层
+ 62
+     3
+100
+AcDbText
+ 10
+-17.81138297093838
+ 20
+11.09980542589426
+ 30
+0.0
+ 40
+5.0
+  1
+日  期
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-12.49376486070217
+ 21
+13.59980542589427
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+2E8
+330
+2D8
+100
+AcDbEntity
+  8
+6文字层
+ 62
+     3
+100
+AcDbText
+ 10
+-17.4105905511811
+ 20
+27.98031496062992
+ 30
+0.0
+ 40
+5.0
+  1
+签  字
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-12.5
+ 21
+30.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+2E9
+330
+2D8
+100
+AcDbEntity
+  8
+6文字层
+ 62
+     3
+100
+AcDbText
+ 10
+-17.46311023622047
+ 20
+61.98031496062991
+ 30
+0.0
+ 40
+5.0
+  1
+校  描
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-12.5
+ 21
+64.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+2EA
+330
+2D8
+100
+AcDbEntity
+  8
+6文字层
+ 62
+     3
+100
+AcDbText
+ 10
+-18.2089468503937
+ 20
+78.98031496062992
+ 30
+0.0
+ 40
+5.0
+  1
+描   图
+ 41
+0.6667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-12.5
+ 21
+81.5
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+2EB
+330
+2D8
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-25.0
+ 20
+78.0
+ 30
+0.0
+ 11
+0.0
+ 21
+78.0
+ 31
+0.0
+  0
+LINE
+  5
+2EC
+330
+2D8
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-25.0
+ 20
+85.0
+ 30
+0.0
+ 11
+0.0
+ 21
+85.0
+ 31
+0.0
+  0
+LINE
+  5
+2ED
+330
+2D8
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-25.0
+ 20
+95.0
+ 30
+0.0
+ 11
+0.0
+ 21
+95.0
+ 31
+0.0
+  0
+LINE
+  5
+2EE
+330
+2D8
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-25.0
+ 20
+102.0
+ 30
+0.0
+ 11
+0.0
+ 21
+102.0
+ 31
+0.0
+  0
+ATTDEF
+  5
+2EF
+330
+2D8
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-23.44469732711161
+ 20
+69.35982487165848
+ 30
+0.0
+ 40
+5.0
+  1
+描图
+ 41
+2.41911855429249
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-1.253570431436401
+ 21
+69.35982487165848
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+描图
+  2
+描图
+ 70
+     0
+  0
+ATTDEF
+  5
+2F0
+330
+2D8
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-23.44469732711161
+ 20
+86.35631590408678
+ 30
+0.0
+ 40
+5.0
+  1
+借通用件登记
+ 41
+0.7525428880509353
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-1.253570431436401
+ 21
+86.35631590408678
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+借通用件登记
+  2
+借通用件登记
+ 70
+     0
+  0
+TEXT
+  5
+2F1
+330
+2D8
+100
+AcDbEntity
+  8
+6文字层
+ 62
+     3
+100
+AcDbText
+ 10
+-22.42622047244095
+ 20
+95.98031496062992
+ 30
+0.0
+ 40
+5.0
+  1
+借通用件登记
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-12.5
+ 21
+98.50000000000001
+ 31
+0.0
+100
+AcDbText
+  0
+ENDBLK
+  5
+2F3
+330
+2D8
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+302
+330
+2FE
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+PC_TYDH_BLOCK
+ 70
+     2
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+PC_TYDH_BLOCK
+  1
+
+  0
+LINE
+  5
+2FF
+330
+2FE
+100
+AcDbEntity
+  8
+2细线层
+  6
+Continuous
+100
+AcDbLine
+ 10
+0.0
+ 20
+-12.0
+ 30
+0.0
+ 11
+60.0
+ 21
+-12.0
+ 31
+0.0
+  0
+ATTDEF
+  5
+300
+330
+2FE
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+58.23961856626533
+ 20
+-2.403184483947882
+ 30
+0.0
+ 40
+7.0
+  1
+图样代号
+ 50
+180.0
+ 41
+2.044489574952841
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+2.346171288814417
+ 21
+-2.403184483947882
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+图样代号
+  2
+图样代号
+ 70
+     0
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+1
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Code
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+LINE
+  5
+301
+330
+2FE
+100
+AcDbEntity
+  8
+2细线层
+  6
+Continuous
+100
+AcDbLine
+ 10
+60.0
+ 20
+0.0
+ 30
+0.0
+ 11
+60.0
+ 21
+-12.0
+ 31
+0.0
+  0
+ENDBLK
+  5
+303
+330
+2FE
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+BLOCK
+  5
+3D5
+330
+392
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockBegin
+  2
+PC_TITLE_BLOCK
+ 70
+     2
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  3
+PC_TITLE_BLOCK
+  1
+
+  0
+LINE
+  5
+393
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-15.0
+ 20
+18.0
+ 30
+0.0
+ 11
+-15.0
+ 21
+31.0
+ 31
+0.0
+  0
+LINE
+  5
+394
+330
+392
+100
+AcDbEntity
+  8
+图框层
+100
+AcDbLine
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 11
+0.0
+ 21
+45.0
+ 31
+0.0
+  0
+LINE
+  5
+395
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-30.0
+ 20
+13.0
+ 30
+0.0
+ 11
+-30.0
+ 21
+31.0
+ 31
+0.0
+  0
+LINE
+  5
+396
+330
+392
+100
+AcDbEntity
+  8
+2细线层
+ 62
+    75
+100
+AcDbLine
+ 10
+-45.0
+ 20
+18.0
+ 30
+0.0
+ 11
+-45.0
+ 21
+26.0
+ 31
+0.0
+  0
+LINE
+  5
+397
+330
+392
+100
+AcDbEntity
+  8
+2细线层
+ 62
+    75
+100
+AcDbLine
+ 10
+-52.5
+ 20
+18.0
+ 30
+0.0
+ 11
+-52.5
+ 21
+26.0
+ 31
+0.0
+  0
+LINE
+  5
+398
+330
+392
+100
+AcDbEntity
+  8
+2细线层
+ 62
+    75
+100
+AcDbLine
+ 10
+-37.5
+ 20
+18.0
+ 30
+0.0
+ 11
+-37.5
+ 21
+26.0
+ 31
+0.0
+  0
+LINE
+  5
+399
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-60.0
+ 20
+0.0
+ 30
+0.0
+ 11
+-60.0
+ 21
+45.0
+ 31
+0.0
+  0
+ATTDEF
+  5
+39A
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-133.5926203357896
+ 20
+15.31465361061623
+ 30
+0.0
+ 40
+3.5
+  1
+
+ 41
+0.7323547108054511
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-120.9794419254324
+ 21
+15.31465361061623
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+标准审查
+  2
+标准审查
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+8
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Standard
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+TEXT
+  5
+39B
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-147.1138543307086
+ 20
+15.72244094488189
+ 30
+0.0
+ 40
+3.5
+  1
+标准审查
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-142.5
+ 21
+17.5
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+39C
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-135.0
+ 20
+0.0
+ 30
+0.0
+ 11
+-135.0
+ 21
+20.0
+ 31
+0.0
+  0
+LINE
+  5
+39D
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-150.0
+ 20
+0.0
+ 30
+0.0
+ 11
+-150.0
+ 21
+20.0
+ 31
+0.0
+  0
+LINE
+  5
+39E
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-120.0
+ 20
+0.0
+ 30
+0.0
+ 11
+-120.0
+ 21
+45.0
+ 31
+0.0
+  0
+TEXT
+  5
+39F
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-177.1873818897637
+ 20
+15.76377952755905
+ 30
+0.0
+ 40
+3.5
+  1
+ 设  计 
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-172.5
+ 21
+17.5
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+3A0
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-165.0
+ 20
+0.0
+ 30
+0.0
+ 11
+-165.0
+ 21
+20.0
+ 31
+0.0
+  0
+LINE
+  5
+3A1
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+0.0
+ 30
+0.0
+ 11
+-180.0
+ 21
+45.0
+ 31
+0.0
+  0
+LINE
+  5
+3A2
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+0.0
+ 30
+0.0
+ 11
+-180.0
+ 21
+45.0
+ 31
+0.0
+  0
+ATTDEF
+  5
+3A3
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-163.7654129165101
+ 20
+15.44542809756748
+ 30
+0.0
+ 40
+3.5
+  1
+
+ 41
+1.504877960614005
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-151.0931485055971
+ 21
+15.44542809756748
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+设计
+  2
+设计
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+5
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Designer
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+LINE
+  5
+3A4
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+0.0
+ 30
+0.0
+ 11
+0.0
+ 21
+0.0
+ 31
+0.0
+  0
+LINE
+  5
+3A5
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-120.0
+ 20
+18.0
+ 30
+0.0
+ 11
+0.0
+ 21
+18.0
+ 31
+0.0
+  0
+ATTDEF
+  5
+3A6
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-117.6480044237862
+ 20
+6.594233809935872
+ 30
+0.0
+ 40
+5.0
+  1
+
+ 50
+0.4654988921199227
+ 41
+0.9862052104089888
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-62.4809198545471
+ 21
+7.042448006670383
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+产品名称或材料标记
+  2
+产品名称或材料标记
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+4
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Material
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+ATTDEF
+  5
+3A7
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-163.7654129165101
+ 20
+10.47599931323964
+ 30
+0.0
+ 40
+3.5
+  1
+
+ 41
+1.48050746732471
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-151.0931485055971
+ 21
+10.47599931323964
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+校对
+  2
+校对
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+7
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Correct
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+ATTDEF
+  5
+3A8
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-163.8698169806833
+ 20
+5.375795755323963
+ 30
+0.0
+ 40
+3.5
+  1
+
+ 41
+1.511057981245562
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-151.0931485055971
+ 21
+5.375795755323963
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+审核
+  2
+审核
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+6
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Check
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+ATTDEF
+  5
+3A9
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-163.8698169806833
+ 20
+0.4063669709960891
+ 30
+0.0
+ 40
+3.5
+  1
+
+ 41
+0.7418473791225698
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-151.0931485055971
+ 21
+0.4063669709960891
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+工艺审查
+  2
+工艺审查
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+9
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Technology
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+LINE
+  5
+3AA
+330
+392
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+5.0
+ 30
+0.0
+ 11
+-120.0
+ 21
+5.0
+ 31
+0.0
+  0
+LINE
+  5
+3AB
+330
+392
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+10.0
+ 30
+0.0
+ 11
+-120.0
+ 21
+10.0
+ 31
+0.0
+  0
+LINE
+  5
+3AC
+330
+392
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+15.0
+ 30
+0.0
+ 11
+-120.0
+ 21
+15.0
+ 31
+0.0
+  0
+TEXT
+  5
+3AD
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-177.0857995096575
+ 20
+10.63648684394542
+ 30
+0.0
+ 40
+3.5
+  1
+ 校  对 
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-172.3984176198937
+ 21
+12.37270731638637
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+3AE
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-177.1873818897637
+ 20
+0.75
+ 30
+0.0
+ 40
+3.5
+  1
+工艺审查
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-172.5
+ 21
+2.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+3AF
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-177.1873818897637
+ 20
+5.763779527559055
+ 30
+0.0
+ 40
+3.5
+  1
+ 审  核 
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-172.5
+ 21
+7.5
+ 31
+0.0
+100
+AcDbText
+  0
+ATTDEF
+  5
+3B0
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-133.8014284641362
+ 20
+10.60677351355431
+ 30
+0.0
+ 40
+3.5
+  1
+
+ 41
+1.494806798232977
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-121.1103707464651
+ 21
+10.60677351355431
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+审定
+  2
+审定
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+10
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Examine
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+ATTDEF
+  5
+3B1
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-134.0767253029693
+ 20
+0.4063669709960891
+ 30
+0.0
+ 40
+3.5
+  1
+
+ 41
+1.546165065179361
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-121.1103707464651
+ 21
+0.4063669709960891
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+日期
+  2
+日期
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+12
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Date
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+ATTDEF
+  5
+3B2
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-133.697024399963
+ 20
+5.375795755323963
+ 30
+0.0
+ 40
+3.5
+  1
+
+ 41
+1.494711368610558
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-121.1103707464651
+ 21
+5.375795755323963
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+批准
+  2
+批准
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+11
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Approve
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+TEXT
+  5
+3B3
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-147.220598198597
+ 20
+10.9410309753045
+ 30
+0.0
+ 40
+3.5
+  1
+ 审  定 
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-142.5332163088332
+ 21
+12.67725144774545
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+3B4
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-147.1873818897637
+ 20
+0.75
+ 30
+0.0
+ 40
+3.5
+  1
+ 日  期 
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-142.5
+ 21
+2.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+3B5
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-145.9425748736088
+ 20
+5.823955756554988
+ 30
+0.0
+ 40
+3.5
+  1
+批  准
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-142.4316339287269
+ 21
+7.601514811673098
+ 31
+0.0
+100
+AcDbText
+  0
+ATTDEF
+  5
+3B6
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-56.33356700951276
+ 20
+3.821827593803959
+ 30
+0.0
+ 40
+5.0
+  1
+
+ 41
+2.108963343485532
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-4.235908177865212
+ 21
+3.821827593803959
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+企业名称
+  2
+企业名称
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+1
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+LINE
+  5
+3B7
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-60.0
+ 20
+13.0
+ 30
+0.0
+ 11
+0.0
+ 21
+13.0
+ 31
+0.0
+  0
+ATTDEF
+  5
+3B8
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-49.75610720937902
+ 20
+13.34563449068005
+ 30
+0.0
+ 40
+3.5
+  1
+
+ 41
+0.7828545111169501
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-39.88128892063651
+ 21
+13.34563449068005
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+共几页
+  2
+共几页
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+13
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+TotalPaper
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+Number
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+TEXT
+  5
+3B9
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-51.96673622047244
+ 20
+13.76377952755905
+ 30
+0.0
+ 40
+3.5
+  1
+共        页
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-45.0
+ 21
+15.5
+ 31
+0.0
+100
+AcDbText
+  0
+ATTDEF
+  5
+3BA
+330
+392
+100
+AcDbEntity
+  8
+0
+100
+AcDbText
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 40
+5.0
+  1
+
+  7
+PC_TEXTSTYLE
+100
+AcDbAttributeDefinition
+  3
+
+  2
+图纸张数
+ 70
+     1
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+17
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Pages
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+LEFT
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+ATTDEF
+  5
+3BB
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-19.68771869283182
+ 20
+13.34563449068005
+ 30
+0.0
+ 40
+3.5
+  1
+
+ 41
+0.7760674325008723
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-9.898511672969334
+ 21
+13.34563449068005
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+第几页
+  2
+第几页
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+14
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+PageNo
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+Number
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+TEXT
+  5
+3BC
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-21.97592716535433
+ 20
+13.75
+ 30
+0.0
+ 40
+3.5
+  1
+第        页
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-15.0
+ 21
+15.5
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+3BD
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+45.0
+ 30
+0.0
+ 11
+0.0
+ 21
+45.0
+ 31
+0.0
+  0
+ATTDEF
+  5
+3BE
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-116.7835562351269
+ 20
+28.23089021740671
+ 30
+0.0
+ 40
+7.0
+  1
+
+ 41
+1.548666201124823
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-63.22423900216643
+ 21
+28.23089021740671
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+图样名称
+  2
+图样名称
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+2
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Name
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+LINE
+  5
+3BF
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+25.0
+ 30
+0.0
+ 11
+-120.0
+ 21
+25.0
+ 31
+0.0
+  0
+LINE
+  5
+3C0
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+20.0
+ 30
+0.0
+ 11
+-120.0
+ 21
+20.0
+ 31
+0.0
+  0
+LINE
+  5
+3C1
+330
+392
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+40.0
+ 30
+0.0
+ 11
+-120.0
+ 21
+40.0
+ 31
+0.0
+  0
+TEXT
+  5
+3C2
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-162.0126909448819
+ 20
+20.77755905511811
+ 30
+0.0
+ 40
+3.5
+  1
+ 更改文件号 
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-155.0
+ 21
+22.5
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+3C3
+330
+392
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+30.0
+ 30
+0.0
+ 11
+-120.0
+ 21
+30.0
+ 31
+0.0
+  0
+LINE
+  5
+3C4
+330
+392
+100
+AcDbEntity
+  8
+2细线层
+100
+AcDbLine
+ 10
+-180.0
+ 20
+35.0
+ 30
+0.0
+ 11
+-120.0
+ 21
+35.0
+ 31
+0.0
+  0
+LINE
+  5
+3C5
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-172.0
+ 20
+20.0
+ 30
+0.0
+ 11
+-172.0
+ 21
+45.0
+ 31
+0.0
+  0
+LINE
+  5
+3C6
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-165.0
+ 20
+20.0
+ 30
+0.0
+ 11
+-165.0
+ 21
+45.0
+ 31
+0.0
+  0
+TEXT
+  5
+3C7
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-178.2609724409448
+ 20
+20.76377952755906
+ 30
+0.0
+ 40
+3.5
+  1
+标记
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-176.0
+ 21
+22.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+3C8
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-170.8528818897637
+ 20
+20.75
+ 30
+0.0
+ 40
+3.5
+  1
+处数
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-168.5
+ 21
+22.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+3C9
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-129.0991614173228
+ 20
+20.75
+ 30
+0.0
+ 40
+3.5
+  1
+ 日 期 
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-125.0
+ 21
+22.5
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+3CA
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-145.0
+ 20
+20.0
+ 30
+0.0
+ 11
+-145.0
+ 21
+45.0
+ 31
+0.0
+  0
+LINE
+  5
+3CB
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-130.0
+ 20
+20.0
+ 30
+0.0
+ 11
+-130.0
+ 21
+45.0
+ 31
+0.0
+  0
+TEXT
+  5
+3CC
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-142.196725107932
+ 20
+20.63547340773744
+ 30
+0.0
+ 40
+3.5
+  1
+ 签  字 
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-137.5093432181682
+ 21
+22.37169388017838
+ 31
+0.0
+100
+AcDbText
+  0
+LINE
+  5
+3CD
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-60.0
+ 20
+26.0
+ 30
+0.0
+ 11
+0.0
+ 21
+26.0
+ 31
+0.0
+  0
+LINE
+  5
+3CE
+330
+392
+100
+AcDbEntity
+  8
+1轮廓实线层
+100
+AcDbLine
+ 10
+-60.0
+ 20
+31.0
+ 30
+0.0
+ 11
+0.0
+ 21
+31.0
+ 31
+0.0
+  0
+ATTDEF
+  5
+3CF
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-28.87528160018451
+ 20
+20.51178504133128
+ 30
+0.0
+ 40
+3.5
+  1
+
+ 41
+1.481707279552722
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-16.34678638495654
+ 21
+20.51178504133128
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+重量
+  2
+重量
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+15
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Weight
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+Number
+1070
+     2
+1000
+2
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+ATTDEF
+  5
+3D0
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-56.95999214599595
+ 20
+35.53274665585608
+ 30
+0.0
+ 40
+5.0
+  1
+
+ 41
+2.1769944475998
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-3.505078977208768
+ 21
+35.53274665585608
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+图样代号
+  2
+图样代号
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+3
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Code
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+TEXT
+  5
+3D1
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-52.61010236220473
+ 20
+26.77755905511811
+ 30
+0.0
+ 40
+3.5
+  1
+ 图 样 标 记 
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-45.0
+ 21
+28.5
+ 31
+0.0
+100
+AcDbText
+  0
+ATTDEF
+  5
+3D2
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-13.52787514939109
+ 20
+20.61609722573781
+ 30
+0.0
+ 40
+3.5
+  1
+
+ 41
+1.468425809023077
+  7
+PC_TEXTSTYLE
+ 72
+     5
+ 11
+-1.416996942299761
+ 21
+20.61609722573781
+ 31
+0.0
+100
+AcDbAttributeDefinition
+  3
+比例
+  2
+比例
+ 70
+     8
+1001
+TH_XDATA_ORDER
+1070
+     1
+1000
+16
+1001
+TH_XDATA_CODE
+1070
+     1
+1000
+Scale
+1001
+TH_XDATA_VTYPE
+1070
+     1
+1000
+String
+1070
+     2
+1000
+
+1001
+TH_XDATA_ALIGN
+1070
+     1
+1000
+CENTER
+1001
+TH_XDATA_EXPRE
+1070
+     1
+1000
+
+  0
+TEXT
+  5
+3D3
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-12.77560236220472
+ 20
+26.83267716535433
+ 30
+0.0
+ 40
+3.5
+  1
+ 比   例 
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-7.5
+ 21
+28.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+3D4
+330
+392
+100
+AcDbEntity
+  8
+6文字层
+100
+AcDbText
+ 10
+-27.77560236220472
+ 20
+26.77755905511811
+ 30
+0.0
+ 40
+3.5
+  1
+ 重   量 
+ 41
+0.667
+  7
+PC_TEXTSTYLE
+ 72
+     4
+ 11
+-22.5
+ 21
+28.5
+ 31
+0.0
+100
+AcDbText
+  0
+ENDBLK
+  5
+3D6
+330
+392
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockEnd
+  0
+ENDSEC
+  0
+SECTION
+  2
+ENTITIES
+  0
+INSERT
+  5
+275
+330
+1F
+100
+AcDbEntity
+  8
+0
+100
+AcDbBlockReference
+  2
+PCCAD_TEMPLATE
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  0
+TH_WaterMark
+  5
+41D
+102
+{ACAD_REACTORS
+330
+27C
+102
+}
+330
+1F
+100
+AcDbEntity
+  8
+1轮廓实线层
+ 62
+   111
+ 92
+      176
+310
+B000000001000000A80000000B00000000000000002059400000000000106940000000000000000000000000000000000000000000000000000000000000F03F000000000000F03F0000000000000000000000000000000000006900FFFFFFFF000000000000000000001040000000000000F03F0000000000000000000000
+310
+000000F03F000000000000000000000000000000000000000074737364656E672E736878007473736463686E2E73687800
+100
+AcDbText
+ 10
+100.5
+ 20
+200.5
+ 30
+0.0
+ 40
+4.0
+  1
+
+  7
+TH_GBDIM
+100
+AcDbText
+  0
+TH_WaterMark
+  5
+41E
+102
+{ACAD_REACTORS
+330
+27C
+102
+}
+330
+1F
+100
+AcDbEntity
+  8
+1轮廓实线层
+ 62
+   111
+ 92
+      176
+310
+B000000001000000A80000000B0000000000000000B870400000000000C05E40000000000000000000000000000000000000000000000000000000000000F03F00D43B0063916DBF2B18F156F2FFEFBF000000000000000000006900FFFFFFFF000000000000000000001040000000000000F03F0000000000000000000000
+310
+000000F03F000000000000000000000000000000000000000074737364656E672E736878007473736463686E2E73687800
+100
+AcDbText
+ 10
+267.5
+ 20
+123.0
+ 30
+0.0
+ 40
+4.0
+  1
+
+ 50
+269.7931981781218
+  7
+TH_GBDIM
+100
+AcDbText
+  0
+TH_WaterMark
+  5
+41F
+102
+{ACAD_REACTORS
+330
+27C
+102
+}
+330
+1F
+100
+AcDbEntity
+  8
+1轮廓实线层
+ 62
+   111
+ 92
+      176
+310
+B000000001000000A80000000B0000000000000000506240000000000000E0BF000000000000000000000000000000000000000000000000000000000000F03F30457845F3FFEFBF0D006280AE8A6CBF000000000000000000006900FFFFFFFF000000000000000000001040000000000000F03F0000000000000000000000
+310
+000000F03F000000000000000000000000000000000000000074737364656E672E736878007473736463686E2E73687800
+100
+AcDbText
+ 10
+146.5
+ 20
+-0.5
+ 30
+0.0
+ 40
+4.0
+  1
+
+ 50
+180.1996244752745
+  7
+TH_GBDIM
+100
+AcDbText
+  0
+ARC
+  5
+428
+330
+1F
+100
+AcDbEntity
+  8
+0
+100
+AcDbCircle
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 40
+16.0
+100
+AcDbArc
+ 50
+270.0
+ 51
+19.47122063449069
+  0
+ARC
+  5
+429
+330
+1F
+100
+AcDbEntity
+  8
+0
+100
+AcDbCircle
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 40
+16.0
+100
+AcDbArc
+ 50
+160.5287793655093
+ 51
+270.0
+  0
+ARC
+  5
+42C
+330
+1F
+100
+AcDbEntity
+  8
+0
+100
+AcDbCircle
+ 10
+0.0
+ 20
+12.0
+ 30
+0.0
+ 40
+12.0
+100
+AcDbArc
+ 50
+19.47122063449069
+ 51
+89.99999999999994
+  0
+ARC
+  5
+42D
+330
+1F
+100
+AcDbEntity
+  8
+0
+100
+AcDbCircle
+ 10
+-0.0000000000000034
+ 20
+12.0
+ 30
+0.0
+ 40
+12.0
+100
+AcDbArc
+ 50
+90.00000000000005
+ 51
+160.5287793655093
+  0
+LINE
+  5
+431
+330
+1F
+100
+AcDbEntity
+  8
+0
+100
+AcDbLine
+ 10
+-11.31370849898476
+ 20
+16.0
+ 30
+0.0
+ 11
+-15.08494466531301
+ 21
+5.333333333333333
+ 31
+0.0
+  0
+LINE
+  5
+432
+330
+1F
+100
+AcDbEntity
+  8
+0
+100
+AcDbLine
+ 10
+11.31370849898476
+ 20
+15.99999999999999
+ 30
+0.0
+ 11
+15.08494466531302
+ 21
+5.333333333333324
+ 31
+0.0
+  0
+ENDSEC
+  0
+SECTION
+  2
+OBJECTS
+  0
+DICTIONARY
+  5
+C
+330
+0
+100
+AcDbDictionary
+281
+     1
+  3
+ACAD_COLOR
+350
+73
+  3
+ACAD_GROUP
+350
+D
+  3
+ACAD_LAYOUT
+350
+1A
+  3
+ACAD_MATERIAL
+350
+72
+  3
+ACAD_MLEADERSTYLE
+350
+D7
+  3
+ACAD_MLINESTYLE
+350
+17
+  3
+ACAD_PLOTSETTINGS
+350
+19
+  3
+ACAD_PLOTSTYLENAME
+350
+E
+  3
+ACAD_SCALELIST
+350
+B6
+  3
+ACAD_TABLESTYLE
+350
+86
+  3
+ACAD_VISUALSTYLE
+350
+99
+  3
+ACDB_RECOMPOSE_DATA
+350
+4A6
+  3
+AcDbVariableDictionary
+350
+66
+  3
+PC_BOM_DIC
+350
+33D
+  3
+PC_PAPER_DIC
+350
+278
+  0
+DICTIONARY
+  5
+346
+330
+2
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_LAYERSTATES
+360
+347
+  0
+DICTIONARY
+  5
+E6
+330
+10
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  0
+DICTIONARY
+  5
+15D
+330
+1F
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  0
+DICTIONARY
+  5
+270
+330
+26F
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  0
+DICTIONARY
+  5
+73
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbDictionary
+281
+     1
+  0
+DICTIONARY
+  5
+D
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbDictionary
+281
+     1
+  3
+*A1
+350
+254
+  3
+*A10
+350
+26C
+  3
+*A11
+350
+26D
+  3
+*A12
+350
+25D
+  3
+*A13
+350
+26E
+  3
+*A14
+350
+2FD
+  3
+*A15
+350
+31A
+  3
+*A16
+350
+256
+  3
+*A17
+350
+31B
+  3
+*A18
+350
+31C
+  3
+*A19
+350
+31D
+  3
+*A2
+350
+265
+  3
+*A20
+350
+257
+  3
+*A21
+350
+258
+  3
+*A22
+350
+259
+  3
+*A23
+350
+25E
+  3
+*A24
+350
+25A
+  3
+*A25
+350
+25B
+  3
+*A26
+350
+25C
+  3
+*A27
+350
+25F
+  3
+*A28
+350
+260
+  3
+*A29
+350
+261
+  3
+*A3
+350
+266
+  3
+*A30
+350
+262
+  3
+*A31
+350
+263
+  3
+*A32
+350
+264
+  3
+*A33
+350
+3FD
+  3
+*A34
+350
+3FE
+  3
+*A35
+350
+3FF
+  3
+*A36
+350
+400
+  3
+*A4
+350
+255
+  3
+*A5
+350
+267
+  3
+*A6
+350
+268
+  3
+*A7
+350
+269
+  3
+*A8
+350
+26A
+  3
+*A9
+350
+26B
+  3
+PC_PAPER_DIC
+350
+27C
+  0
+DICTIONARY
+  5
+1A
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbDictionary
+281
+     1
+  3
+Model
+350
+22
+  3
+布局1
+350
+59
+  3
+布局2
+350
+5E
+  0
+DICTIONARY
+  5
+72
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbDictionary
+281
+     1
+  3
+ByBlock
+350
+97
+  3
+ByLayer
+350
+96
+  3
+Global
+350
+98
+  0
+DICTIONARY
+  5
+D7
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbDictionary
+281
+     1
+  3
+Annotative
+350
+E5
+  3
+Standard
+350
+D8
+  0
+DICTIONARY
+  5
+17
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbDictionary
+281
+     1
+  3
+Standard
+350
+18
+  0
+DICTIONARY
+  5
+19
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbDictionary
+281
+     1
+  0
+ACDBDICTIONARYWDFLT
+  5
+E
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbDictionary
+281
+     1
+  3
+Normal
+350
+F
+100
+AcDbDictionaryWithDefault
+340
+F
+  0
+DICTIONARY
+  5
+B6
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbDictionary
+281
+     1
+  3
+A0
+350
+B7
+  3
+A1
+350
+124
+  3
+A2
+350
+125
+  3
+A3
+350
+126
+  3
+A4
+350
+127
+  3
+A5
+350
+128
+  3
+A6
+350
+129
+  3
+A7
+350
+12A
+  3
+A8
+350
+12B
+  3
+A9
+350
+12C
+  3
+B0
+350
+12D
+  3
+B1
+350
+12E
+  3
+B2
+350
+12F
+  3
+B3
+350
+130
+  3
+B4
+350
+131
+  3
+B5
+350
+132
+  3
+B6
+350
+133
+  3
+B7
+350
+134
+  3
+B8
+350
+135
+  3
+B9
+350
+136
+  3
+C0
+350
+137
+  3
+C1
+350
+138
+  3
+C2
+350
+139
+  3
+C3
+350
+13A
+  3
+C4
+350
+13B
+  3
+C5
+350
+13C
+  3
+C6
+350
+13D
+  3
+C7
+350
+13E
+  3
+C8
+350
+13F
+  3
+C9
+350
+140
+  3
+D0
+350
+141
+  3
+D1
+350
+142
+  3
+D2
+350
+143
+  0
+DICTIONARY
+  5
+86
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbDictionary
+281
+     1
+  3
+Standard
+350
+87
+  0
+DICTIONARY
+  5
+99
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbDictionary
+281
+     1
+  3
+2dWireframe
+350
+9F
+  3
+3D Hidden
+350
+A1
+  3
+3dWireframe
+350
+A0
+  3
+Basic
+350
+9E
+  3
+Brighten
+350
+A5
+  3
+ColorChange
+350
+A9
+  3
+Conceptual
+350
+A2
+  3
+Dim
+350
+A4
+  3
+EdgeColorOff
+350
+175
+  3
+Facepattern
+350
+A8
+  3
+Flat
+350
+9A
+  3
+FlatWithEdges
+350
+9B
+  3
+Gouraud
+350
+9C
+  3
+GouraudWithEdges
+350
+9D
+  3
+JitterOff
+350
+173
+  3
+Linepattern
+350
+A7
+  3
+OverhangOff
+350
+174
+  3
+Realistic
+350
+A3
+  3
+Thicken
+350
+A6
+  0
+XRECORD
+  5
+4A6
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbXrecord
+280
+     1
+ 90
+        1
+330
+87
+  0
+DICTIONARY
+  5
+66
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbDictionary
+281
+     1
+  3
+CANNOSCALE
+350
+F0
+  3
+CMLEADERSTYLE
+350
+EF
+  3
+CTABLESTYLE
+350
+89
+  3
+DIMASSOC
+350
+67
+  3
+HIDETEXT
+350
+6B
+  3
+INDEXCTL
+350
+436
+  3
+LAYEREVAL
+350
+14D
+  3
+LAYERNOTIFY
+350
+14E
+  3
+LIGHTINGUNITS
+350
+434
+  3
+MSLTSCALE
+350
+433
+  3
+SORTENTS
+350
+435
+  3
+XCLIPFRAME
+350
+437
+  0
+DICTIONARY
+  5
+33D
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbDictionary
+281
+     1
+  0
+DICTIONARY
+  5
+278
+102
+{ACAD_REACTORS
+330
+C
+102
+}
+330
+C
+100
+AcDbDictionary
+281
+     1
+  3
+PC_CSL_REC
+350
+27B
+  3
+PC_PAPER_REC
+350
+279
+  3
+PC_PAPERSIZERECORD
+350
+27A
+  0
+DICTIONARY
+  5
+347
+102
+{ACAD_REACTORS
+330
+346
+102
+}
+330
+346
+100
+AcDbDictionary
+281
+     1
+  0
+GROUP
+  5
+254
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+26C
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+26D
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+25D
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+26E
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+2FD
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+31A
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+256
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+31B
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+31C
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+31D
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+265
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+257
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+258
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+259
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+25E
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+25A
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+25B
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+25C
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+25F
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+260
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+261
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+266
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+262
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+263
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+264
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+3FD
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+3FE
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+3FF
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+400
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+255
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+267
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+268
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+269
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+26A
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+26B
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+
+ 70
+     0
+ 71
+     1
+  0
+GROUP
+  5
+27C
+102
+{ACAD_REACTORS
+330
+D
+102
+}
+330
+D
+100
+AcDbGroup
+300
+PC_PAPER_REC
+ 70
+     0
+ 71
+     1
+340
+41D
+340
+41E
+340
+41F
+  0
+LAYOUT
+  5
+22
+102
+{ACAD_XDICTIONARY
+360
+34C
+102
+}
+102
+{ACAD_REACTORS
+330
+1A
+102
+}
+330
+1A
+100
+AcDbPlotSettings
+  1
+
+  2
+none_device
+  4
+ANSI_A_(8.50_x_11.00_Inches)
+  6
+
+ 40
+6.349999904632568
+ 41
+19.04999923706055
+ 42
+6.350006103515625
+ 43
+19.04998779296875
+ 44
+215.8999938964844
+ 45
+279.3999938964844
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+0.0
+140
+0.0
+141
+0.0
+142
+1.0
+143
+2.584895464708373
+ 70
+ 11952
+ 72
+     0
+ 73
+     1
+ 74
+     0
+  7
+
+ 75
+     0
+147
+0.3868628397755418
+ 76
+     0
+ 77
+     2
+ 78
+   300
+148
+0.0
+149
+0.0
+100
+AcDbLayout
+  1
+Model
+ 70
+     1
+ 71
+     0
+ 10
+0.0
+ 20
+0.0
+ 11
+12.0
+ 21
+9.0
+ 12
+0.0
+ 22
+0.0
+ 32
+0.0
+ 14
+0.0
+ 24
+0.0
+ 34
+0.0
+ 15
+0.0
+ 25
+0.0
+ 35
+0.0
+146
+0.0
+ 13
+0.0
+ 23
+0.0
+ 33
+0.0
+ 16
+1.0
+ 26
+0.0
+ 36
+0.0
+ 17
+0.0
+ 27
+1.0
+ 37
+0.0
+ 76
+     0
+330
+1F
+331
+94
+  0
+LAYOUT
+  5
+59
+102
+{ACAD_REACTORS
+330
+1A
+102
+}
+330
+1A
+100
+AcDbPlotSettings
+  1
+
+  2
+None
+  4
+
+  6
+
+ 40
+0.0
+ 41
+0.0
+ 42
+0.0
+ 43
+0.0
+ 44
+0.0
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+0.0
+140
+0.0
+141
+0.0
+142
+1.0
+143
+1.0
+ 70
+   688
+ 72
+     0
+ 73
+     0
+ 74
+     5
+  7
+
+ 75
+    16
+147
+1.0
+ 76
+     0
+ 77
+     2
+ 78
+   300
+148
+0.0
+149
+0.0
+100
+AcDbLayout
+  1
+布局1
+ 70
+     1
+ 71
+     1
+ 10
+0.0
+ 20
+0.0
+ 11
+12.0
+ 21
+9.0
+ 12
+0.0
+ 22
+0.0
+ 32
+0.0
+ 14
+0.0
+ 24
+0.0
+ 34
+0.0
+ 15
+0.0
+ 25
+0.0
+ 35
+0.0
+146
+0.0
+ 13
+0.0
+ 23
+0.0
+ 33
+0.0
+ 16
+1.0
+ 26
+0.0
+ 36
+0.0
+ 17
+0.0
+ 27
+1.0
+ 37
+0.0
+ 76
+     0
+330
+58
+  0
+LAYOUT
+  5
+5E
+102
+{ACAD_REACTORS
+330
+1A
+102
+}
+330
+1A
+100
+AcDbPlotSettings
+  1
+
+  2
+None
+  4
+
+  6
+
+ 40
+0.0
+ 41
+0.0
+ 42
+0.0
+ 43
+0.0
+ 44
+0.0
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+0.0
+140
+0.0
+141
+0.0
+142
+1.0
+143
+1.0
+ 70
+   688
+ 72
+     0
+ 73
+     0
+ 74
+     5
+  7
+
+ 75
+    16
+147
+1.0
+ 76
+     0
+ 77
+     2
+ 78
+   300
+148
+0.0
+149
+0.0
+100
+AcDbLayout
+  1
+布局2
+ 70
+     1
+ 71
+     2
+ 10
+0.0
+ 20
+0.0
+ 11
+12.0
+ 21
+9.0
+ 12
+0.0
+ 22
+0.0
+ 32
+0.0
+ 14
+0.0
+ 24
+0.0
+ 34
+0.0
+ 15
+0.0
+ 25
+0.0
+ 35
+0.0
+146
+0.0
+ 13
+0.0
+ 23
+0.0
+ 33
+0.0
+ 16
+1.0
+ 26
+0.0
+ 36
+0.0
+ 17
+0.0
+ 27
+1.0
+ 37
+0.0
+ 76
+     0
+330
+5D
+  0
+MATERIAL
+  5
+97
+102
+{ACAD_XDICTIONARY
+360
+4AA
+102
+}
+102
+{ACAD_REACTORS
+330
+72
+102
+}
+330
+72
+100
+AcDbMaterial
+  1
+ByBlock
+  0
+MATERIAL
+  5
+96
+102
+{ACAD_XDICTIONARY
+360
+4A8
+102
+}
+102
+{ACAD_REACTORS
+330
+72
+102
+}
+330
+72
+100
+AcDbMaterial
+  1
+ByLayer
+  0
+MATERIAL
+  5
+98
+102
+{ACAD_XDICTIONARY
+360
+110
+102
+}
+102
+{ACAD_REACTORS
+330
+72
+102
+}
+330
+72
+100
+AcDbMaterial
+  1
+Global
+ 43
+0.0208000000566244
+ 43
+0.0
+ 43
+0.0
+ 43
+0.0
+ 43
+0.0
+ 43
+0.0208000000566244
+ 43
+0.0
+ 43
+0.0
+ 43
+0.0
+ 43
+0.0
+ 43
+1.0
+ 43
+0.0
+ 43
+0.0
+ 43
+0.0
+ 43
+0.0
+ 43
+1.0
+ 49
+0.0208000000566244
+ 49
+0.0
+ 49
+0.0
+ 49
+0.0
+ 49
+0.0
+ 49
+0.0208000000566244
+ 49
+0.0
+ 49
+0.0
+ 49
+0.0
+ 49
+0.0
+ 49
+1.0
+ 49
+0.0
+ 49
+0.0
+ 49
+0.0
+ 49
+0.0
+ 49
+1.0
+142
+0.0208000000566244
+142
+0.0
+142
+0.0
+142
+0.0
+142
+0.0
+142
+0.0208000000566244
+142
+0.0
+142
+0.0
+142
+0.0
+142
+0.0
+142
+1.0
+142
+0.0
+142
+0.0
+142
+0.0
+142
+0.0
+142
+1.0
+144
+0.0208000000566244
+144
+0.0
+144
+0.0
+144
+0.0
+144
+0.0
+144
+0.0208000000566244
+144
+0.0
+144
+0.0
+144
+0.0
+144
+0.0
+144
+1.0
+144
+0.0
+144
+0.0
+144
+0.0
+144
+0.0
+144
+1.0
+1001
+ACAD
+1070
+    -1
+1070
+     3
+1070
+     0
+1000
+
+1071
+        0
+1070
+     0
+  0
+MLEADERSTYLE
+  5
+E5
+102
+{ACAD_REACTORS
+330
+D7
+102
+}
+330
+D7
+100
+AcDbMLeaderStyle
+170
+     2
+171
+     1
+172
+     0
+ 90
+        2
+ 40
+0.0
+ 41
+0.0
+173
+     1
+ 91
+-1056964608
+340
+14
+ 92
+       -2
+290
+     1
+ 42
+0.09
+291
+     1
+ 43
+0.36
+  3
+Standard
+ 44
+0.18
+300
+
+342
+11
+174
+     1
+178
+     1
+175
+     1
+176
+     0
+ 93
+-1056964608
+ 45
+0.18
+292
+     0
+297
+     0
+ 46
+0.18
+ 94
+-1056964608
+ 47
+1.0
+ 49
+1.0
+140
+1.0
+293
+     1
+141
+0.0
+294
+     1
+177
+     0
+142
+1.0
+295
+     0
+296
+     1
+143
+0.125
+1001
+ACAD_MLEADERVER
+1070
+     2
+  0
+MLEADERSTYLE
+  5
+D8
+102
+{ACAD_REACTORS
+330
+D7
+102
+}
+330
+D7
+100
+AcDbMLeaderStyle
+170
+     2
+171
+     1
+172
+     0
+ 90
+        2
+ 40
+0.0
+ 41
+0.0
+173
+     1
+ 91
+-1056964608
+340
+14
+ 92
+       -2
+290
+     1
+ 42
+0.09
+291
+     1
+ 43
+0.36
+  3
+Standard
+ 44
+0.18
+300
+
+342
+11
+174
+     1
+178
+     1
+175
+     1
+176
+     0
+ 93
+-1056964608
+ 45
+0.18
+292
+     0
+297
+     0
+ 46
+0.18
+ 94
+-1056964608
+ 47
+1.0
+ 49
+1.0
+140
+1.0
+293
+     1
+141
+0.0
+294
+     1
+177
+     0
+142
+1.0
+295
+     0
+296
+     0
+143
+0.125
+1001
+ACAD_MLEADERVER
+1070
+     2
+  0
+MLINESTYLE
+  5
+18
+102
+{ACAD_REACTORS
+330
+17
+102
+}
+330
+17
+100
+AcDbMlineStyle
+  2
+STANDARD
+ 70
+     0
+  3
+
+ 62
+   256
+ 51
+90.0
+ 52
+90.0
+ 71
+     2
+ 49
+0.5
+ 62
+   256
+  6
+BYLAYER
+ 49
+-0.5
+ 62
+   256
+  6
+BYLAYER
+  0
+ACDBPLACEHOLDER
+  5
+F
+102
+{ACAD_REACTORS
+330
+E
+102
+}
+330
+E
+  0
+SCALE
+  5
+B7
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1:1
+140
+1.0
+141
+1.0
+290
+     1
+  0
+SCALE
+  5
+124
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1:2
+140
+1.0
+141
+2.0
+290
+     0
+  0
+SCALE
+  5
+125
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1:4
+140
+1.0
+141
+4.0
+290
+     0
+  0
+SCALE
+  5
+126
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1:5
+140
+1.0
+141
+5.0
+290
+     0
+  0
+SCALE
+  5
+127
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1:8
+140
+1.0
+141
+8.0
+290
+     0
+  0
+SCALE
+  5
+128
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1:10
+140
+1.0
+141
+10.0
+290
+     0
+  0
+SCALE
+  5
+129
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1:16
+140
+1.0
+141
+16.0
+290
+     0
+  0
+SCALE
+  5
+12A
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1:20
+140
+1.0
+141
+20.0
+290
+     0
+  0
+SCALE
+  5
+12B
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1:30
+140
+1.0
+141
+30.0
+290
+     0
+  0
+SCALE
+  5
+12C
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1:40
+140
+1.0
+141
+40.0
+290
+     0
+  0
+SCALE
+  5
+12D
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1:50
+140
+1.0
+141
+50.0
+290
+     0
+  0
+SCALE
+  5
+12E
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1:100
+140
+1.0
+141
+100.0
+290
+     0
+  0
+SCALE
+  5
+12F
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+2:1
+140
+2.0
+141
+1.0
+290
+     0
+  0
+SCALE
+  5
+130
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+4:1
+140
+4.0
+141
+1.0
+290
+     0
+  0
+SCALE
+  5
+131
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+8:1
+140
+8.0
+141
+1.0
+290
+     0
+  0
+SCALE
+  5
+132
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+10:1
+140
+10.0
+141
+1.0
+290
+     0
+  0
+SCALE
+  5
+133
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+100:1
+140
+100.0
+141
+1.0
+290
+     0
+  0
+SCALE
+  5
+134
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1/128" = 1'-0"
+140
+0.0078125
+141
+12.0
+290
+     0
+  0
+SCALE
+  5
+135
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1/64" = 1'-0"
+140
+0.015625
+141
+12.0
+290
+     0
+  0
+SCALE
+  5
+136
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1/32" = 1'-0"
+140
+0.03125
+141
+12.0
+290
+     0
+  0
+SCALE
+  5
+137
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1/16" = 1'-0"
+140
+0.0625
+141
+12.0
+290
+     0
+  0
+SCALE
+  5
+138
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+3/32" = 1'-0"
+140
+0.09375
+141
+12.0
+290
+     0
+  0
+SCALE
+  5
+139
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1/8" = 1'-0"
+140
+0.125
+141
+12.0
+290
+     0
+  0
+SCALE
+  5
+13A
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+3/16" = 1'-0"
+140
+0.1875
+141
+12.0
+290
+     0
+  0
+SCALE
+  5
+13B
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1/4" = 1'-0"
+140
+0.25
+141
+12.0
+290
+     0
+  0
+SCALE
+  5
+13C
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+3/8" = 1'-0"
+140
+0.375
+141
+12.0
+290
+     0
+  0
+SCALE
+  5
+13D
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1/2" = 1'-0"
+140
+0.5
+141
+12.0
+290
+     0
+  0
+SCALE
+  5
+13E
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+3/4" = 1'-0"
+140
+0.75
+141
+12.0
+290
+     0
+  0
+SCALE
+  5
+13F
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1" = 1'-0"
+140
+1.0
+141
+12.0
+290
+     0
+  0
+SCALE
+  5
+140
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1-1/2" = 1'-0"
+140
+1.5
+141
+12.0
+290
+     0
+  0
+SCALE
+  5
+141
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+3" = 1'-0"
+140
+3.0
+141
+12.0
+290
+     0
+  0
+SCALE
+  5
+142
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+6" = 1'-0"
+140
+6.0
+141
+12.0
+290
+     0
+  0
+SCALE
+  5
+143
+102
+{ACAD_REACTORS
+330
+B6
+102
+}
+330
+B6
+100
+AcDbScale
+ 70
+     0
+300
+1'-0" = 1'-0"
+140
+12.0
+141
+12.0
+290
+     0
+  0
+TABLESTYLE
+  5
+87
+102
+{ACAD_XDICTIONARY
+360
+104
+102
+}
+102
+{ACAD_REACTORS
+330
+86
+102
+}
+330
+86
+100
+AcDbTableStyle
+  3
+Standard
+ 70
+     0
+ 71
+     0
+ 40
+0.06
+ 41
+0.06
+280
+     0
+281
+     0
+  7
+Standard
+140
+0.18
+170
+     2
+ 62
+     0
+ 63
+     7
+283
+     0
+274
+    -2
+284
+     1
+ 64
+     0
+275
+    -2
+285
+     1
+ 65
+     0
+276
+    -2
+286
+     1
+ 66
+     0
+277
+    -2
+287
+     1
+ 67
+     0
+278
+    -2
+288
+     1
+ 68
+     0
+279
+    -2
+289
+     1
+ 69
+     0
+  7
+Standard
+140
+0.25
+170
+     5
+ 62
+     0
+ 63
+     7
+283
+     0
+274
+    -2
+284
+     1
+ 64
+     0
+275
+    -2
+285
+     1
+ 65
+     0
+276
+    -2
+286
+     1
+ 66
+     0
+277
+    -2
+287
+     1
+ 67
+     0
+278
+    -2
+288
+     1
+ 68
+     0
+279
+    -2
+289
+     1
+ 69
+     0
+  7
+Standard
+140
+0.18
+170
+     5
+ 62
+     0
+ 63
+     7
+283
+     0
+274
+    -2
+284
+     1
+ 64
+     0
+275
+    -2
+285
+     1
+ 65
+     0
+276
+    -2
+286
+     1
+ 66
+     0
+277
+    -2
+287
+     1
+ 67
+     0
+278
+    -2
+288
+     1
+ 68
+     0
+279
+    -2
+289
+     1
+ 69
+     0
+  0
+VISUALSTYLE
+  5
+9F
+102
+{ACAD_XDICTIONARY
+360
+4B7
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+2dWireframe
+ 70
+     4
+ 71
+     0
+ 72
+     2
+ 73
+     1
+ 90
+        0
+ 40
+-0.6
+ 41
+-30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     1
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+        0
+ 66
+   257
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     0
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+A1
+102
+{ACAD_XDICTIONARY
+360
+4BB
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+3D Hidden
+ 70
+     6
+ 71
+     1
+ 72
+     2
+ 73
+     2
+ 90
+        0
+ 40
+-0.6
+ 41
+-30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     2
+ 91
+        2
+ 64
+     7
+ 65
+   257
+ 75
+     2
+175
+     1
+ 42
+40.0
+ 92
+        0
+ 66
+   257
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     3
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     0
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+A0
+102
+{ACAD_XDICTIONARY
+360
+4B9
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+3dWireframe
+ 70
+     5
+ 71
+     0
+ 72
+     2
+ 73
+     1
+ 90
+        0
+ 40
+-0.6
+ 41
+-30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     1
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+        0
+ 66
+   257
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     0
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+9E
+102
+{ACAD_XDICTIONARY
+360
+4B5
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+Basic
+ 70
+     7
+ 71
+     1
+ 72
+     0
+ 73
+     1
+ 90
+        0
+ 40
+-0.6
+ 41
+-30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     0
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+        8
+ 66
+     7
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     1
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+A5
+102
+{ACAD_XDICTIONARY
+360
+4C3
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+Brighten
+ 70
+    12
+ 71
+     2
+ 72
+     2
+ 73
+     1
+ 90
+        0
+ 40
+-0.6
+ 41
+-30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     1
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+        8
+ 66
+     7
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+50.0
+173
+     0
+291
+     1
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+A9
+102
+{ACAD_XDICTIONARY
+360
+4CB
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+ColorChange
+ 70
+    16
+ 71
+     2
+ 72
+     2
+ 73
+     3
+ 90
+        0
+ 40
+-0.6
+ 41
+-30.0
+ 62
+     5
+ 63
+     8
+421
+  8421504
+ 74
+     1
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+        8
+ 66
+     8
+424
+  8421504
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     1
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+A2
+102
+{ACAD_XDICTIONARY
+360
+4BD
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+Conceptual
+ 70
+     9
+ 71
+     3
+ 72
+     2
+ 73
+     1
+ 90
+        0
+ 40
+-0.6
+ 41
+-30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     2
+ 91
+        2
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+40.0
+ 92
+        8
+ 66
+     7
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     3
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     0
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+A4
+102
+{ACAD_XDICTIONARY
+360
+4C1
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+Dim
+ 70
+    11
+ 71
+     2
+ 72
+     2
+ 73
+     1
+ 90
+        0
+ 40
+-0.6
+ 41
+-30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     1
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+        8
+ 66
+     7
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+-50.0
+173
+     0
+291
+     1
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+175
+102
+{ACAD_XDICTIONARY
+360
+4D1
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+EdgeColorOff
+ 70
+    22
+ 71
+     2
+ 72
+     2
+ 73
+     0
+ 90
+        0
+ 40
+-0.6
+ 41
+-30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     1
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+        8
+ 66
+     7
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     1
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+A8
+102
+{ACAD_XDICTIONARY
+360
+4C9
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+Facepattern
+ 70
+    15
+ 71
+     2
+ 72
+     2
+ 73
+     1
+ 90
+        0
+ 40
+-0.6
+ 41
+-30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     1
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+        8
+ 66
+     7
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     1
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+9A
+102
+{ACAD_XDICTIONARY
+360
+4AD
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+Flat
+ 70
+     0
+ 71
+     2
+ 72
+     1
+ 73
+     1
+ 90
+        2
+ 40
+-0.6
+ 41
+30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     0
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+        8
+ 66
+     7
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     1
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+9B
+102
+{ACAD_XDICTIONARY
+360
+4AF
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+FlatWithEdges
+ 70
+     1
+ 71
+     2
+ 72
+     1
+ 73
+     1
+ 90
+        2
+ 40
+-0.6
+ 41
+30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     1
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+        0
+ 66
+   257
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     1
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+9C
+102
+{ACAD_XDICTIONARY
+360
+4B1
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+Gouraud
+ 70
+     2
+ 71
+     2
+ 72
+     2
+ 73
+     1
+ 90
+        2
+ 40
+-0.6
+ 41
+30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     0
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+        0
+ 66
+     7
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     1
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+9D
+102
+{ACAD_XDICTIONARY
+360
+4B3
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+GouraudWithEdges
+ 70
+     3
+ 71
+     2
+ 72
+     2
+ 73
+     1
+ 90
+        2
+ 40
+-0.6
+ 41
+30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     1
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+        0
+ 66
+   257
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     1
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+173
+102
+{ACAD_XDICTIONARY
+360
+4CD
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+JitterOff
+ 70
+    20
+ 71
+     2
+ 72
+     2
+ 73
+     0
+ 90
+        0
+ 40
+-0.6
+ 41
+-30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     1
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+       10
+ 66
+     7
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     1
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+A7
+102
+{ACAD_XDICTIONARY
+360
+4C7
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+Linepattern
+ 70
+    14
+ 71
+     2
+ 72
+     2
+ 73
+     1
+ 90
+        0
+ 40
+-0.6
+ 41
+-30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     1
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     7
+175
+     7
+ 42
+1.0
+ 92
+        8
+ 66
+     7
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     1
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+174
+102
+{ACAD_XDICTIONARY
+360
+4CF
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+OverhangOff
+ 70
+    21
+ 71
+     2
+ 72
+     2
+ 73
+     0
+ 90
+        0
+ 40
+-0.6
+ 41
+-30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     1
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+        9
+ 66
+     7
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     1
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+A3
+102
+{ACAD_XDICTIONARY
+360
+4BF
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+Realistic
+ 70
+     8
+ 71
+     2
+ 72
+     2
+ 73
+     1
+ 90
+        0
+ 40
+-0.6
+ 41
+-30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     1
+ 91
+        0
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+        8
+ 66
+     8
+424
+  7895160
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+       13
+ 44
+0.0
+173
+     0
+291
+     0
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+VISUALSTYLE
+  5
+A6
+102
+{ACAD_XDICTIONARY
+360
+4C5
+102
+}
+102
+{ACAD_REACTORS
+330
+99
+102
+}
+330
+99
+100
+AcDbVisualStyle
+  2
+Thicken
+ 70
+    13
+ 71
+     2
+ 72
+     2
+ 73
+     1
+ 90
+        0
+ 40
+-0.6
+ 41
+-30.0
+ 62
+     5
+ 63
+     7
+421
+ 16777215
+ 74
+     1
+ 91
+        4
+ 64
+     7
+ 65
+   257
+ 75
+     1
+175
+     1
+ 42
+1.0
+ 92
+       12
+ 66
+     7
+ 43
+1.0
+ 76
+     1
+ 77
+     6
+ 78
+     2
+ 67
+     7
+ 79
+     5
+170
+     0
+171
+     0
+290
+     0
+174
+     0
+ 93
+        1
+ 44
+0.0
+173
+     0
+291
+     1
+ 45
+0.0
+1001
+ACAD
+1000
+AcDbSavedByObjectVersion
+1070
+     0
+  0
+DICTIONARYVAR
+  5
+F0
+102
+{ACAD_REACTORS
+330
+66
+102
+}
+330
+66
+100
+DictionaryVariables
+280
+     0
+  1
+1:1
+  0
+DICTIONARYVAR
+  5
+EF
+102
+{ACAD_REACTORS
+330
+66
+102
+}
+330
+66
+100
+DictionaryVariables
+280
+     0
+  1
+STANDARD
+  0
+DICTIONARYVAR
+  5
+89
+102
+{ACAD_REACTORS
+330
+66
+102
+}
+330
+66
+100
+DictionaryVariables
+280
+     0
+  1
+STANDARD
+  0
+DICTIONARYVAR
+  5
+67
+102
+{ACAD_REACTORS
+330
+66
+102
+}
+330
+66
+100
+DictionaryVariables
+280
+     0
+  1
+2
+  0
+DICTIONARYVAR
+  5
+6B
+102
+{ACAD_REACTORS
+330
+66
+102
+}
+330
+66
+100
+DictionaryVariables
+280
+     0
+  1
+1
+  0
+DICTIONARYVAR
+  5
+436
+102
+{ACAD_REACTORS
+330
+66
+102
+}
+330
+66
+100
+DictionaryVariables
+280
+     0
+  1
+0
+  0
+DICTIONARYVAR
+  5
+14D
+102
+{ACAD_REACTORS
+330
+66
+102
+}
+330
+66
+100
+DictionaryVariables
+280
+     0
+  1
+0
+  0
+DICTIONARYVAR
+  5
+14E
+102
+{ACAD_REACTORS
+330
+66
+102
+}
+330
+66
+100
+DictionaryVariables
+280
+     0
+  1
+0
+  0
+DICTIONARYVAR
+  5
+434
+102
+{ACAD_REACTORS
+330
+66
+102
+}
+330
+66
+100
+DictionaryVariables
+280
+     0
+  1
+2
+  0
+DICTIONARYVAR
+  5
+433
+102
+{ACAD_REACTORS
+330
+66
+102
+}
+330
+66
+100
+DictionaryVariables
+280
+     0
+  1
+1
+  0
+DICTIONARYVAR
+  5
+435
+102
+{ACAD_REACTORS
+330
+66
+102
+}
+330
+66
+100
+DictionaryVariables
+280
+     0
+  1
+127
+  0
+DICTIONARYVAR
+  5
+437
+102
+{ACAD_REACTORS
+330
+66
+102
+}
+330
+66
+100
+DictionaryVariables
+280
+     0
+  1
+2
+  0
+TH_CSLRECORDER
+  5
+27B
+102
+{ACAD_REACTORS
+330
+278
+102
+}
+330
+278
+100
+TH_CSLRecorder
+ 70
+   800
+170
+     0
+300
+材料处理
+1001
+TH_CSLRecorder
+1070
+     1
+1070
+     0
+1070
+     2
+1000
+材料处理
+  0
+TH_PAPERRECORDER
+  5
+279
+102
+{ACAD_REACTORS
+330
+278
+102
+}
+330
+278
+100
+TH_PaperRecorder
+ 70
+   800
+170
+        4
+171
+     0
+172
+     1
+173
+     0
+174
+     0
+175
+     0
+176
+     0
+177
+        0
+178
+        0
+179
+        2
+180
+        2
+140
+1.0
+300
+Tydh
+301
+标题栏2
+302
+附加栏
+303
+明细表
+1001
+TH_PaperRecorder
+1070
+     1
+1070
+    19
+1070
+     2
+1000
+制图
+1070
+     3
+1000
+
+1070
+     4
+1000
+产品名称或材料标记
+1070
+     5
+1000
+
+1070
+     6
+1000
+比例
+1070
+     7
+1000
+1:1
+1070
+     8
+1000
+重量
+1070
+     9
+1000
+
+1070
+    10
+1000
+材料
+1070
+    11
+1000
+
+1070
+    12
+1000
+标准化
+1070
+    13
+1000
+
+1070
+    14
+1000
+设计
+1070
+    15
+1000
+
+1070
+    16
+1000
+图纸张数
+1070
+    17
+1000
+1
+1070
+    18
+1000
+共几页
+1070
+    19
+1000
+
+1070
+    20
+1000
+产品名称
+1070
+    21
+1000
+
+1070
+    22
+1000
+日期
+1070
+    23
+1000
+
+1070
+    24
+1000
+图幅
+1070
+    25
+1000
+A4
+1070
+    26
+1000
+审核
+1070
+    27
+1000
+
+1070
+    28
+1000
+审定
+1070
+    29
+1000
+
+1070
+    30
+1000
+第几页
+1070
+    31
+1000
+
+1070
+    32
+1000
+图样代号
+1070
+    33
+1000
+
+1070
+    34
+1000
+工艺
+1070
+    35
+1000
+
+1070
+    36
+1000
+图样名称
+1070
+    37
+1000
+
+1070
+    38
+1000
+企业名称
+1070
+    39
+1000
+
+1070
+    40
+1070
+     4
+1070
+    41
+1070
+     0
+1070
+    42
+1070
+     0
+1070
+    43
+1070
+     2
+1070
+    44
+1070
+     2
+1070
+    45
+1070
+     0
+1070
+    46
+1070
+     1
+1070
+    47
+1070
+     4
+1070
+    48
+1070
+     0
+1070
+    49
+1070
+     0
+1070
+    50
+1070
+     0
+1070
+    51
+1040
+1.0
+1070
+    52
+1000
+Tydh
+1070
+    53
+1000
+标题栏2
+1070
+    54
+1000
+附加栏
+1070
+    55
+1000
+明细表
+1001
+TH_PaperSizeRecorder
+1070
+     1
+1000
+图幅规格
+1070
+     2
+1000
+A4
+1070
+     3
+1000
+图幅长度
+1070
+     4
+1000
+297
+1070
+     5
+1000
+图幅宽度
+1070
+     6
+1000
+210
+1070
+     7
+1000
+图幅_A
+1070
+     8
+1000
+25
+1070
+     9
+1000
+图幅_C
+1070
+    10
+1000
+5
+1070
+    11
+1000
+图幅_E
+1070
+    12
+1000
+10
+  0
+DICTIONARY
+  5
+34C
+330
+22
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ADSK_XREC_LAYOUTTHUMBNAIL
+360
+34D
+  0
+DICTIONARY
+  5
+4AA
+330
+97
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4AB
+  0
+DICTIONARY
+  5
+4A8
+330
+96
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4A9
+  0
+DICTIONARY
+  5
+110
+330
+98
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4AC
+  3
+BUMPTILE
+360
+112
+  3
+DIFFUSETILE
+360
+111
+  3
+OPACITYTILE
+360
+113
+  3
+REFLECTIONTILE
+360
+114
+  0
+DICTIONARY
+  5
+104
+330
+87
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
+360
+4A5
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4A7
+  0
+DICTIONARY
+  5
+4B7
+330
+9F
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4B8
+  0
+DICTIONARY
+  5
+4BB
+330
+A1
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4BC
+  0
+DICTIONARY
+  5
+4B9
+330
+A0
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4BA
+  0
+DICTIONARY
+  5
+4B5
+330
+9E
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4B6
+  0
+DICTIONARY
+  5
+4C3
+330
+A5
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4C4
+  0
+DICTIONARY
+  5
+4CB
+330
+A9
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4CC
+  0
+DICTIONARY
+  5
+4BD
+330
+A2
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4BE
+  0
+DICTIONARY
+  5
+4C1
+330
+A4
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4C2
+  0
+DICTIONARY
+  5
+4D1
+330
+175
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4D2
+  0
+DICTIONARY
+  5
+4C9
+330
+A8
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4CA
+  0
+DICTIONARY
+  5
+4AD
+330
+9A
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4AE
+  0
+DICTIONARY
+  5
+4AF
+330
+9B
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4B0
+  0
+DICTIONARY
+  5
+4B1
+330
+9C
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4B2
+  0
+DICTIONARY
+  5
+4B3
+330
+9D
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4B4
+  0
+DICTIONARY
+  5
+4CD
+330
+173
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4CE
+  0
+DICTIONARY
+  5
+4C7
+330
+A7
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4C8
+  0
+DICTIONARY
+  5
+4CF
+330
+174
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4D0
+  0
+DICTIONARY
+  5
+4BF
+330
+A3
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4C0
+  0
+DICTIONARY
+  5
+4C5
+330
+A6
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+ACAD_XREC_ROUNDTRIP
+360
+4C6
+  0
+XRECORD
+  5
+34D
+102
+{ACAD_REACTORS
+330
+34C
+102
+}
+330
+34C
+100
+AcDbXrecord
+280
+     1
+310
+28000000000100007B0000000100080000000000007B0000000000000000000000010000000000008484840000000000FFFFFF000000000000000000000000000000000000000000000000000000000000000000330000006600000099000000CC000000FF00000000330000333300006633000099330000CC330000FF3300
+310
+0000660000336600006666000099660000CC660000FF66000000990000339900006699000099990000CC990000FF99000000CC000033CC000066CC000099CC0000CCCC0000FFCC000000FF000033FF000066FF000099FF0000CCFF0000FFFF000000003300330033006600330099003300CC003300FF003300003333003333
+310
+33006633330099333300CC333300FF33330000663300336633006666330099663300CC663300FF66330000993300339933006699330099993300CC993300FF99330000CC330033CC330066CC330099CC3300CCCC3300FFCC330000FF330033FF330066FF330099FF3300CCFF3300FFFF330000006600330066006600660099
+310
+006600CC006600FF00660000336600333366006633660099336600CC336600FF33660000666600336666006666660099666600CC666600FF66660000996600339966006699660099996600CC996600FF99660000CC660033CC660066CC660099CC6600CCCC6600FFCC660000FF660033FF660066FF660099FF6600CCFF6600
+310
+FFFF660000009900330099006600990099009900CC009900FF00990000339900333399006633990099339900CC339900FF33990000669900336699006666990099669900CC669900FF66990000999900339999006699990099999900CC999900FF99990000CC990033CC990066CC990099CC9900CCCC9900FFCC990000FF99
+310
+0033FF990066FF990099FF9900CCFF9900FFFF99000000CC003300CC006600CC009900CC00CC00CC00FF00CC000033CC003333CC006633CC009933CC00CC33CC00FF33CC000066CC003366CC006666CC009966CC00CC66CC00FF66CC000099CC003399CC006699CC009999CC00CC99CC00FF99CC0000CCCC0033CCCC0066CC
+310
+CC0099CCCC00CCCCCC00FFCCCC0000FFCC0033FFCC0066FFCC0099FFCC00CCFFCC00FFFFCC000000FF003300FF006600FF009900FF00CC00FF00FF00FF000033FF003333FF006633FF009933FF00CC33FF00FF33FF000066FF003366FF006666FF009966FF00CC66FF00FF66FF000099FF003399FF006699FF009999FF00CC
+310
+99FF00FF99FF0000CCFF0033CCFF0066CCFF0099CCFF00CCCCFF00FFCCFF0000FFFF0033FFFF0066FFFF0099FFFF00CCFFFF00FFFFFF00000000000D0D0D001A1A1A00282828003535350043434300505050005D5D5D006B6B6B00787878008686860093939300A1A1A100AEAEAE00BBBBBB00C9C9C900D6D6D600E4E4E400
+310
+F1F1F100FFFFFF0000000000000000000000000000000000000000000000000000000000000000000000000000000000ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+310
+ECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECECEC
+  0
+XRECORD
+  5
+4AB
+102
+{ACAD_REACTORS
+330
+4AA
+102
+}
+330
+4AA
+100
+AcDbXrecord
+280
+     1
+102
+MATERIAL
+148
+0.0
+149
+0.0
+149
+0.0
+ 93
+        0
+ 94
+       63
+282
+     0
+ 72
+     1
+ 77
+     1
+171
+     1
+175
+     1
+179
+     1
+273
+     0
+  0
+XRECORD
+  5
+4A9
+102
+{ACAD_REACTORS
+330
+4A8
+102
+}
+330
+4A8
+100
+AcDbXrecord
+280
+     1
+102
+MATERIAL
+148
+0.0
+149
+0.0
+149
+0.0
+ 93
+        0
+ 94
+       63
+282
+     0
+ 72
+     1
+ 77
+     1
+171
+     1
+175
+     1
+179
+     1
+273
+     0
+  0
+XRECORD
+  5
+4AC
+102
+{ACAD_REACTORS
+330
+110
+102
+}
+330
+110
+100
+AcDbXrecord
+280
+     1
+102
+MATERIAL
+148
+0.0
+149
+0.0
+149
+0.0
+ 93
+        0
+ 94
+       63
+282
+     0
+ 72
+     1
+ 77
+     1
+171
+     1
+175
+     1
+179
+     1
+273
+     0
+  0
+XRECORD
+  5
+112
+102
+{ACAD_REACTORS
+330
+110
+102
+}
+330
+110
+100
+AcDbXrecord
+280
+     1
+270
+     1
+271
+     1
+  0
+XRECORD
+  5
+111
+102
+{ACAD_REACTORS
+330
+110
+102
+}
+330
+110
+100
+AcDbXrecord
+280
+     1
+270
+     1
+271
+     1
+  0
+XRECORD
+  5
+113
+102
+{ACAD_REACTORS
+330
+110
+102
+}
+330
+110
+100
+AcDbXrecord
+280
+     1
+270
+     1
+271
+     1
+  0
+XRECORD
+  5
+114
+102
+{ACAD_REACTORS
+330
+110
+102
+}
+330
+110
+100
+AcDbXrecord
+280
+     1
+270
+     1
+271
+     1
+  0
+CELLSTYLEMAP
+  5
+4A5
+102
+{ACAD_REACTORS
+330
+104
+102
+}
+330
+104
+100
+AcDbCellStyleMap
+ 90
+        3
+300
+CELLSTYLE
+  1
+TABLEFORMAT_BEGIN
+ 90
+        5
+170
+     1
+ 91
+        0
+ 92
+    32768
+ 62
+   257
+ 93
+        1
+300
+CONTENTFORMAT
+  1
+CONTENTFORMAT_BEGIN
+ 90
+        0
+ 91
+        0
+ 92
+      512
+ 93
+        0
+300
+
+ 40
+0.0
+140
+1.0
+ 94
+        5
+ 62
+     0
+340
+11
+144
+0.25
+309
+CONTENTFORMAT_END
+171
+     1
+301
+MARGIN
+  1
+CELLMARGIN_BEGIN
+ 40
+0.06
+ 40
+0.06
+ 40
+0.06
+ 40
+0.06
+ 40
+0.18
+ 40
+0.18
+309
+CELLMARGIN_END
+ 94
+        6
+ 95
+        1
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+ 95
+        2
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+ 95
+        4
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+ 95
+        8
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+ 95
+       16
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+ 95
+       32
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+309
+TABLEFORMAT_END
+  1
+CELLSTYLE_BEGIN
+ 90
+        1
+ 91
+        1
+300
+_TITLE
+309
+CELLSTYLE_END
+300
+CELLSTYLE
+  1
+TABLEFORMAT_BEGIN
+ 90
+        5
+170
+     1
+ 91
+        0
+ 92
+        0
+ 62
+   257
+ 93
+        1
+300
+CONTENTFORMAT
+  1
+CONTENTFORMAT_BEGIN
+ 90
+        0
+ 91
+        0
+ 92
+      512
+ 93
+        0
+300
+
+ 40
+0.0
+140
+1.0
+ 94
+        5
+ 62
+     0
+340
+11
+144
+0.18
+309
+CONTENTFORMAT_END
+171
+     1
+301
+MARGIN
+  1
+CELLMARGIN_BEGIN
+ 40
+0.06
+ 40
+0.06
+ 40
+0.06
+ 40
+0.06
+ 40
+0.18
+ 40
+0.18
+309
+CELLMARGIN_END
+ 94
+        6
+ 95
+        1
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+ 95
+        2
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+ 95
+        4
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+ 95
+        8
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+ 95
+       16
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+ 95
+       32
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+309
+TABLEFORMAT_END
+  1
+CELLSTYLE_BEGIN
+ 90
+        2
+ 91
+        1
+300
+_HEADER
+309
+CELLSTYLE_END
+300
+CELLSTYLE
+  1
+TABLEFORMAT_BEGIN
+ 90
+        5
+170
+     1
+ 91
+        0
+ 92
+        0
+ 62
+   257
+ 93
+        1
+300
+CONTENTFORMAT
+  1
+CONTENTFORMAT_BEGIN
+ 90
+        0
+ 91
+        0
+ 92
+      512
+ 93
+        0
+300
+
+ 40
+0.0
+140
+1.0
+ 94
+        2
+ 62
+     0
+340
+11
+144
+0.18
+309
+CONTENTFORMAT_END
+171
+     1
+301
+MARGIN
+  1
+CELLMARGIN_BEGIN
+ 40
+0.06
+ 40
+0.06
+ 40
+0.06
+ 40
+0.06
+ 40
+0.18
+ 40
+0.18
+309
+CELLMARGIN_END
+ 94
+        6
+ 95
+        1
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+ 95
+        2
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+ 95
+        4
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+ 95
+        8
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+ 95
+       16
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+ 95
+       32
+302
+GRIDFORMAT
+  1
+GRIDFORMAT_BEGIN
+ 90
+        0
+ 91
+        1
+ 62
+     0
+ 92
+       -2
+340
+0
+ 93
+        0
+ 40
+0.045
+309
+GRIDFORMAT_END
+309
+TABLEFORMAT_END
+  1
+CELLSTYLE_BEGIN
+ 90
+        3
+ 91
+        2
+300
+_DATA
+309
+CELLSTYLE_END
+  0
+XRECORD
+  5
+4A7
+102
+{ACAD_REACTORS
+330
+104
+102
+}
+330
+104
+100
+AcDbXrecord
+280
+     1
+102
+ACAD_ROUNDTRIP_PRE2007_TABLESTYLE
+ 90
+      512
+ 91
+        0
+  1
+
+ 92
+      512
+ 93
+        0
+  2
+
+ 94
+      512
+ 95
+        0
+  3
+
+  0
+XRECORD
+  5
+4B8
+102
+{ACAD_REACTORS
+330
+4B7
+102
+}
+330
+4B7
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+XRECORD
+  5
+4BC
+102
+{ACAD_REACTORS
+330
+4BB
+102
+}
+330
+4BB
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+XRECORD
+  5
+4BA
+102
+{ACAD_REACTORS
+330
+4B9
+102
+}
+330
+4B9
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+XRECORD
+  5
+4B6
+102
+{ACAD_REACTORS
+330
+4B5
+102
+}
+330
+4B5
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+XRECORD
+  5
+4C4
+102
+{ACAD_REACTORS
+330
+4C3
+102
+}
+330
+4C3
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+XRECORD
+  5
+4CC
+102
+{ACAD_REACTORS
+330
+4CB
+102
+}
+330
+4CB
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+XRECORD
+  5
+4BE
+102
+{ACAD_REACTORS
+330
+4BD
+102
+}
+330
+4BD
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+XRECORD
+  5
+4C2
+102
+{ACAD_REACTORS
+330
+4C1
+102
+}
+330
+4C1
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+XRECORD
+  5
+4D2
+102
+{ACAD_REACTORS
+330
+4D1
+102
+}
+330
+4D1
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     0
+102
+RTVSPropertyOp1
+ 70
+     0
+102
+RTVSPropertyOp2
+ 70
+     0
+102
+RTVSPropertyOp3
+ 70
+     0
+102
+RTVSPropertyOp4
+ 70
+     0
+102
+RTVSPropertyOp5
+ 70
+     0
+102
+RTVSPropertyOp6
+ 70
+     0
+102
+RTVSPropertyOp7
+ 70
+     0
+102
+RTVSPropertyOp8
+ 70
+     0
+102
+RTVSPropertyOp9
+ 70
+     0
+102
+RTVSPropertyOp10
+ 70
+     0
+102
+RTVSPropertyOp11
+ 70
+     0
+102
+RTVSPropertyOp12
+ 70
+     0
+102
+RTVSPropertyOp13
+ 70
+     0
+102
+RTVSPropertyOp14
+ 70
+     2
+102
+RTVSPropertyOp15
+ 70
+     0
+102
+RTVSPropertyOp16
+ 70
+     0
+102
+RTVSPropertyOp17
+ 70
+     0
+102
+RTVSPropertyOp18
+ 70
+     0
+102
+RTVSPropertyOp19
+ 70
+     0
+102
+RTVSPropertyOp20
+ 70
+     0
+102
+RTVSPropertyOp21
+ 70
+     0
+102
+RTVSPropertyOp22
+ 70
+     0
+102
+RTVSPropertyOp23
+ 70
+     0
+102
+RTVSPropertyOp24
+ 70
+     0
+102
+RTVSPropertyOp25
+ 70
+     0
+102
+RTVSPropertyOp26
+ 70
+     0
+102
+RTVSPropertyOp27
+ 70
+     0
+  0
+XRECORD
+  5
+4CA
+102
+{ACAD_REACTORS
+330
+4C9
+102
+}
+330
+4C9
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+XRECORD
+  5
+4AE
+102
+{ACAD_REACTORS
+330
+4AD
+102
+}
+330
+4AD
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+XRECORD
+  5
+4B0
+102
+{ACAD_REACTORS
+330
+4AF
+102
+}
+330
+4AF
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+XRECORD
+  5
+4B2
+102
+{ACAD_REACTORS
+330
+4B1
+102
+}
+330
+4B1
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+XRECORD
+  5
+4B4
+102
+{ACAD_REACTORS
+330
+4B3
+102
+}
+330
+4B3
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+XRECORD
+  5
+4CE
+102
+{ACAD_REACTORS
+330
+4CD
+102
+}
+330
+4CD
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     0
+102
+RTVSPropertyOp1
+ 70
+     0
+102
+RTVSPropertyOp2
+ 70
+     0
+102
+RTVSPropertyOp3
+ 70
+     0
+102
+RTVSPropertyOp4
+ 70
+     0
+102
+RTVSPropertyOp5
+ 70
+     0
+102
+RTVSPropertyOp6
+ 70
+     0
+102
+RTVSPropertyOp7
+ 70
+     0
+102
+RTVSPropertyOp8
+ 70
+     0
+102
+RTVSPropertyOp9
+ 70
+     0
+102
+RTVSPropertyOp10
+ 70
+     0
+102
+RTVSPropertyOp11
+ 70
+     0
+102
+RTVSPropertyOp12
+ 70
+     0
+102
+RTVSPropertyOp13
+ 70
+     0
+102
+RTVSPropertyOp14
+ 70
+     2
+102
+RTVSPropertyOp15
+ 70
+     0
+102
+RTVSPropertyOp16
+ 70
+     0
+102
+RTVSPropertyOp17
+ 70
+     0
+102
+RTVSPropertyOp18
+ 70
+     0
+102
+RTVSPropertyOp19
+ 70
+     0
+102
+RTVSPropertyOp20
+ 70
+     0
+102
+RTVSPropertyOp21
+ 70
+     0
+102
+RTVSPropertyOp22
+ 70
+     0
+102
+RTVSPropertyOp23
+ 70
+     0
+102
+RTVSPropertyOp24
+ 70
+     0
+102
+RTVSPropertyOp25
+ 70
+     0
+102
+RTVSPropertyOp26
+ 70
+     0
+102
+RTVSPropertyOp27
+ 70
+     0
+  0
+XRECORD
+  5
+4C8
+102
+{ACAD_REACTORS
+330
+4C7
+102
+}
+330
+4C7
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+XRECORD
+  5
+4D0
+102
+{ACAD_REACTORS
+330
+4CF
+102
+}
+330
+4CF
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     0
+102
+RTVSPropertyOp1
+ 70
+     0
+102
+RTVSPropertyOp2
+ 70
+     0
+102
+RTVSPropertyOp3
+ 70
+     0
+102
+RTVSPropertyOp4
+ 70
+     0
+102
+RTVSPropertyOp5
+ 70
+     0
+102
+RTVSPropertyOp6
+ 70
+     0
+102
+RTVSPropertyOp7
+ 70
+     0
+102
+RTVSPropertyOp8
+ 70
+     0
+102
+RTVSPropertyOp9
+ 70
+     0
+102
+RTVSPropertyOp10
+ 70
+     0
+102
+RTVSPropertyOp11
+ 70
+     0
+102
+RTVSPropertyOp12
+ 70
+     0
+102
+RTVSPropertyOp13
+ 70
+     0
+102
+RTVSPropertyOp14
+ 70
+     2
+102
+RTVSPropertyOp15
+ 70
+     0
+102
+RTVSPropertyOp16
+ 70
+     0
+102
+RTVSPropertyOp17
+ 70
+     0
+102
+RTVSPropertyOp18
+ 70
+     0
+102
+RTVSPropertyOp19
+ 70
+     0
+102
+RTVSPropertyOp20
+ 70
+     0
+102
+RTVSPropertyOp21
+ 70
+     0
+102
+RTVSPropertyOp22
+ 70
+     0
+102
+RTVSPropertyOp23
+ 70
+     0
+102
+RTVSPropertyOp24
+ 70
+     0
+102
+RTVSPropertyOp25
+ 70
+     0
+102
+RTVSPropertyOp26
+ 70
+     0
+102
+RTVSPropertyOp27
+ 70
+     0
+  0
+XRECORD
+  5
+4C0
+102
+{ACAD_REACTORS
+330
+4BF
+102
+}
+330
+4BF
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+XRECORD
+  5
+4C6
+102
+{ACAD_REACTORS
+330
+4C5
+102
+}
+330
+4C5
+100
+AcDbXrecord
+280
+     1
+102
+RTVSPropertyOp0
+ 70
+     1
+102
+RTVSPropertyOp1
+ 70
+     1
+102
+RTVSPropertyOp2
+ 70
+     1
+102
+RTVSPropertyOp3
+ 70
+     1
+102
+RTVSPropertyOp4
+ 70
+     1
+102
+RTVSPropertyOp5
+ 70
+     1
+102
+RTVSPropertyOp6
+ 70
+     1
+102
+RTVSPropertyOp7
+ 70
+     1
+102
+RTVSPropertyOp8
+ 70
+     1
+102
+RTVSPropertyOp9
+ 70
+     1
+102
+RTVSPropertyOp10
+ 70
+     1
+102
+RTVSPropertyOp11
+ 70
+     1
+102
+RTVSPropertyOp12
+ 70
+     1
+102
+RTVSPropertyOp13
+ 70
+     1
+102
+RTVSPropertyOp14
+ 70
+     1
+102
+RTVSPropertyOp15
+ 70
+     1
+102
+RTVSPropertyOp16
+ 70
+     1
+102
+RTVSPropertyOp17
+ 70
+     1
+102
+RTVSPropertyOp18
+ 70
+     1
+102
+RTVSPropertyOp19
+ 70
+     1
+102
+RTVSPropertyOp20
+ 70
+     1
+102
+RTVSPropertyOp21
+ 70
+     1
+102
+RTVSPropertyOp22
+ 70
+     1
+102
+RTVSPropertyOp23
+ 70
+     1
+102
+RTVSPropertyOp24
+ 70
+     1
+102
+RTVSPropertyOp25
+ 70
+     1
+102
+RTVSPropertyOp26
+ 70
+     1
+102
+RTVSPropertyOp27
+ 70
+     1
+  0
+ENDSEC
+  0
+EOF

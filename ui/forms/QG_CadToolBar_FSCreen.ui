@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QG_CadToolBar_FSCreen</class>
+ <widget class="QWidget" name="QG_CadToolBar_FSCreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>84</width>
+    <height>40</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QG_CadToolBar_FSCreen</string>
+  </property>
+  <widget class="QToolButton" name="btnFSCreen">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>2</y>
+     <width>36</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>36</width>
+     <height>36</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>全屏</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../../res/extui/extui.qrc">
+     <normaloff>:/extui/FullScreen.png</normaloff>
+     <normalon>:/extui/quitFullScreen.png</normalon>
+     <disabledoff>:/extui/FullScreen.png</disabledoff>
+     <disabledon>:/extui/quitFullScreen.png</disabledon>
+     <activeoff>:/extui/FullScreen.png</activeoff>
+     <activeon>:/extui/quitFullScreen.png</activeon>
+     <selectedoff>:/extui/FullScreen.png</selectedoff>
+     <selectedon>:/extui/quitFullScreen.png</selectedon>:/extui/FullScreen.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../res/extui/extui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

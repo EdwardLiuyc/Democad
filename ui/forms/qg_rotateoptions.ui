@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QG_RotateOptions</class>
+ <widget class="QWidget" name="QG_RotateOptions">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>37</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="lbInfo">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>10</y>
+     <width>75</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>旋转参数:</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_manual">
+   <property name="geometry">
+    <rect>
+     <x>81</x>
+     <y>10</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>手动</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_fixed">
+   <property name="geometry">
+    <rect>
+     <x>134</x>
+     <y>10</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>自动</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_ok">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>6</y>
+     <width>50</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>192</x>
+     <y>10</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>X:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_xValue">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>8</y>
+     <width>50</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>347</x>
+     <y>9</y>
+     <width>35</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>角度</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_angle">
+   <property name="geometry">
+    <rect>
+     <x>383</x>
+     <y>8</y>
+     <width>50</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>11</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Y:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_yValue">
+   <property name="geometry">
+    <rect>
+     <x>286</x>
+     <y>8</y>
+     <width>50</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>radioButton_manual</sender>
+   <signal>clicked()</signal>
+   <receiver>QG_RotateOptions</receiver>
+   <slot>changeSelect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>31</x>
+     <y>10</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>34</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_fixed</sender>
+   <signal>clicked()</signal>
+   <receiver>QG_RotateOptions</receiver>
+   <slot>changeSelect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>80</x>
+     <y>7</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>87</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_ok</sender>
+   <signal>clicked()</signal>
+   <receiver>QG_RotateOptions</receiver>
+   <slot>rotateFixed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>345</x>
+     <y>13</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>340</x>
+     <y>85</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>changeSelect()</slot>
+  <slot>rotateFixed()</slot>
+ </slots>
+</ui>

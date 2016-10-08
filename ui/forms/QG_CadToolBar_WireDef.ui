@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QG_CadToolBar_WireDef</class>
+ <widget class="QWidget" name="QG_CadToolBar_WireDef">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>80</width>
+    <height>190</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>线切割定义</string>
+  </property>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>62</y>
+     <width>65</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnDelTrance">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>148</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>轨迹删除 </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <activeoff>:/extui/delete.png</activeoff>
+     <activeon>:/extui/delete_ON.png</activeon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnTDie">
+   <property name="geometry">
+    <rect>
+     <x>32</x>
+     <y>3</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>凸模</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <activeoff>:/extui/TDie.png</activeoff>
+     <activeon>:/extui/TDie_ON.png</activeon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnCancleAR">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>106</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>取消指定R</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <activeoff>:/extui/CancelAR.png</activeoff>
+     <activeon>:/extui/CancelAR_ON.png</activeon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnDifShape">
+   <property name="geometry">
+    <rect>
+     <x>32</x>
+     <y>34</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>上下异形</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <activeoff>:/extui/DifShape.png</activeoff>
+     <activeon>:/extui/DifShape_ON.png</activeon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnAssignR">
+   <property name="geometry">
+    <rect>
+     <x>32</x>
+     <y>75</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>上下指定R</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <activeoff>:/extui/AssignR.png</activeoff>
+     <activeon>:/extui/AssignR_ON.png</activeon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnTaper">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>75</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>部分锥度</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <activeoff>:/extui/Taper.png</activeoff>
+     <activeon>:/extui/Taper_ON.png</activeon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnEditTrance">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>148</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>轨迹编辑</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <activeoff>:/extui/edit.png</activeoff>
+     <activeon>:/extui/edit_ON.png</activeon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="bHidden">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>354</y>
+     <width>0</width>
+     <height>0</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnDie">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>3</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>凹模</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <activeoff>:/extui/Die.png</activeoff>
+     <activeon>:/extui/Die_ON.png</activeon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>135</y>
+     <width>65</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="btnOpenShape">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>34</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>开形状</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <activeoff>:/extui/OpenShape.png</activeoff>
+     <activeon>:/extui/OpenShape_ON.png</activeon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../res/extui/extui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

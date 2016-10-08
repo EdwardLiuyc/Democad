@@ -1,0 +1,2547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{f9ad4b6d-9571-42a7-9d80-06dff050185d}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{54f6c70c-d70f-4fa2-872c-a35249b937f3}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{c53202a1-cb50-41f1-8a4d-03716169b821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\actions">
+      <UniqueIdentifier>{21f37957-f7c7-4aed-94b2-af5aacfb4f6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\engine">
+      <UniqueIdentifier>{e2ce826f-9ed8-41c4-bc44-825d40dfbc78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\debug">
+      <UniqueIdentifier>{640e7000-0aaf-4f49-9665-fe04d347c451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\filters">
+      <UniqueIdentifier>{73b2f00d-d4b0-4241-9d9d-2c15193aeb45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\gui">
+      <UniqueIdentifier>{cb7cf555-00a7-4697-83f5-3b7d166ee7ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\information">
+      <UniqueIdentifier>{d611cb36-152c-41d5-aed0-38776ff8789c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\math">
+      <UniqueIdentifier>{64c0285a-ec9a-4db6-8813-e7ed81b5704b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\modification">
+      <UniqueIdentifier>{1c2fcdb4-7d6d-4187-a84b-536b4e9cd8c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cadextra">
+      <UniqueIdentifier>{cd970285-faca-4f2f-9827-e7dce9a9bc64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{c01854a3-08c0-4c61-83cd-ad30ff619406}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="actions">
+      <UniqueIdentifier>{0ac39bcc-859c-466b-90c4-33e31b71a965}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_democad.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_democad.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_democad.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorMessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ErrorMessage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ErrorMessage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Parameter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_getData_Line.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_getData_Line.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_arcoptions.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_arcoptions.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QG_CadToolBar_AssistTool.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QG_CadToolBar_AssistTool.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QG_CadToolBar_FileOpt.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QG_CadToolBar_FileOpt.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QG_CadToolBar_FSCreen.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QG_CadToolBar_FSCreen.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QG_CadToolBar_LeadWire.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QG_CadToolBar_LeadWire.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_cadtoolbarmain.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_cadtoolbarmain.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_caldisofTP.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_caldisofTP.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_circleoptions.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_circleoptions.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_leadarcradiusoptions.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_leadarcradiusoptions.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_lineoptions.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_lineoptions.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_mirroroptions.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_mirroroptions.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_moveoptions.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_moveoptions.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_rectoptions.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_rectoptions.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_rotateoptions.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_rotateoptions.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_scaleoptions.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_scaleoptions.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_setgridtype.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_setgridtype.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_setorignal.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_setorignal.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_showangel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_showangel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_showmindis.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_showmindis.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_showposofTP.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_showposofTP.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_snapdistoptions.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_snapdistoptions.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_snapmiddleoptions.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_snapmiddleoptions.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_snaptoolbar.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_snaptoolbar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\actions\rs_actioninterface.cpp">
+      <Filter>lib\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actioninterface.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actioninterface.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\actions\rs_preview.cpp">
+      <Filter>lib\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\actions\rs_previewactioninterface.cpp">
+      <Filter>lib\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\actions\rs_snapper.cpp">
+      <Filter>lib\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_arc.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_circle.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_color.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_constructionline.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_document.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_ellipse.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_entity.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_entitycontainer.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_line.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_overlaybox.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_overlayline.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_pen.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_settings.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_undo.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_undoable.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_units.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\engine\rs_vector.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\debug\rs_debug.cpp">
+      <Filter>lib\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\filters\rs_filterdxfrw.cpp">
+      <Filter>lib\filters</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gui\rs_eventhandler.cpp">
+      <Filter>lib\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gui\rs_grid.cpp">
+      <Filter>lib\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gui\rs_linetypepattern.cpp">
+      <Filter>lib\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gui\rs_painter.cpp">
+      <Filter>lib\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\gui\rs_painterqt.cpp">
+      <Filter>lib\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\information\rs_information.cpp">
+      <Filter>lib\information</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\math\lc_quadratic.cpp">
+      <Filter>lib\math</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\math\rs_math.cpp">
+      <Filter>lib\math</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\modification\rs_modification.cpp">
+      <Filter>lib\modification</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\modification\rs_selection.cpp">
+      <Filter>lib\modification</Filter>
+    </ClCompile>
+    <ClCompile Include="cadextra\democadSignal.cpp">
+      <Filter>cadextra</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_democadSignal.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_democadSignal.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="cadextra\dialogmediator.cpp">
+      <Filter>cadextra</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_dialogmediator.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_dialogmediator.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="cadextra\en_Line.cpp">
+      <Filter>cadextra</Filter>
+    </ClCompile>
+    <ClCompile Include="cadextra\functionGraphM.cpp">
+      <Filter>cadextra</Filter>
+    </ClCompile>
+    <ClCompile Include="cadextra\global_Operator.cpp">
+      <Filter>cadextra</Filter>
+    </ClCompile>
+    <ClCompile Include="cadextra\global_Values.cpp">
+      <Filter>cadextra</Filter>
+    </ClCompile>
+    <ClCompile Include="cadextra\graphicview.cpp">
+      <Filter>cadextra</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_graphicview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_graphicview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="cadextra\PublicFuction.cpp">
+      <Filter>cadextra</Filter>
+    </ClCompile>
+    <ClCompile Include="cadextra\QPublicSignal.cpp">
+      <Filter>cadextra</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QPublicSignal.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QPublicSignal.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="cadextra\rs_graphicview.cpp">
+      <Filter>cadextra</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_arcoptions.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_snaptoolbar.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_baseoptions.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\QG_CadToolBar_AssistTool.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\QG_CadToolBar_FileOpt.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\QG_CadToolBar_FSCreen.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\QG_CadToolBar_LeadWire.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_cadtoolbarmain.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_caldisofTP.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_circleoptions.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_leadarcradiusoptions.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_lineoptions.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_mirroroptions.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_moveoptions.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_rectoptions.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_rotateoptions.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_scaleoptions.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_setgridtype.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_setorignal.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_showangel.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_showmindis.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_showposofTP.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_snapdistoptions.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\qg_snapmiddleoptions.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_actionfactory.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_actionfactory.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_actionfactory.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\qg_actionhandler.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_actionhandler.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_actionhandler.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qg_scrollbar.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qg_scrollbar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionassignr.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionassignr.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionassignr.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actioncaldisofTP.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actioncaldisofTP.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actioncaldisofTP.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondefault.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actiondefault.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actiondefault.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawarc.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actiondrawarc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actiondrawarc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawcircle.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actiondrawcircle.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actiondrawcircle.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawleadarcline.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actiondrawleadarcline.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actiondrawleadarcline.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawleadline.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actiondrawleadline.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actiondrawleadline.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawleadlineside.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actiondrawleadlineside.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actiondrawleadlineside.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawline.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actiondrawline.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actiondrawline.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actiondrawlinerectangle.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actiondrawlinerectangle.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actiondrawlinerectangle.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actioneditundo.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actioneditundo.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actioneditundo.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifydelete.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionmodifydelete.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionmodifydelete.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifymirror.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionmodifymirror.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionmodifymirror.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifymove.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionmodifymove.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionmodifymove.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifyrotate.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionmodifyrotate.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionmodifyrotate.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifyscale.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionmodifyscale.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionmodifyscale.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionmodifytrim.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionmodifytrim.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionmodifytrim.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionorignalInitial.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionorignalInitial.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionorignalInitial.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionparttaper.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionparttaper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionparttaper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionselectall.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionselectall.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionselectall.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionselectinvert.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionselectinvert.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionselectinvert.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionsetGridType.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionsetGridType.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionsetGridType.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionsetOrignal.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionsetOrignal.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionsetOrignal.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionshowangel.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionshowangel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionshowangel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionshowmindis.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionshowmindis.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionshowmindis.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionshowposofTP.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionshowposofTP.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionshowposofTP.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionsizeinitial.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionsizeinitial.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionsizeinitial.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionzoomauto.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionzoomauto.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionzoomauto.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionzoomin.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionzoomin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionzoomin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionzoompan.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionzoompan.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionzoompan.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="actions\rs_actionautodrawleadline.cpp">
+      <Filter>actions</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rs_actionautodrawleadline.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rs_actionautodrawleadline.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_ui.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_main.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_extui.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_actions.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\forms\getData_Line.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="rs_spline.cpp">
+      <Filter>lib\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="graphicviewside.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_graphicviewside.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_graphicviewside.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="curvefit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parasetwdt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_parasetwdt.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_parasetwdt.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="RS_CustomBtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RS_CustomBtn.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RS_CustomBtn.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="offsetwdt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_offsetwdt.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_offsetwdt.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="democad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="detresultdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_detresultdlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_detresultdlg.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_showfinalncdlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_showfinalncdlg.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="showfinalncdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hidelabeln3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_hidelabeln3.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_hidelabeln3.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="democad.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="democad.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="democad.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ErrorMessage.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ErrorMessage.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\getData_Line.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_arcoptions.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\QG_CadToolBar_AssistTool.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\QG_CadToolBar_FileOpt.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\QG_CadToolBar_FSCreen.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\QG_CadToolBar_LeadWire.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_cadtoolbarmain.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_caldisofTP.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_circleoptions.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_leadarcradiusoptions.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_lineoptions.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_mirroroptions.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_moveoptions.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_rectoptions.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_rotateoptions.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_scaleoptions.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_setgridtype.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_setorignal.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_showangel.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_showmindis.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_showposofTP.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_snapdistoptions.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_snapmiddleoptions.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="lib\actions\rs_actioninterface.h">
+      <Filter>lib\actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="cadextra\democadSignal.h">
+      <Filter>cadextra</Filter>
+    </CustomBuild>
+    <CustomBuild Include="cadextra\dialogmediator.h">
+      <Filter>cadextra</Filter>
+    </CustomBuild>
+    <CustomBuild Include="cadextra\graphicview.h">
+      <Filter>cadextra</Filter>
+    </CustomBuild>
+    <CustomBuild Include="cadextra\QPublicSignal.h">
+      <Filter>cadextra</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\qg_actionfactory.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\qg_actionhandler.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\qg_scrollbar.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionassignr.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actioncaldisofTP.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actiondefault.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actiondrawarc.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actiondrawcircle.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actiondrawleadarcline.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actiondrawleadline.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actiondrawleadlineside.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actiondrawline.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actiondrawlinerectangle.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actioneditundo.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionmodifydelete.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionmodifymirror.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionmodifymove.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionmodifyrotate.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionmodifyscale.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionmodifytrim.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionorignalInitial.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionparttaper.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionselectall.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionselectinvert.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionsetGridType.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionsetOrignal.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionshowangel.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionshowmindis.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionshowposofTP.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionsizeinitial.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionzoomauto.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionzoomin.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionzoompan.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="actions\rs_actionautodrawleadline.h">
+      <Filter>actions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\ui\ui.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\main\main.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\extui_backup\extui.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\actions\actions.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_arcoptions.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_snaptoolbar.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\QG_CadToolBar_AssistTool.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\QG_CadToolBar_FileOpt.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\QG_CadToolBar_FSCreen.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\QG_CadToolBar_LeadWire.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_cadtoolbarmain.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_caldisofTP.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_circleoptions.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_leadarcradiusoptions.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_lineoptions.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_mirroroptions.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_moveoptions.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_rectoptions.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_rotateoptions.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_scaleoptions.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_setgridtype.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_setorignal.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_showangel.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_showmindis.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_showposofTP.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_snapdistoptions.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\qg_snapmiddleoptions.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\getData_Line.h">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphicviewside.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="parasetwdt.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RS_CustomBtn.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="offsetwdt.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="detresultdlg.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="showfinalncdlg.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hidelabeln3.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_democad.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ErrorMessage.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Parameter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_getData_Line.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_arcoptions.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QG_CadToolBar_AssistTool.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QG_CadToolBar_FileOpt.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QG_CadToolBar_FSCreen.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QG_CadToolBar_LeadWire.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_cadtoolbarmain.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_caldisofTP.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_circleoptions.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_leadarcradiusoptions.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_lineoptions.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_mirroroptions.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_moveoptions.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_rectoptions.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_rotateoptions.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_scaleoptions.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_setgridtype.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_setorignal.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_showangel.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_showmindis.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_showposofTP.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_snapdistoptions.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qg_snapmiddleoptions.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\actions\rs_preview.h">
+      <Filter>lib\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\actions\rs_previewactioninterface.h">
+      <Filter>lib\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\actions\rs_snapper.h">
+      <Filter>lib\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_arc.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_atomicentity.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_circle.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_color.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_constructionline.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_document.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_ellipse.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_entity.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_entitycontainer.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_flags.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_line.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_overlaybox.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_overlayline.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_pen.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_settings.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_undo.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_undoable.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_undocycle.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_units.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\engine\rs_vector.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\debug\rs_debug.h">
+      <Filter>lib\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\filters\rs_filterdxfrw.h">
+      <Filter>lib\filters</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_commandevent.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_coordinateevent.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_eventhandler.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_grid.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_linetypepattern.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_mainwindowinterface.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_painter.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gui\rs_painterqt.h">
+      <Filter>lib\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\information\rs_information.h">
+      <Filter>lib\information</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\math\lc_quadratic.h">
+      <Filter>lib\math</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\math\rs_math.h">
+      <Filter>lib\math</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\modification\rs_modification.h">
+      <Filter>lib\modification</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\modification\rs_selection.h">
+      <Filter>lib\modification</Filter>
+    </ClInclude>
+    <ClInclude Include="cadextra\en_Line.h">
+      <Filter>cadextra</Filter>
+    </ClInclude>
+    <ClInclude Include="cadextra\entityDefine.h">
+      <Filter>cadextra</Filter>
+    </ClInclude>
+    <ClInclude Include="cadextra\EntityManager.h">
+      <Filter>cadextra</Filter>
+    </ClInclude>
+    <ClInclude Include="cadextra\functionGraphM.h">
+      <Filter>cadextra</Filter>
+    </ClInclude>
+    <ClInclude Include="cadextra\global_Operator.h">
+      <Filter>cadextra</Filter>
+    </ClInclude>
+    <ClInclude Include="cadextra\global_Values.h">
+      <Filter>cadextra</Filter>
+    </ClInclude>
+    <ClInclude Include="cadextra\PublicFuction.h">
+      <Filter>cadextra</Filter>
+    </ClInclude>
+    <ClInclude Include="cadextra\PublicStruct.h">
+      <Filter>cadextra</Filter>
+    </ClInclude>
+    <ClInclude Include="cadextra\rs_graphicview.h">
+      <Filter>cadextra</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\qg_mainwindowinterface.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\forms\qg_baseoptions.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="cadextra\structGraphM.h">
+      <Filter>cadextra</Filter>
+    </ClInclude>
+    <ClInclude Include="rs_spline.h">
+      <Filter>lib\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="curvefit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CIComm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DemoCad.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ui\blockadd.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\blockattributes.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\blockedit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\blockinsert.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\blockremove.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\blockfreeze.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\blockdefreeze.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\color00.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\color01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\color02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\color03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\color04.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\color05.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\color06.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\color07.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\color08.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\color09.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\color11.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\color14.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\colorxx.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\cur_cad_bmp.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\cur_del_bmp.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\cur_glass_bmp.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\cur_hand_bmp.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\cur_select_bmp.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\fileprint.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\folderclosed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\folderopen.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\hiddenblock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\hiddenlayer.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\layertoggle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\layeradd.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\layeredit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\layerremove.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\linetype00.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\linetype01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\linetype02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\linetype03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\linetype04.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\linetype05.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\linetype06.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\linetype07.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\mouse.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\viewdraft.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\viewgrid.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\visibleblock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\visiblelayer.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\width00.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\width01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\width02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\width03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\width04.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\width05.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\width06.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\width07.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\width08.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\width09.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\width10.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\width11.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\width12.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\lockedlayer.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ui\unlockedlayer.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main\librecad.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main\librecad16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main\contents.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main\document.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main\editclear.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main\filenew.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main\fileopen.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main\filesave.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main\intro_librecad.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main\splash_librecad.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main\donate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\widthbox.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\align_bc.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\align_bl.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\align_br.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\align_mc.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\align_ml.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\align_mr.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\align_tc.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\align_tl.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\align_tr.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\aligntext_bc.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\aligntext_bl.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\aligntext_br.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\aligntext_lc.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\aligntext_ll.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\aligntext_lr.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\aligntext_mc.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\aligntext_ml.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\aligntext_mr.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\aligntext_tc.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\aligntext_tl.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\aligntext_tr.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\Angle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\Angle_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\arcs3p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\arcscraa.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\arcscraa_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\arcscraa_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\arcspara.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\arcstangential.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\AssignR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\AssignR_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\back.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\CancelAR.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\CancelAR_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\char_degrees.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\char_diameter.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\char_pm.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\circleinscribe.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\circles2p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\circles3p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\circles.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\circles_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\circles_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\circlescr.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\circlespara.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\circletan1_2p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\circletan2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\circletan2_1p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\circletan3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\colorbox.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\delete.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\delete_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\deselectinters.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\deselectwindow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\Die.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\Die_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\DifShape.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\DifShape_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dimaligned.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dimangular.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dimdiametric.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dimhor.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dimleader.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dimlinear.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dimradial.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dimver.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dirneg.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dirpos.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlfmoverotate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgmirror1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgmirror.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgmodifymirror.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgmodifymoverotate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgmodifyrotate2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgmodifyrotate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgmodifyscale.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgmove1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgmove.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgmoverotate1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgrotate1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgrotate2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgrotate21.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgrotate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgscale1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgscale.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgscale_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\dlgscale_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\edit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\edit_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\editcopy.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\editcut.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\editpaste.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\ElementD.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\ElementD_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\ellipse4points.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\ellipsearcsaxes.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\ellipsecenter3points.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\ellipsefocipoint.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\ellipseinscribed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\ellipsesaxes.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\filenew.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\fileopen.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\fileopen_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\filesave.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\forward.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\FullScreen.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\gfs.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\gfs_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\GridSet.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\GridSet_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\infoangle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\infoarea.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\infodist2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\infodist.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\infototallength.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesangle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesangle_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesangle_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesbisector.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesfree.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\lineshor.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesnormal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesnormal_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesnormal_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesorthogonal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesorthogonal_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesorthogonal_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesorthtan.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linespara.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesparathrough.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linespolygon2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linespolygon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesrect.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesrect_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesrect_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesrelativeangle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linestan1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linestan1_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linestan1_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linestan2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesver.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesver_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\linesver_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\menuarc.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\menublock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\menucircle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\menudim.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\menuedit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\menuellipse.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\menuhatch.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\menuimage.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\menuline.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\menumeasure.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\menupoint.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\menupolyline.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\menuselect.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\menuspline.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\menutext.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifyattributes.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifybevel.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifycut.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifydelete1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifydelete.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifydelete_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifyentity.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifyentity_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifyentity_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifyexplode.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifyexplodetext.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifymirror.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifymirror_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifymirror_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifymove.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifymove_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifymove_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifymoverotate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifyrotate2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifyrotate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifyrotate_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifyrotate_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifyround.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifyscale.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifystretch.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifytext.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifytoback.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifytofront.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifytrim2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifytrim2_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifytrim2_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifytrim.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifytrim_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifytrim_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\modifytrimamount.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\new.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\new_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\OpenShape.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\OpenShape_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\order_bottom.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\order_lower.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\order_raise.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\order_top.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\OriginalInit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\OriginalInit_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\OriSet.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\OriSet_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\PointD.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\PointD_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\points.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\polyline.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\polylineadd.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\polylineappend.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\polylinedel.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\polylinedelbetween.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\polylineequidstant.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\polylinesegment.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\polylinetrim.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\printbw.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\printcenter.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\printfit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\printscale.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\python2.4-16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\python2.4-32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\quitFullScreen.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\README.TXT">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\relzerolock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\relzeromove.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\restricthorizontal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\restrictnothing.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\restrictorthogonal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\restrictvertical.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\reverse.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\save.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\save_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\saveas.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\saveas_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\selectall.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\selectall_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\selectall_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\selectcontour.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\selectdoubles.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\selectinters.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\selectinvert.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\selectinvert_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\selectinvert_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\selectlayer.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\selectnothing.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\selectnothing_OFF.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\selectnothing_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\selectsingle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\selectwindow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\ShowV.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\ShowV_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\SizeSet.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\SizeSet_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\snapcenter.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\snapdist.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\snapendpoint.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\snapfree.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\snapgrid.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\snapintersection.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\snapintersectionm.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\snapmiddle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\snaponentity.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\splinesnurbs.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\Taper.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\Taper_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\TDie.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\TDie_ON.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\tolerance1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\extui_backup\tolerance2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\configure.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\editcopy.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\editcopy2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\editcut.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\editcut2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\editpaste.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\editpaste2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\editredo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\editundo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\exit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\fileclose.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\filenew.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\fileopen.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\fileopen2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\fileprint.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\fileprintpreview.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\filesave.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\filesave2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\filesaveas.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\redo2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\undo2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\viewdraft.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\viewgrid.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\zoomauto.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\zoomin.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\zoomout.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\zoompan.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\zoomprevious.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\zoomredraw.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\zoomwindow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\actions\back.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
