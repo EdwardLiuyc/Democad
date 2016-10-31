@@ -34,7 +34,11 @@ enum XYZ_DIR
 	XY_RIGHT,
 	XY_TOP,
 	XY_BTM,
-	Z_DIR
+	Z_DIR,
+	XY_LEFT_TOP,
+	XY_RIGHT_TOP,
+	XY_LEFT_BTM,
+	XY_RIGHT_BTM
 };
 
 enum inputMode
@@ -66,6 +70,23 @@ enum MEA_NUM
 	Z_MAX,
 	MEA_MACRO_COUNT
 };
+
+enum XY_PNT_SET_INDEX
+{
+	_leftB, _leftE, 
+	_rightB, _rightE,
+	_topB, _topE,
+	_btmB, _btmE,
+	_leftTopB, _leftTopE,
+	_rightTopB, _rightTopE,
+	_leftBtmB, _leftBtmE,
+	_rightBtmB, _rightBtmE,
+	_zB, _zE,
+	pnt_set_index_count
+};
+
+extern unsigned short g_XYIndex[_rightBtmE+1];
+extern unsigned short g_ZIndex[2];
 
 struct LineNCInfo
 {
@@ -157,7 +178,9 @@ extern RS_EntityContainer * g_ContainerPtr;
 #define MACRO_P151L10_FLAG       228
 #define MACRO_P151L11_K          229 
 #define MACRO_P151L11_FLAG       230
-#define MACRO_P151L10_INDEXWRONG 231
+#define MACRO_ALL_WRONG          231
+#define MACRO_P151L11_W          232
+#define MACRO_P151L12_FLAG       233
 
 #define MACRO_X_DATA             234
 #define MACRO_Y_DATA             235
@@ -377,6 +400,7 @@ extern QString qstrToHTML( QString content, int fontSize, QColor contentColor, b
 enum lineFlag{ LineX, LineY };
 extern double getAngleOfLine( int indexB, int indexE, int flag );
 
+//< 获取宏变量的整数值
 extern int getMacroInt( int nMacro );
 
 

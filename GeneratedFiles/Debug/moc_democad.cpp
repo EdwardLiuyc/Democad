@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'democad.h'
 **
-** Created: Mon Sep 26 14:56:06 2016
+** Created: Tue Oct 25 09:10:52 2016
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_DemoCad[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -41,6 +41,7 @@ static const uint qt_meta_data_DemoCad[] = {
      120,    8,  104,    8, 0x0a,
      133,    8,    8,    8, 0x0a,
      143,    8,    8,    8, 0x0a,
+     161,    8,    8,    8, 0x0a,
 
        0        // eod
 };
@@ -50,7 +51,7 @@ static const char qt_meta_stringdata_DemoCad[] = {
     "toggle\0slotViewGrid(bool)\0msg\0"
     "slotSetMsg(QString)\0openFile()\0bool\0"
     "saveFile()\0saveAsFile()\0newFile()\0"
-    "slotThisVis(bool)\0"
+    "slotThisVis(bool)\0slotReset232()\0"
 };
 
 void DemoCad::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -69,6 +70,7 @@ void DemoCad::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
         case 6: _t->newFile(); break;
         case 7: _t->slotThisVis((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 8: _t->slotReset232(); break;
         default: ;
         }
     }
@@ -108,9 +110,9 @@ int DemoCad::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }

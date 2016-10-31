@@ -152,7 +152,7 @@ protected:
 	void showEvent(QShowEvent * event);
 	void closeEvent(QCloseEvent * event);
 
-	inline void clearData_L10();
+	void clearData_L10();
 	bool clearDataAccIndex_L11();
 	bool clearSaveralData_L12();
 	bool saveDataAccIndex_L25();
@@ -162,7 +162,8 @@ protected:
 
 	bool getAngleOff_P151L51();
 	bool getXYOffset_P151L10();
-	bool getXYOffset_P151L11();
+	bool getXYOffset_P151L11();  //< need to change!
+	bool getArcPoints_P151L12();
 	bool getZOffset_P151L21();
 	bool rmOffXY_P151L60();
 	bool rmOffZ_P151L61();
@@ -190,6 +191,7 @@ public slots:
 	bool saveAsFile();
 	void newFile();
 	void slotThisVis(bool);
+	void slotReset232();
 
 private:
     QG_SnapToolBar* snapToolBar;//²¶×½µÄÑ¡Ïî

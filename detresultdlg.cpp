@@ -193,8 +193,15 @@ void DetResultDlg::paintPntsAndEntity( QPainter & painter, int width, int height
 				dirStr = ".T";
 			else if( i >= g_Index[XY_MIN_BTM] && i <= g_Index[XY_MAX_BTM] )
 				dirStr = ".B";
-			else
-			{
+			else if( i >= g_XYIndex[_leftTopB] && i <= g_XYIndex[_leftTopE] )
+			    dirStr = ".";
+			else if( i >= g_XYIndex[_rightTopB] && i <= g_XYIndex[_rightTopE] )
+				dirStr = ".";
+			else if( i >= g_XYIndex[_leftBtmB] && i <= g_XYIndex[_leftBtmE] )
+				dirStr = ".";
+			else if( i >= g_XYIndex[_rightBtmB] && i <= g_XYIndex[_rightBtmE] )
+				dirStr = ".";
+			else {
 				qDebug() << "liuyc: paint index is wrong! _ detresultwdt";
 				dirStr = "";
 			}

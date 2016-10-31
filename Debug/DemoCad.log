@@ -1,17 +1,17 @@
-﻿生成启动时间为 2016-9-26 16:05:13。
+﻿生成启动时间为 2016-10-26 星期三 15:46:01。
      1>项目“D:\Documents\Visual Studio 2010\Projects\DemoCad\DemoCad\DemoCad.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\DemoCad.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        CustomBuild:
          所有输出均为最新。
        ClCompile:
-         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /ID:\Qt\4.8.4\include /I.\GeneratedFiles\Debug /ID:\Qt\4.8.4\include\QtCore /ID:\Qt\4.8.4\include\QtGui /ID:\Qt\4.8.4\include\QtXml /Zi /nologo /W1 /WX- /MP /Od /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_XML_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt democad.cpp
-         democad.cpp
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /ID:\Qt\4.8.4\include /I.\GeneratedFiles\Debug /ID:\Qt\4.8.4\include\QtCore /ID:\Qt\4.8.4\include\QtGui /ID:\Qt\4.8.4\include\QtXml /I"D:\Program Files\Visual Leak Detector\include" /Zi /nologo /W1 /WX- /MP /Od /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_XML_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
          所有输出均为最新。
        ResourceCompile:
          所有输出均为最新。
        Link:
-         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\Visual Studio 2010\Projects\DemoCad\Win32\Debug\\DemoCad.exe" /NOLOGO /LIBPATH:D:\Qt\4.8.4\lib qtmaind.lib QtCored4.lib QtGuid4.lib DxfConvert.lib QtXmld4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\DemoCad.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Documents\Visual Studio 2010\Projects\DemoCad\Win32\Debug\DemoCad.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\Visual Studio 2010\Projects\DemoCad\Win32\Debug\DemoCad.lib" /MACHINE:X86 Debug\DemoCad.res
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\Visual Studio 2010\Projects\DemoCad\Win32\Debug\\DemoCad.exe" /NOLOGO /LIBPATH:D:\Qt\4.8.4\lib /LIBPATH:"D:\Program Files\Visual Leak Detector\lib\Win32" qtmaind.lib QtCored4.lib QtGuid4.lib DxfConvert.lib QtXmld4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\DemoCad.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Documents\Visual Studio 2010\Projects\DemoCad\Win32\Debug\DemoCad.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\Visual Studio 2010\Projects\DemoCad\Win32\Debug\DemoCad.lib" /MACHINE:X86 Debug\DemoCad.res
          Debug\rs_actionassignr.obj
          Debug\rs_actionautodrawleadline.obj
          Debug\rs_actioncaldisofTP.obj
@@ -55,10 +55,12 @@
          Debug\rs_graphicview.obj
          Debug\curvefit.obj
          Debug\democad.obj
+         Debug\detpntsetdlg.obj
          Debug\detresultdlg.obj
          Debug\ErrorMessage.obj
          Debug\moc_democad.obj
          Debug\moc_democadSignal.obj
+         Debug\moc_detpntsetdlg.obj
          Debug\moc_detresultdlg.obj
          Debug\moc_dialogmediator.obj
          Debug\moc_ErrorMessage.obj
@@ -128,6 +130,7 @@
          Debug\moc_rs_actionzoomin.obj
          Debug\moc_rs_actionzoompan.obj
          Debug\moc_RS_CustomBtn.obj
+         Debug\moc_showallqdlg.obj
          Debug\moc_showfinalncdlg.obj
          Debug\qrc_actions.obj
          Debug\qrc_democad.obj
@@ -175,6 +178,7 @@
          Debug\parasetwdt.obj
          Debug\RS_CustomBtn.obj
          Debug\rs_spline.obj
+         Debug\showallqdlg.obj
          Debug\showfinalncdlg.obj
          Debug\getData_Line.obj
          Debug\qg_arcoptions.obj
@@ -214,4 +218,4 @@
 
 生成成功。
 
-已用时间 00:00:25.38
+已用时间 00:00:08.81

@@ -16,8 +16,11 @@ HEADERS += ./CIComm.h \
     ./parasetwdt.h \
     ./offsetwdt.h \
     ./detresultdlg.h \
+    ./hidelabeln3.h \
+    ./detpntsetdlg.h \
     ./RS_CustomBtn.h \
     ./showfinalncdlg.h \
+    ./showallqdlg.h \
     ./ErrorMessage.h \
     ./lib/actions/rs_preview.h \
     ./lib/actions/rs_previewactioninterface.h \
@@ -133,18 +136,20 @@ HEADERS += ./CIComm.h \
     ./actions/rs_actiondrawarc.h \
     ./actions/rs_actiondefault.h \
     ./actions/rs_actioncaldisofTP.h \
-    ./actions/rs_actionassignr.h \
-    ./hidelabeln3.h
+    ./actions/rs_actionassignr.h
 SOURCES += ./curvefit.cpp \
     ./democad.cpp \
+    ./detpntsetdlg.cpp \
     ./detresultdlg.cpp \
     ./ErrorMessage.cpp \
     ./graphicviewside.cpp \
+    ./hidelabeln3.cpp \
     ./main.cpp \
     ./offsetwdt.cpp \
     ./Parameter.cpp \
     ./parasetwdt.cpp \
     ./RS_CustomBtn.cpp \
+    ./showallqdlg.cpp \
     ./showfinalncdlg.cpp \
     ./lib/actions/rs_actioninterface.cpp \
     ./lib/actions/rs_preview.cpp \
@@ -247,8 +252,7 @@ SOURCES += ./curvefit.cpp \
     ./actions/rs_actionsizeinitial.cpp \
     ./actions/rs_actionzoomauto.cpp \
     ./actions/rs_actionzoomin.cpp \
-    ./actions/rs_actionzoompan.cpp \
-    ./hidelabeln3.cpp
+    ./actions/rs_actionzoompan.cpp
 FORMS += ./democad.ui \
     ./ErrorMessage.ui \
     ./ui/forms/getData_Line.ui \

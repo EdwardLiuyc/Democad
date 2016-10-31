@@ -30,6 +30,11 @@ OffsetWdt::OffsetWdt(QWidget *parent)
 	, m_NewNCPntDlg( NULL )
 	, m_bHasRmXY( true )
 	, m_bHasRmZ( true )
+	, m_nCutFirstPointIndex( -1 )
+	, m_nCutLastPointIndex( -1 )
+	, m_lActFstOffPnt( -1 )
+	, m_lActLstOffPnt( -1 )
+	, m_bIsClose( false )
 {
 	setMinimumSize( 300, 10 );
 	setFont( FONT_10_SIMHEI_LIGHT );
@@ -159,14 +164,23 @@ OffsetWdt::~OffsetWdt()
 {
 	//< Qt自动销毁所有的子控件，所以子控件无需手动销毁
 	if( m_NCPoints != NULL )
+	{
 		delete [] m_NCPoints;
+		m_NCPoints = NULL;
+	}
 
 	m_lineNumToDataIndex.clear();
 
 	if( m_ncLineNumXY != NULL )
+	{
 		delete [] m_ncLineNumXY;
+		m_ncLineNumXY = NULL;
+	}
 	if( m_ncLineNumZ != NULL )
+	{
 		delete [] m_ncLineNumZ;
+		m_ncLineNumZ = NULL;
+	}
 }
 
 /************************************************************************/
@@ -288,28 +302,94 @@ void OffsetWdt::slotGenNewNC()
 	
 }
 
+XYZ_DIR OffsetWdt::getDetDir( int pointIndex )
+{
+	qDebug() << __FUNCTION__;
+
+	//< step1 将输入的编号转移到探针原始数据的范围中，这样可以直接通过输入的情况来判断探针点方向
+	int tmpIndex = 0;
+	XYZ_DIR dir = XY_BTM;
+	if( pointIndex >= g_XYDesDataBeginNum && pointIndex <= g_XYDesDataEndNum )
+		tmpIndex = pointIndex - g_XYDesDataBeginNum + g_XYSrcDataBeginNum;
+	else if( pointIndex >= g_XYSrcDataBeginNum && pointIndex <= g_XYSrcDataEndNum )
+		tmpIndex = pointIndex;
+	else
+	{
+		qDebug() << __FUNCTION__ << " liuyc: index is ilegal ";
+		return dir;
+	}
+
+	//< step2 根据编号来确定当前点的探针方向
+	if( tmpIndex >= g_XYIndex[_leftB] && tmpIndex <= g_XYIndex[_leftE] )
+		dir = XY_LEFT;
+	else if( tmpIndex >= g_XYIndex[_rightB] && tmpIndex <= g_XYIndex[_rightE] )
+		dir = XY_RIGHT;
+	else if( tmpIndex >= g_XYIndex[_topB] && tmpIndex <= g_XYIndex[_topE] )
+		dir = XY_TOP;
+	else if( tmpIndex >= g_XYIndex[_btmB] && tmpIndex <= g_XYIndex[_btmE] )
+		dir = XY_BTM;
+	else if( tmpIndex >= g_XYIndex[_rightTopB] && tmpIndex <= g_XYIndex[_rightTopE] )
+		dir = XY_RIGHT_TOP;
+	else if( tmpIndex >= g_XYIndex[_rightBtmB] && tmpIndex <= g_XYIndex[_rightBtmE] )
+		dir = XY_RIGHT_BTM;
+	else if( tmpIndex >= g_XYIndex[_leftTopB] && tmpIndex <= g_XYIndex[_leftTopE] )
+		dir = XY_LEFT_TOP;
+	else if( tmpIndex >= g_XYIndex[_leftBtmB] && tmpIndex <= g_XYIndex[_leftBtmE] )
+		dir = XY_LEFT_BTM;
+	    
+	return dir;
+}
+
 void OffsetWdt::genNewNC( QString filename, int inputmd )
 {
 #ifdef Q_OS_LINUX
 	timeval starttime, endtime;
 	gettimeofday(&starttime, 0);
 #endif
+	qDebug() << "liuyc : g_xydesbegin = " << g_XYDesDataBeginNum << "g_xydesend = " << g_XYDesDataEndNum;
+	qDebug() << "liuyc : g_xydescount = " << g_XYDesDataCount;
+
+	qDebug() << "liuyc : g_xysrcbegin = " << g_XYSrcDataBeginNum << "g_xysrcend = " << g_XYSrcDataEndNum;
+	qDebug() << "liuyc : g_xysrccount = " << g_XYSrcDataCount;
+
+	if( g_XYDesDataCount != g_XYSrcDataCount )
+	{
+		qDebug() << " liuyc : counts not match! ";
+#ifndef Q_OS_WIN
+		SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 2. );  //< #231 == 2 时报错，输入的数据个数与去偏移的数据个数不符
+#endif
+		return;
+	}
 
 	//<  ☆☆☆☆☆☆☆ 生成新的NC ☆☆☆☆☆☆☆
 	//< step1.1 所有偏移点减去探球半径，同时获取相应的实体信息
 	qDebug() << "\n\nliuyc step1.1...";
-	if( container == NULL || g_XYDesDataCount <= 0 )
+	if( g_XYDesDataCount <= 0 || g_XYSrcDataCount <= 0)
+	{
+#ifndef Q_OS_WIN
+		SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 3. );
+#endif
 		return;
+	}
+	if( container == NULL )
+	{
+#ifndef Q_OS_WIN
+		SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 4. );
+#endif
+		return;
+	}
 	RS_Vector * dataWthoutR = new RS_Vector[g_XYDesDataCount];  //< 消除探针球半径后的探测数据  checked leak
 	int       * dataDir     = new int[g_XYDesDataCount];        //< 上面数据对应的方向         checked leak
 	for( int i = 0; i < g_XYDesDataCount; ++i )
 	{
 		dataWthoutR[i] = g_SavedData[i+g_XYDesDataBeginNum];  //< 复制一份数据
 	}
+	qDebug() << "liuyc : copy data finished!";
 
+#if 0  //< 第一种方法，判断上下左右然后直接去减去探针半径
 		//qDebug() << "liuyc: det radius bigger than 0!";
 		int tmpindex = 0;
-		if( g_Index[XY_MIN_LEFT] != 0 && g_Index[XY_MAX_LEFT] != 0 )
+		if( g_Index[XY_MIN_LEFT] != 0 && g_Index[XY_MAX_LEFT] != 0 )  //< 左边
 		{
 			tmpindex = 0;
 			for( int i = g_Index[XY_MIN_LEFT]; i <= g_Index[XY_MAX_LEFT]; ++i )
@@ -319,7 +399,7 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 				dataDir[tmpindex] = XY_LEFT;
 			}
 		}
-		if( g_Index[XY_MIN_RIGHT] != 0 && g_Index[XY_MAX_RIGHT] != 0 )
+		if( g_Index[XY_MIN_RIGHT] != 0 && g_Index[XY_MAX_RIGHT] != 0 )  //< 右边
 		{
 			tmpindex = 0;
 			for( int i = g_Index[XY_MIN_RIGHT]; i <= g_Index[XY_MAX_RIGHT]; ++i )
@@ -349,13 +429,40 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 				dataDir[tmpindex] = XY_BTM;
 			}
 		}
-	
+
+#else
+
+	RS_Vector tmpNearestPnt;  
+	int tmpIndex = 0;
+	for( int i = g_XYDesDataBeginNum; i <= g_XYDesDataEndNum; ++i )
+	{
+		tmpIndex = i - g_XYDesDataBeginNum;
+
+		tmpNearestPnt = container->getNearestPointOnEntity( g_SavedData.value(i) );
+		tmpNearestPnt.z = g_SavedData.value(i).z;
+		tmpNearestPnt = tmpNearestPnt - g_SavedData.value(i);
+
+		dataDir[tmpIndex] = getDetDir( i );
+
+		tmpNearestPnt = tmpNearestPnt / tmpNearestPnt.magnitude();
+		dataWthoutR[tmpIndex] = g_SavedData.value(i) + tmpNearestPnt * g_DecRadius;
+	}
+
+#endif
+	qDebug() << "liuyc : get data without det R finished!";
+	for( int i = 0; i < g_XYDesDataCount; ++i )
+	{
+		cout << "liuyc : data without r = " << dataWthoutR[i] << endl;
+	}
 
 	//< step1.2 计算XY最终的补偿值和对应的NC行号
 	qDebug() << "\n\nliuyc step 1.2...";
 	RS_Vector * finalOffsetXY = new RS_Vector[g_XYDesDataCount];  //< XY方向上的补偿      checked leak
 	if( m_ncLineNumXY != NULL )
+	{
 		delete [] m_ncLineNumXY;
+		m_ncLineNumXY = NULL;
+	}
 
 	if( g_XYDesDataCount > 0 )
 	{
@@ -363,7 +470,7 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 		calculataXYOff( dataWthoutR, dataDir, finalOffsetXY, g_XYDesDataCount, inputmd);  //< 这中间有修改NC点位信息，但是没有加入补偿
         for( int i = 0; i < g_XYDesDataCount; ++i )
 		{
-			if( finalOffsetXY[i].magnitude() > 1. )  //< 补偿过大
+			if( finalOffsetXY[i].magnitude() > 5. )  //< 补偿过大，就可能是数据有问题
 			{
 				if( inputmd = ui_input )
 				{
@@ -373,7 +480,12 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 					popMessageBox( "Lynuc CAD Warning", tmpContent, 5, QColor(255,0,0), true );
 				}
 				else
+				{
+#ifndef Q_OS_WIN
+					SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 5. );
+#endif
 					qDebug() << "liuyc: offset is to big!";
+				}
 
 				delete [] dataWthoutR;
 				delete [] dataDir;
@@ -381,8 +493,7 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 
 				return;
 			}
-		}
-		
+		}	
 	}
 	
 	//< step1.3 计算Z轴补偿和对应点
@@ -412,91 +523,76 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 	fout.flush();
 	testFommerPointFile.close()*/;
 
-	//< 计算NC开头和结尾的补偿
-	RS_Vector headOff, tailOff;
-	calculateHeadAndTailOff( finalOffsetXY, g_XYDesDataCount, headOff, tailOff );
+	//< 计算NC开头和结尾的补偿  
+	//< 之前是将整个一条边的补偿的平均值加到头或者尾上，以保证进刀或者退刀的补偿合理并且不出现回折
+	//< 现在进刀和退刀的补偿量直接设置为0  2016.10.13  liu.y.c
+	RS_Vector headOff, tailOff;  //< 进刀、退刀的补偿，整体偏移
+	calculateHeadAndTailOff( finalOffsetXY, g_XYDesDataCount, headOff, tailOff ); 
 	cout << "liuyc head and tail off: " << headOff << "  " << tailOff << endl;
 
 	long curPntNum = 0;
 	if( g_XYDesDataCount > 0 && m_ncLineNumXY != NULL )
 	{
-		long offLNumFirXY = m_ncLineNumXY[0];
-		long offLNumLstXY = m_ncLineNumXY[g_XYDesDataCount-1];
+		long offLNumFirXY = m_ncLineNumXY[0];                                 //< 第一个补偿点的行号
+		long offLNumLstXY = m_ncLineNumXY[g_XYDesDataCount-1];                //< 最后一个补偿点的行号
+		long cutLNumFir = -1;
+	    long cutLNumLst = -1;
+		long actFirOffLine = -1;
+		long actLstOffLine = -1;
+		if( m_bIsClose )
+		{
+			cutLNumFir = m_lineNumToDataIndex.key( m_nCutFirstPointIndex, -1 );  //< 进刀点行号
+			cutLNumLst = m_lineNumToDataIndex.key( m_nCutLastPointIndex, -1 );   //< 退刀点行号
+			if( offLNumFirXY < cutLNumFir || offLNumLstXY > cutLNumLst )
+			{
+				qDebug() << __FUNCTION__ << " : liuyc failed to find cut in point!";
+				return;
+			}
+
+			actFirOffLine = m_lineNumToDataIndex.key( m_lActFstOffPnt, -1 );     //< 实际上补偿开始的行号（接近进刀点）
+			actLstOffLine = m_lineNumToDataIndex.key( m_lActLstOffPnt, -1 );     //< 实际上补偿结束的行号
+		}
+
+		qDebug() << "liuyc: act first offline = " << actFirOffLine;
+		qDebug() << "liuyc: act last offline = " << actLstOffLine; 
+
+		if( actFirOffLine <= 0 )
+		{
+			actFirOffLine = m_nSrcNCPntFirstLine;
+			actLstOffLine = m_nSrcNCPntFirstLine + m_lPointCount;
+		}
+
+		qDebug() << "liuyc: act first offline = " << actFirOffLine;
+		qDebug() << "liuyc: act last offline = " << actLstOffLine; 
 		
 		RS_Vector tmpVec;
-		int headPartSamePntNum = 0;
-		for( int i = m_nSrcNCPntFirstLine; i < offLNumFirXY; ++i )  //< 其实移动段里面相同的点
-		{
-			tmpVec = m_NCPoints[m_lineNumToDataIndex.value(i+1)] - m_NCPoints[m_lineNumToDataIndex.value(i)];
-			if( fabs(tmpVec.x) < 10e-7 && fabs(tmpVec.y) < 10e-7 )
-				headPartSamePntNum++;
-			else
-				break;
-		}
-		qDebug() << "liuyc: head part same point num = " << headPartSamePntNum;
-
-		int lastPartPntNum = 0;  //< 最后一段的不同的点数
-		for( int i = offLNumLstXY + 1; i <= m_nSrcNCPntFirstLine + m_lPointCount - 1; ++i )
-		{
-			tmpVec = m_NCPoints[m_lineNumToDataIndex.value(i, -1)] - m_NCPoints[m_lineNumToDataIndex.value(i-1, -1)];
-			if( fabs(tmpVec.x) > 10e-7 || fabs(tmpVec.y) > 10e-7 )
-			{
-				lastPartPntNum++;
-			}
-			else
-				break;
-		}
-		qDebug() << "liuyc: last part pnt num = " << lastPartPntNum;
-
 		for( int i = 0; i < m_lNCLineCount; ++i )
 		{
 			if( m_lineNumToDataIndex.value(i, -1) == -1 )
 				continue;
 
 			curPntNum = m_lineNumToDataIndex.value(i, -1);
-			if( i < offLNumFirXY )  //< 第一个点补偿点之前
+            if( i <= actFirOffLine )  //< 实际上第一个补偿点之前，全都平移第一个补偿点的值
 			{
-				if( m_nSrcNCPntFirstLine + headPartSamePntNum >= offLNumFirXY )
-				{
-					qDebug() << "liuyc: same pnt count wrong!";
-					break;
-				}
-				long tmpFirLine = m_nSrcNCPntFirstLine + headPartSamePntNum;
-				if( i < tmpFirLine )
-				{
-					m_NCPoints[curPntNum] += headOff;
-				}
-				else
-				{
-					m_NCPoints[curPntNum] += ( headOff + ( finalOffsetXY[0] - headOff ) 
-						* static_cast<double>(i - tmpFirLine) / static_cast<double>( offLNumFirXY - tmpFirLine ));
-				}
+				m_NCPoints[curPntNum] += headOff;
 				continue;
 			}
-			else if( i == offLNumFirXY )  //< 第一个补偿点
+			else if( i >= actLstOffLine )  //< 实际的最后一个补偿点之后
 			{
-				m_NCPoints[curPntNum] += finalOffsetXY[0];
+				m_NCPoints[curPntNum] += tailOff;
 				continue;
 			}
-			else if( i == offLNumLstXY )  //< 最后一个补偿点
+			else if( i <= offLNumFirXY )  //< 第一个探测点之前
 			{
-				m_NCPoints[curPntNum] += finalOffsetXY[g_XYDesDataCount-1];
+				m_NCPoints[curPntNum] += ( headOff + ( finalOffsetXY[0] - headOff ) 
+					* static_cast<double>( i - actFirOffLine ) / static_cast<double>( offLNumFirXY - actFirOffLine ));
 				continue;
 			}
-			else if( i > offLNumLstXY )   //< 最后一个补偿点之后
+			else if( i >= offLNumLstXY )   //< 最后一个探测点之后
 			{
-				if( lastPartPntNum == 0 )
-					break;
-				if( i > offLNumLstXY + lastPartPntNum )
-				{
-					m_NCPoints[curPntNum] += tailOff;
-				}
-				else
-				{
-					m_NCPoints[curPntNum] = m_NCPoints[curPntNum] 
-					+ ( finalOffsetXY[g_XYDesDataCount-1] - tailOff ) * ( 1. -  static_cast<double>( i - offLNumLstXY ) 
-						/ static_cast<double>(lastPartPntNum) ) + tailOff;
-				}
+				m_NCPoints[curPntNum] = m_NCPoints[curPntNum] + finalOffsetXY[g_XYDesDataCount-1] 
+				  + ( tailOff - finalOffsetXY[g_XYDesDataCount-1] ) * static_cast<double>( i - offLNumLstXY )
+					  / static_cast<double>( actLstOffLine - offLNumLstXY );
 				continue;
 			}
 			else  //< 第一个补偿点到最后一个补偿点之间
@@ -509,7 +605,8 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 						break;
 				}
 				m_NCPoints[curPntNum] = m_NCPoints[curPntNum] + finalOffsetXY[j] + ( finalOffsetXY[j+1] - finalOffsetXY[j] )
-					* static_cast< double >( i - m_ncLineNumXY[j] ) / static_cast<double>( m_ncLineNumXY[j+1] - m_ncLineNumXY[j] );
+					* static_cast< double >( i - m_ncLineNumXY[j] ) 
+					/ static_cast<double>( m_ncLineNumXY[j+1] - m_ncLineNumXY[j] );
 
 				continue;
 			}
@@ -632,6 +729,7 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 	delete [] m_ncLineNumZ;
 	m_ncLineNumZ = NULL;
 	delete [] finalOffsetZ;
+	finalOffsetZ = NULL;
 
 	delete [] finalOffsetXY;
 	delete [] dataDir;
@@ -646,7 +744,12 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 void OffsetWdt::calculataXYOff(RS_Vector * dataWthoutR, int * dataDir
 	, RS_Vector * finalOffsetXY, int size, int inputmd)
 {
-	RS_Vector * decPntOnEnt   = new RS_Vector[size];
+	if( size <= 0 )
+		return;
+
+	qDebug() << __FUNCTION__ << " liuyc : start to calculateXYoff !" ;
+
+	RS_Vector * decPntOnEnt = new RS_Vector[size];
 
 	RS_Entity * tmpEnt = NULL;
 	int insertFlag = NOT_INSERT_PNT;
@@ -654,73 +757,111 @@ void OffsetWdt::calculataXYOff(RS_Vector * dataWthoutR, int * dataDir
 	{
 		decPntOnEnt[i] = container->getNearestPointOnEntity( dataWthoutR[i] );
 		tmpEnt = container->getNearestEntity( dataWthoutR[i] );
-		switch( dataDir[i] )
-		{
-		case XY_LEFT:
-		case XY_RIGHT:
-			finalOffsetXY[i].x = decPntOnEnt[i].x - dataWthoutR[i].x;
-			break;
-		case XY_TOP:
-		case XY_BTM:
-			finalOffsetXY[i].y = decPntOnEnt[i].y - dataWthoutR[i].y;
-			break;
-		default:
-			break;
-		}
+
+		finalOffsetXY[i] = dataWthoutR[i] - decPntOnEnt[i];
+		finalOffsetXY[i].z = 0.;
+		if( fabs(finalOffsetXY[i].x) < 10e-6 )
+			finalOffsetXY[i].x = 0.;
+		else if( fabs(finalOffsetXY[i].y) < 10e-6 )
+			finalOffsetXY[i].y = 0.;
 
 		//< 获取当前的补偿是向内还是对外
 		if( inputmd == motion_input )
 			g_nInOrOut = getSrcNCOffDir();
 
 		qDebug() << "liuyc offdir : " << g_nInOrOut;
-		if( tmpEnt->rtti() == RS2::EntityLine )
+		//< 2016.10.20 liu.y.c 之前的版本中只支持四条边，所以选择这这种方法来，其实也没有必要，算法可以更简单
+	//	if( tmpEnt->rtti() == RS2::EntityLine )
+	//	{
+	//		//< 先找到径补偿正确的方向
+	//		RS_Vector normalVec = dynamic_cast<RS_Line *>( tmpEnt )->getNormalVector();
+	//		if( ( dataDir[i] == XY_LEFT && normalVec.x > 0.) || (dataDir[i] == XY_RIGHT && normalVec.x < 0.)
+	//			|| (dataDir[i] == XY_TOP && normalVec.y < 0.) || (dataDir[i] == XY_BTM && normalVec.y > 0.))
+	//		{
+	//			normalVec.x = -normalVec.x;
+	//			normalVec.y = -normalVec.y;
+	//		}
+	//		cout << "liuyc dir : " << dataDir[i] << "  normal vec : " << normalVec << endl;
+	//		//< 在探测点上加上NC本身带的径补偿后，再与NC里的点位作比较，找出相应的NC行号
+	//		RS_Vector ncVector = decPntOnEnt[i] + normalVec * m_dNCFileROff * g_nInOrOut;
+	//		cout << "point with tool R : " << ncVector << endl;
+
+	//		insertFlag = NOT_INSERT_PNT;
+	//		m_ncLineNumXY[i] = findNearestNCLineXY( ncVector, insertFlag );  //< 是否为插入的点
+	//		if( m_ncLineNumXY[i] == -1 )
+	//		{
+	//			qDebug() << "liuyc: never find nc line!";
+	//			return;
+	//		}
+
+	//		//< 若当前获取的行号对应的是插入的新点，则后面的 LINENUM 需要往后推，包括Z轴的也需要做类似的处理
+	//		if( INSERT_PNT == insertFlag )
+	//		{
+	//			for( int j = 0; j < i; ++j )
+	//			{
+	//				if( m_ncLineNumXY[i] <= m_ncLineNumXY[j] )  //< 两个补偿不能补在同一个点上
+	//					m_ncLineNumXY[j]++;
+	//			}
+
+	//			if( m_ncLineNumZ != NULL )  //< 同样Z轴行号也是需要往后移动的
+	//			{
+	//				for( int j = 0; j < g_ZDataCount; ++j )
+	//				{
+	//					if( m_ncLineNumXY[i] <= m_ncLineNumZ[j] )
+	//						m_ncLineNumZ[j]++;
+	//				}
+	//			}
+	//		}
+	//		
+	//	}
+	//	else
+	//	{
+	//		qDebug() << "liuyc: it's not a line!";
+	//	}
+
+		RS_Vector normalVec = finalOffsetXY[i] / finalOffsetXY[i].magnitude();  //< 法向向量，但暂时没有确定向内还是向外
+		//< 先将所有的法向量都调整到向外
+		if( ( (dataDir[i] == XY_LEFT || dataDir[i] == XY_LEFT_TOP || dataDir[i] == XY_LEFT_BTM) && normalVec.x > 0.) 
+			|| ( (dataDir[i] == XY_RIGHT || dataDir[i] == XY_RIGHT_TOP || dataDir[i] == XY_RIGHT_BTM) && normalVec.x < 0.)
+			|| (dataDir[i] == XY_TOP && normalVec.y < 0.) 
+			|| (dataDir[i] == XY_BTM && normalVec.y > 0.))
 		{
-			//< 先找到径补偿正确的方向
-			RS_Vector normalVec = dynamic_cast<RS_Line *>( tmpEnt )->getNormalVector();
-			if( ( dataDir[i] == XY_LEFT && normalVec.x > 0.) || (dataDir[i] == XY_RIGHT && normalVec.x < 0.)
-				|| (dataDir[i] == XY_TOP && normalVec.y < 0.) || (dataDir[i] == XY_BTM && normalVec.y > 0.))
-			{
-				normalVec.x = -normalVec.x;
-				normalVec.y = -normalVec.y;
-			}
-			cout << "liuyc dir : " << dataDir[i] << "  normal vec : " << normalVec << endl;
-			//< 在探测点上加上NC本身带的径补偿后，再与NC里的点位作比较，找出相应的NC行号
-			RS_Vector ncVector = decPntOnEnt[i] + normalVec * m_dNCFileROff * g_nInOrOut;
-			cout << "point with tool R : " << ncVector << endl;
-
-			insertFlag = NOT_INSERT_PNT;
-			m_ncLineNumXY[i] = findNearestNCLineXY( ncVector, insertFlag );  //< 是否为插入的点
-			if( m_ncLineNumXY[i] == -1 )
-			{
-				qDebug() << "liuyc: never find nc line!";
-				return;
-			}
-
-			//< 若当前获取的行号对应的是插入的新点，则后面的 LINENUM 需要往后推，包括Z轴的也需要做类似的处理
-			if( INSERT_PNT == insertFlag )
-			{
-				for( int j = 0; j < i; ++j )
-				{
-					if( m_ncLineNumXY[i] <= m_ncLineNumXY[j] )  //< 两个补偿不能补在同一个点上
-						m_ncLineNumXY[j]++;
-				}
-
-				if( m_ncLineNumZ != NULL )  //< 同样Z轴行号也是需要往后移动的
-				{
-					for( int j = 0; j < g_ZDataCount; ++j )
-					{
-						if( m_ncLineNumXY[i] <= m_ncLineNumZ[j] )
-							m_ncLineNumZ[j]++;
-					}
-				}
-			}
-			
+			normalVec.x = -normalVec.x;
+			normalVec.y = -normalVec.y;
 		}
-		else
+		cout << "liuyc dir : " << dataDir[i] << "  normal vec : " << normalVec << endl;
+		//< 在探测点上加上NC本身带的径补偿后，再与NC里的点位作比较，找出相应的NC行号
+		RS_Vector ncVector = decPntOnEnt[i] + normalVec * m_dNCFileROff * g_nInOrOut;
+		cout << "point with tool R : " << ncVector << endl;
+
+		insertFlag = NOT_INSERT_PNT;
+		m_ncLineNumXY[i] = findNearestNCLineXY( ncVector, insertFlag );  //< 是否为插入的点
+		if( m_ncLineNumXY[i] == -1 )
 		{
-			qDebug() << "liuyc: it's not a line!";
+			qDebug() << "liuyc: never find nc line!";
+			return;
+		}
+
+		//< 若当前获取的行号对应的是插入的新点，则后面的 LINENUM 需要往后推，包括Z轴的也需要做类似的处理
+		if( INSERT_PNT == insertFlag )
+		{
+			for( int j = 0; j < i; ++j )
+			{
+				if( m_ncLineNumXY[i] <= m_ncLineNumXY[j] )  //< 两个补偿不能补在同一个点上
+					m_ncLineNumXY[j]++;
+			}
+
+			if( m_ncLineNumZ != NULL )  //< 同样Z轴行号也是需要往后移动的
+			{
+				for( int j = 0; j < g_ZDataCount; ++j )
+				{
+					if( m_ncLineNumXY[i] <= m_ncLineNumZ[j] )
+						m_ncLineNumZ[j]++;
+				}
+			}
 		}
 	}
+
 
 	for( int i = 0; i < size; ++i )
 	{
@@ -763,57 +904,6 @@ int OffsetWdt::getSrcNCOffDir( /*RS_Vector & vecOnEnt, XYZ_DIR dir*/ )
 #define OUTSIDE_OFF 1
 	
 	return getMacroInt( MACRO_P152_INorOUT );
-
-	/*double minDist = RS_MAXDOUBLE;
-	RS_Vector nearestPnt;
-	for( int i = 0; i < m_lPointCount; ++i )
-	{
-	if( vecOnEnt.distanceTo( m_NCPoints[i] ) < minDist )
-	{
-	minDist = vecOnEnt.distanceTo( m_NCPoints[i] );
-	nearestPnt = m_NCPoints[i];
-	}
-	}
-
-	switch( dir )
-	{
-	case XY_BTM:
-	{
-	if( vecOnEnt.y + 10e-6 < nearestPnt.y )
-	return INSIDE_OFF;
-	else if( vecOnEnt.y - 10e-6 > nearestPnt.y )
-	return OUTSIDE_OFF;
-	}
-	break;
-	case XY_TOP:
-	{
-	if( vecOnEnt.y + 10e-6 < nearestPnt.y )
-	return OUTSIDE_OFF;
-	else if( vecOnEnt.y - 10e-6 > nearestPnt.y )
-	return INSIDE_OFF;
-	}
-	break;
-	case XY_LEFT:
-	{
-	if( vecOnEnt.x + 10e-6 < nearestPnt.x )
-	return INSIDE_OFF;
-	else if( vecOnEnt.x - 10e-6 > nearestPnt.x )
-	return OUTSIDE_OFF;
-	}
-	break;
-	case XY_RIGHT:
-	{
-	if( vecOnEnt.x + 10e-6 < nearestPnt.x )
-	return OUTSIDE_OFF;
-	else if( vecOnEnt.x - 10e-6 > nearestPnt.x )
-	return INSIDE_OFF;
-	}
-	break;
-	default:
-	break;
-	}
-
-	return 0;*/
 }
 
 /************************************************************************/
@@ -921,7 +1011,7 @@ void OffsetWdt::newNCOutput(QString filename, RS_Vector headOff, RS_Vector tailo
 
 void OffsetWdt::calculataZOff( RS_Vector * finalOffsetZ, int size )
 {
-	if( g_ZDesDataBeginNum == 0 || g_ZDesDataEndNum == 0 )
+	if( g_ZDesDataBeginNum <= 0 || g_ZDesDataEndNum <= 0 )
 		return;
 
 	qDebug() << "liuyc calculate z off start!";
@@ -933,6 +1023,7 @@ void OffsetWdt::calculataZOff( RS_Vector * finalOffsetZ, int size )
 	//< 先计算Z轴各个探测点的补偿值
 	for( int i = 0; i < size; ++i )
 	{
+		//< 先将Z轴探点的XY 和 Z坐标分离开
 		finalOffsetZ[i].set( 0., 0., 0. );
 		finalOffsetZ[i].z = g_SavedData[i+g_ZDesDataBeginNum].z;  //< Z轴补偿，只有Z，XY都是0.
 
@@ -940,38 +1031,33 @@ void OffsetWdt::calculataZOff( RS_Vector * finalOffsetZ, int size )
 		detPointXY[i].z = 0.;
 
 		tmpEnt = container->getNearestEntity( detPointXY[i] );
-		if( tmpEnt->rtti() == RS2::EntityLine )
+		//< 2016/10/20 liu.y.c 同样是加入圆弧探点时修改算法，没有必要是直线 
+		//if( tmpEnt->rtti() == RS2::EntityLine )
+		//{
+		insertFlag = NOT_INSERT_PNT;
+		m_ncLineNumZ[i] = findNearestNCLineZ( detPointXY[i], insertFlag, 1. );//< 这个函数的算法可能有问题，需要修改，暂停不修改 2016.10.20
+		if( m_ncLineNumZ[i] == -1 )
 		{
-			insertFlag = NOT_INSERT_PNT;
-			m_ncLineNumZ[i] = findNearestNCLineZ( detPointXY[i], insertFlag, 1. );
-			if( m_ncLineNumZ[i] == -1 )
-			{
-				qDebug() << "liuyc: never find nc line_z!";
-				delete [] detPointXY;
-				return;
-			}
-
-			if( INSERT_PNT == insertFlag )
-			{
-				for( int j = 0; j < i; ++j )
-				{
-					if( m_ncLineNumZ[i] <= m_ncLineNumZ[j] )
-						m_ncLineNumZ[j]++;
-				}
-				if( m_ncLineNumXY != NULL )  //< XY轴行号也是需要往后移动的
-				{
-					for( int j = 0; j < g_XYDesDataCount; ++j )
-					{
-						if( m_ncLineNumZ[i] <= m_ncLineNumXY[j] )
-							m_ncLineNumXY[j]++;
-					}
-				}
-			}
-			
+			qDebug() << "liuyc: never find nc line_z!";
+			delete [] detPointXY;
+			return;
 		}
-		else
+
+		if( INSERT_PNT == insertFlag )
 		{
-			qDebug() << "liuyc: it is not a line_z!";
+			for( int j = 0; j < i; ++j )
+			{
+				if( m_ncLineNumZ[i] <= m_ncLineNumZ[j] )
+					m_ncLineNumZ[j]++;
+			}
+			if( m_ncLineNumXY != NULL )  //< XY轴行号也是需要往后移动的
+			{
+				for( int j = 0; j < g_XYDesDataCount; ++j )
+				{
+					if( m_ncLineNumZ[i] <= m_ncLineNumXY[j] )
+						m_ncLineNumXY[j]++;
+				}
+			}
 		}
 	}
 
@@ -997,53 +1083,101 @@ void OffsetWdt::calculataZOff( RS_Vector * finalOffsetZ, int size )
 	//< 给插入点的行号排序（升序），保证后面加补偿时为连续多段补偿
 	std::sort( m_ncLineNumZ, m_ncLineNumZ + size );
 
-
 	delete [] detPointXY;
 }
 
 void OffsetWdt::calculateHeadAndTailOff( RS_Vector * offset, int size, RS_Vector & headOff, RS_Vector & tailOff )
 {
-	if( size <= 0 || offset == NULL )
-		return;
-
-	if( size == 1 )
-	{
-		headOff = offset[0];
-		tailOff = offset[0];
-		return;
-	}
-
+	//< step1 先直接设定补偿为0，若不符合要求则直接返回补偿为0
 	headOff.set( 0., 0., 0. );
 	tailOff.set( 0., 0., 0. );
-	int i = 0;
-	for( i = 1; i < size ; ++i )
-	{
-		if( fabs( offset[i].x - offset[i-1].x) > 10e-8 
-			&& fabs( offset[i].y - offset[i-1].y) > 10e-8 )  //< 前后两个点XY都不同表示补偿不在一条边上
-		{
-			headOff += offset[i-1];
-			break;
-		}
-		else
-			headOff += offset[i-1];
-	}
-	headOff /= static_cast<double>( i );
 
-	int j = 0;
-	for( j = size - 2; j >= 0; j-- )
-	{
-		if( fabs( offset[j].x - fabs(offset[j+1].x)) > 10e-8 
-			&& fabs( offset[j].y - fabs(offset[j+1].y)) > 10e-8 )
-		{
-			tailOff += offset[j+1];
-			break;
-		}
-		else
-		    tailOff += offset[j+1];
-	}
-    tailOff /= ( size - 1 - j);
+	if( size <= 0 || offset == NULL )  //< 如果OFFSET数组没有，则直接返回
+		return;
+	//if( m_nCutFirstPointIndex <= 0 || m_nCutLastPointIndex <= 0 )
+		//return;
 
-}
+	//< step2 若是封闭图形，则需要找到进退刀段中重合的点并剔除
+	if( !m_bIsClose )
+	{
+		//< 如果这个图形非封闭，则header使用这条边的平均offset
+		int i = 0;
+		for( i = 1; i < size ; ++i )
+		{
+			if( fabs( offset[i].x - offset[i-1].x) > 10e-8 
+				&& fabs( offset[i].y - offset[i-1].y) > 10e-8 )  //< 前后两个点XY都不同表示补偿不在一条边上
+			{
+				headOff += offset[i-1];
+				break;
+			}
+			else
+				headOff += offset[i-1];
+		}
+		headOff /= static_cast<double>( i );
+
+		int j = 0;
+		for( j = size - 2; j >= 0; j-- )
+		{
+			if( fabs( offset[j].x - fabs(offset[j+1].x)) > 10e-8 
+				&& fabs( offset[j].y - fabs(offset[j+1].y)) > 10e-8 )
+			{
+				tailOff += offset[j+1];
+				break;
+			}
+			else
+				tailOff += offset[j+1];
+		}
+		tailOff /= ( size - 1 - j);
+		return;
+	}
+
+	//< 封闭图形的情况	
+	int pntCountLstToFirst = 0;
+	RS_Vector offsetVec = offset[0] - offset[size - 1];  //< 最后一点到第一个点这一段的补偿量
+	int part1Count = 0;
+	int part2Count = 0;
+	if( m_NCPoints[m_nCutFirstPointIndex].distanceTo(m_NCPoints[m_nCutLastPointIndex]) < 0.001 ) 
+	{
+		//< 进退刀点重合，此时进退刀点中间的点就会形成一个封闭的图形
+	    part1Count = m_lineNumToDataIndex.value( m_ncLineNumXY[0] ) - m_nCutFirstPointIndex;
+		part2Count = m_nCutLastPointIndex - m_lineNumToDataIndex.value( g_XYDesDataCount - 1 );
+
+		m_lActFstOffPnt = m_nCutFirstPointIndex;
+		m_lActLstOffPnt = m_nCutLastPointIndex;
+	} 
+	else 
+	{
+		//< 进退刀点不重合
+		int    index   = -1;
+		double minDist = RS_MAXDOUBLE;
+		double tmpDist = 0.;
+		cout << "liuyc first cut " << m_NCPoints[m_nCutFirstPointIndex] << " last cut " << 
+			m_NCPoints[m_nCutLastPointIndex] << endl;
+		for( int i = m_nCutFirstPointIndex; i < m_lPointCount * 0.5 && i < m_nCutLastPointIndex; ++i )  
+		{
+			//< 从进刀点到退刀点前一个点，最多只找到整个NC的一半
+			tmpDist = m_NCPoints[i].distanceTo( m_NCPoints[m_nCutLastPointIndex] );
+			if( tmpDist < minDist )
+			{
+				minDist = tmpDist;
+				index = i;
+			}
+		}
+		qDebug() << "liuyc find tail! index = " << index << " dist = " << minDist;
+		part1Count = index - m_nCutFirstPointIndex;
+		part2Count = m_nCutLastPointIndex - m_lineNumToDataIndex.value( g_XYDesDataCount - 1 );
+
+		m_lActFstOffPnt = index;
+		m_lActLstOffPnt = m_nCutLastPointIndex;
+	}
+
+	pntCountLstToFirst = part2Count + part1Count;
+
+	tailOff = offsetVec / static_cast<double>( pntCountLstToFirst ) * part1Count + offset[size-1];
+	headOff = tailOff;
+
+	qDebug() << "liuyc act point index = " << m_lActFstOffPnt << " " << m_lActLstOffPnt;
+} 
 
 int OffsetWdt::findNearestNCLineXY( RS_Vector & vec, int & insertFlag, double tollerentDist )
 {
@@ -2178,7 +2312,7 @@ int OffsetWdt::isDxfToNC()
 	if( m_NCPoints == NULL )
 		return -1;
 
-	//< 检测中间70%的点的径补偿是否相同，点数为原点数的0.9
+	//< 检测中间70%的点的径补偿是否相同，点数为原点数的0.7
 	int judgePntCnt = static_cast<int>( static_cast<double>( m_lPointCount ) * 0.7 );
 	if( judgePntCnt <= 0 )
 		return -1;
@@ -2214,6 +2348,90 @@ int OffsetWdt::isDxfToNC()
 	qDebug() << "nc d offset = " << QString::number( distAvg, 'd', 6 );
 	m_NewBtn[FILE_NEW]->setEnabled( true );
 	m_dNCFileROff = distAvg;
+
+	//< step2 NC与DXF匹配成功后，需要找到进退刀点
+	for( int i = _leftB; i <= _btmE; ++i )
+	{
+		if( g_Index[i] == 0 || g_XYIndex[i] == 0 )  //< 中间有一个编号并没有输入
+		{
+			m_bIsClose = false;
+			return 1;
+		}
+	}
+
+	m_bIsClose = true;
+	qDebug() << __FUNCTION__ << " : liuyc : finding cut in point!";
+	int tmpSum = 0;  //< 计数连续5个点距离相等就判定这一段在模型上
+	tmpDist = new double( 0. );
+	double * tmpDist2 = new double( 0. );  //< 另一个遍历中的距离
+	for( int i = 0; i < m_lPointCount; ++i )
+	{
+	    tmpVec = container->getNearestPointOnEntity( m_NCPoints[i], true, tmpDist );  //< 获取距离
+		if( fabs( *tmpDist - m_dNCFileROff ) < 0.001 )  //< 如果遇到到DXF的距离等于匹配的距离, 1um
+		{
+			tmpSum = 1;
+			m_nCutFirstPointIndex = i;
+			qDebug() << "liuyc : find first point index";
+			for( int j = m_nCutFirstPointIndex + 1;
+				j < m_nCutFirstPointIndex + 5 && j < m_lPointCount; 
+				++j )
+			{
+				//++i;  //< 往后找5个点
+				tmpVec = container->getNearestPointOnEntity( m_NCPoints[j], true, tmpDist2 );  //< 获取距离
+				qDebug() << "m_dNCFileROff = " << m_dNCFileROff << "tmpDist = " << *tmpDist << "tmpDist2 = "
+					 << *tmpDist2;
+				if( fabs( *tmpDist2 - m_dNCFileROff ) < 0.001 )
+					tmpSum++;
+
+				//qDebug() << "tmpSum = " << tmpSum;
+			}
+			if( tmpSum >= 5 )  //< 若这5个点中有5个点满足，就认定找到进刀点
+			{
+				break;
+			}
+			else
+				m_nCutFirstPointIndex = -1;  //< 继续往后找，直到找到连续5个点都符合要求的
+		}
+	}
+	if( m_nCutFirstPointIndex < 0 )
+	{
+		qDebug() << "liuyc: find first cut point failed";
+		m_nCutFirstPointIndex = 0;
+	}
+	else
+		qDebug() << "liuyc: m_nCutFirstPointIndex = " << m_nCutFirstPointIndex;
+
+	tmpSum = 0;
+	for( int i = m_lPointCount - 1; i >= 0; --i )
+	{
+		tmpVec = container->getNearestPointOnEntity( m_NCPoints[i], true, tmpDist );  //< 获取距离
+		if( fabs( *tmpDist - m_dNCFileROff ) < 0.001 )  //< 如果遇到到DXF的距离等于匹配的距离 1um
+		{
+			tmpSum = 1;
+			m_nCutLastPointIndex = i;
+			for( int j = m_nCutLastPointIndex - 1; j > m_nCutLastPointIndex - 5 && j >= 0; --j )
+			{
+				tmpVec = container->getNearestPointOnEntity( m_NCPoints[j], true, tmpDist2 );  //< 获取距离
+				if( fabs( *tmpDist2 - m_dNCFileROff ) < 0.001 )
+					tmpSum++;
+			}
+			if( tmpSum >= 5 )  //< 若这5个点中有5个点满足，就认定找到退刀点
+				break;
+			else
+				m_nCutFirstPointIndex = -1;
+		}
+	}
+	if( m_nCutLastPointIndex < 0 )
+	{
+		qDebug() << "liuyc: find last cut point failed";
+		m_nCutLastPointIndex = m_lPointCount - 1;
+	}
+	else
+		qDebug() << "liuyc: m_nCutLastPointIndex = " << m_nCutLastPointIndex;
+
+	delete tmpDist2;
+	delete tmpDist;
+
 	return 1;  //< 1表示匹配成功
 }
 
@@ -2365,14 +2583,14 @@ void OffsetWdt::saveConfig()
 
     QString configFile;
 #ifdef Q_OS_WIN
-	configFile = "F:/";
+	configFile = "E:/";  //< 目录
 #else
 	configFile = "/home/Lynuc/Users/Config/";
 #endif
-	configFile += "CAD_GGBC_cfg.xml";
+	configFile += "CAD_GGBC_cfg.xml";  //< 文件名
 
 	QFile file( configFile );
-	if( !file.exists() )  //< 如果没有此文件则通过只读打开的方式建立文件
+	if( !file.exists() )  //< 如果没有此文件则通过只写打开的方式建立文件
 	{
 		if( !file.open( QIODevice::WriteOnly ) )
 			return;
@@ -2467,16 +2685,9 @@ void OffsetWdt::saveConfig()
 	newElem.setAttribute( "is_cur" , "true" );
 	root.appendChild( newElem );
 
-	QString dirStr[5] = 
-	{
-		"left",
-		"right",
-		"top",
-		"btm",
-		"z"
-	};
 
-	for( int i = XY_LEFT; i <= Z_DIR; ++i )
+	//< 结构有所变化 2016.10.20 liu.y.c
+	/*for( int i = XY_LEFT; i <= Z_DIR; ++i )
 	{
 		if( g_Index[i*2] != 0 && g_Index[i*2+1] != 0 )
 		{
@@ -2486,7 +2697,39 @@ void OffsetWdt::saveConfig()
 			offElement.setAttribute( "index_max", g_Index[i*2+1]);
 			newElem.appendChild( offElement );
 		}
+	}*/
+
+	QString _xy_dirStr[8] = 
+	{
+		"left",
+		"right",
+		"top",
+		"btm",
+		"left_top",
+		"right_top",
+		"left_btm",
+		"right_btm",
+	};
+	for( int i = _leftB; i < _rightBtmE; i += 2 )  //< XY
+	{
+		if( g_XYIndex[i] != 0 && g_XYIndex[i+1] != 0 )
+		{
+			QDomElement offElement = doc.createElement( "INDEX_SRC" );
+			offElement.setAttribute( "dir", _xy_dirStr[i/2] );
+			offElement.setAttribute( "index_min", g_XYIndex[i]);
+			offElement.setAttribute( "index_max", g_XYIndex[i+1]);
+			newElem.appendChild( offElement );
+		}
 	}
+	if( g_ZIndex[0] != 0 && g_ZIndex[1] != 0)    //< Z
+	{
+		QDomElement offElement = doc.createElement( "INDEX_SRC" );
+		offElement.setAttribute( "dir", "z" );
+		offElement.setAttribute( "index_min", g_ZIndex[0]);
+		offElement.setAttribute( "index_max", g_ZIndex[1]);
+		newElem.appendChild( offElement );
+	}
+
 	QDomElement desDffElement = doc.createElement( "INDEX_DES" );
 	desDffElement.setAttribute( "xy_begin", g_XYDesDataBeginNum);
 	desDffElement.setAttribute( "z_begin", g_ZDesDataBeginNum);
@@ -2501,6 +2744,7 @@ void OffsetWdt::saveConfig()
 	//< 最后写入文件
 	if( !file.open(QIODevice::WriteOnly | QIODevice::Text) )
 	{
+		qDebug() << "liuyc : save config failed!";
 		return ;
 	}
 	QTextStream out(&file);
@@ -2510,9 +2754,32 @@ void OffsetWdt::saveConfig()
 	file.close();
 
 	//< end
+	qDebug() << "liuyc : save config finished!";
 	return;
 }
 
+/************************************************************************/
+/* 在读配置文件之前，清楚所有保存下来的编号信息
+/************************************************************************/
+void OffsetWdt::clearIndex()
+{
+	for( int i = 0; i < MEA_MACRO_COUNT; ++i )
+	{
+		g_Index[i] = 0;
+	}
+	for( int i = 0; i <= _rightBtmE; ++i )
+	{
+		g_XYIndex[i] = 0;
+	}
+	g_ZIndex[0] = g_ZIndex[1] = 0;
+
+	g_XYSrcDataCount = g_XYDesDataCount = 0;
+	g_XYSrcDataBeginNum = g_XYSrcDataEndNum = 0;
+	g_XYDesDataBeginNum = g_XYDesDataEndNum = 0;
+	g_ZSrcDataBeginNum = g_ZSrcDataEndNum = 0;
+	g_ZDesDataBeginNum = g_ZDesDataEndNum = 0;
+	g_ZDataCount = 0;
+}
 
 /************************************************************************/
 /* readConfig
@@ -2531,6 +2798,9 @@ void OffsetWdt::readConfig()
 	configFile = "/home/Lynuc/Users/Config/";
 #endif
 	configFile += "CAD_GGBC_cfg.xml";
+
+	//< 先清除之前的数据
+	clearIndex();
 
 	//< 判断各种报错
 	QFile file( configFile );
@@ -2566,14 +2836,18 @@ void OffsetWdt::readConfig()
 		return;
 	}
 
-	QString dirStr[5] = 
+	QString _xy_dirStr[8] = 
 	{
 		"left",
 		"right",
 		"top",
 		"btm",
-		"z"
+		"left_top",
+		"right_top",
+		"left_btm",
+		"right_btm",
 	};
+
 	bool bHasConfig = false;
 	QDomNodeList nodes_1st = root.childNodes();  //< 第一级节点(GGBC_SET)
 	for( int i = 0; i < nodes_1st.count(); ++i )
@@ -2587,38 +2861,46 @@ void OffsetWdt::readConfig()
 
 		if( elem_1st.tagName() != "GGBC_SET" )
 		{
-			qDebug() << "liuyc: format of config file is wrong!";
+			qDebug() << "liuyc: format of config file is wrong!";  //< 二级节点只有GLOBAL_SET和GGBC_SET，前面那个判断已经排除了GLOBAL_SET
 			return;
 		}
 		else
 		{
-			if( elem_1st.attribute( "dxf_file" ) != m_dxfFilename )
+			if( elem_1st.attribute( "dxf_file" ) != m_dxfFilename )  //< 如果不是当前的DXF文件则直接跳过，直至找到当前的DXF文件或者全不匹配
 				continue;
 		}
 
 		//< 如果找到了第一个匹配的配置
 		QDomNodeList nodes_2st = nodes_1st.at(i).childNodes();
-		for( int j = 0; j < nodes_2st.count(); ++j )
+		for( int j = 0; j < nodes_2st.count(); ++j )  //< GGBC_SET的下一级节点  INDEX_SRC | INDEX_DES | MAN_OFF
 		{
 			QDomElement elem_2st = nodes_2st.at(j).toElement();
-			if( "INDEX_SRC" == elem_2st.tagName() )
+			if( "INDEX_SRC" == elem_2st.tagName() )  //< INDEX_SRC
 			{
-				for( int ii = 0; ii < 5; ++ii )
+				if( elem_2st.attribute( "dir" ) == "z" )
 				{
-					if( dirStr[ii] != elem_2st.attribute( "dir" ) )
+					g_ZIndex[0] = elem_2st.attribute( "index_min" ).toUShort();
+					g_ZIndex[1] = elem_2st.attribute( "index_max" ).toUShort();
+					continue;
+				}
+
+				for( int ii = 0; ii < 8; ++ii )
+				{
+					if( _xy_dirStr[ii] != elem_2st.attribute( "dir" ) )
 						continue;
 
-					g_Index[ii*2] = elem_2st.attribute( "index_min" ).toUShort();
-					g_Index[ii*2+1] = elem_2st.attribute( "index_max" ).toUShort();
+					g_XYIndex[ii*2] = elem_2st.attribute( "index_min" ).toUShort();
+					g_XYIndex[ii*2+1] = elem_2st.attribute( "index_max" ).toUShort();
 					break;
 				}
+
 			}
-			else if( "INDEX_DES" == elem_2st.tagName() )
+			else if( "INDEX_DES" == elem_2st.tagName() )  //< INDEX_DES
 			{
 				g_XYDesDataBeginNum = elem_2st.attribute( "xy_begin" ).toUShort();
 				g_ZDesDataBeginNum = elem_2st.attribute( "z_begin" ).toUShort();
 			}
-			else if( "MAN_OFF" == elem_2st.tagName())
+			else if( "MAN_OFF" == elem_2st.tagName())     //< MAN_OFF
 			{
 				g_ManOff[0] = elem_2st.attribute( "x" ).toDouble();
 				g_ManOff[1] = elem_2st.attribute( "y" ).toDouble();
@@ -2630,9 +2912,17 @@ void OffsetWdt::readConfig()
 				return;
 			}
 		}
-
+		
 		bHasConfig = true;
 	}
+
+	//< 将值映射过来到g_Index中
+	for( int i = XY_MIN_LEFT; i <= XY_MAX_BTM; ++i )
+	{
+		g_Index[i] = g_XYIndex[i];
+	}
+	g_Index[Z_MIN] = g_ZIndex[0];
+	g_Index[Z_MAX] = g_ZIndex[1];
 
 	if( !bHasConfig )
 		return;
@@ -2646,6 +2936,7 @@ void OffsetWdt::readConfig()
 		m_ManOffLEdit[i]->setText( QString::number( g_ManOff[i], 'd', 4 ) );
 	}
 
+	qDebug() << "liuyc read config finished!";
 	emit sglConfigRdy();
 }
 

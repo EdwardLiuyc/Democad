@@ -7,11 +7,13 @@
 #include <QLayout>
 #include <QLineEdit>
 #include <QRadioButton>
+#include <detpntsetdlg.h>
 #include "curvefit.h"
 #include "RS_CustomBtn.h"
 #include "Parameter.h"
 #include "CIComm.h"
 #include "detresultdlg.h"
+#include "showallqdlg.h"
 
 
 class ParaSetWdt : public QDockWidget
@@ -45,6 +47,8 @@ public slots:
 	void slotRadSetFinish();
 	void slotConfig();
 	void slotInOrOut();
+	void slotInputSetting();
+	void slotShowAllQ();
 
 protected:
 	void resizeEvent( QResizeEvent * event );
@@ -66,7 +70,8 @@ private:
 
 	QLabel * m_MeaAxisLbl[5];  //< 探测模块的控件
 	QLabel * m_MeaSymbalLbl[5];
-	QLineEdit * m_MeaLEdit[MEA_MACRO_COUNT];
+	RS_CustomBtn * m_indexSetBtn;
+	RS_CustomBtn * m_ShowAllQBtn;  //< 显示所有探针点
 	
 	QLabel * m_CalOffTitleLbl; //< 计算模块的控件
 	QLabel * m_CalRotTitleLbl;
@@ -75,6 +80,9 @@ private:
 	RS_CustomBtn * m_CalBtn;
 
 	DetResultDlg * m_DetPointDlg;
+	DetPntSetDlg * m_DetPointSettingDlg;
+	ShowAllQDlg  * m_showAllQDlg;
+	bool m_bIsRdyToCalc;
 };
 
 #endif // PARASETWDT_H

@@ -2,7 +2,7 @@
 
 QMainWindow* gMainWindow=NULL;
 
-DemocadSignal* pDemocadSignal=new DemocadSignal();
+DemocadSignal* pDemocadSignal;
 
 double g_dCadCalAccuracy  = 0.0001;	// ¼ÆËã¾«¶È
 const int g_nGridSpacingMax = 1000; // added by wang.k.h

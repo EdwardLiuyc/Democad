@@ -5,13 +5,13 @@
 
 ParaSetWdt::ParaSetWdt(QWidget *parent)
 	: QDockWidget(parent)
+	, m_bIsRdyToCalc( false )
+	, m_showAllQDlg( NULL )
 {
 	setMinimumSize( 300, 10 );
 
 	QRegExp regExp("^(\\d?\\d?(\\.\\d{0,4})?)$");  //< 最大输入值99.9999
 	QRegExpValidator *pReg = new QRegExpValidator(regExp, this); 
-	QRegExp regExp2("^(500|[1-4]?\\d?\\d?)$");  //< 最大值500
-	QRegExpValidator *pReg2 = new QRegExpValidator(regExp2, this); 
 
 	//< 设置所有控件统一字体
 	this->setFont( FONT_10_SIMHEI_LIGHT );
@@ -78,27 +78,18 @@ ParaSetWdt::ParaSetWdt(QWidget *parent)
 	m_DetHlpLabel[MEASURE]->setText( tr("    探针探测N个点，输入每条边的探针测量结果存放的变量号，请确保探针探测程序中每个点的X/Y/Z轴变量号连续：") );
 	m_Layout[MEASURE]->addWidget( m_DetHlpLabel[MEASURE], 0, 0, 1, 4);
 
-	for ( int i = 0; i < MEA_MACRO_COUNT; ++i )
-	{
-		m_MeaLEdit[i] = new QLineEdit( this );
-		m_MeaLEdit[i]->setAlignment( Qt::AlignCenter );
-		m_MeaLEdit[i]->setValidator( pReg2 );
-        m_Layout[MEASURE]->addWidget( m_MeaLEdit[i], i/2+1, 1+(i%2)*2, 1, 1 );
-	}
-	for ( int i = 0; i < 5; ++i )
-	{
-		m_MeaAxisLbl[i] = new QLabel( this );
-		m_Layout[MEASURE]->addWidget( m_MeaAxisLbl[i], i+1, 0, 1, 1 );
+	m_indexSetBtn = new RS_CustomBtn( this );
+	m_indexSetBtn->setText( tr("变量号设定") );
+	m_indexSetBtn->setFocusPolicy( Qt::NoFocus );
+	m_Layout[MEASURE]->addWidget( m_indexSetBtn, 1, 2, 1, 2);
+	connect( m_indexSetBtn, SIGNAL( clicked() ), this, SLOT( slotInputSetting() ));
 
-		m_MeaSymbalLbl[i] = new QLabel( this );
-		m_MeaSymbalLbl[i]->setText( "~" );
-		m_Layout[MEASURE]->addWidget( m_MeaSymbalLbl[i], 1+i, 2, 1, 1);
-	}
-	m_MeaAxisLbl[0]->setText( tr("X/Y轴（左）") );
-	m_MeaAxisLbl[1]->setText( tr("     （右）") );
-	m_MeaAxisLbl[2]->setText( tr("     （上）") );
-	m_MeaAxisLbl[3]->setText( tr("     （下）") );
-	m_MeaAxisLbl[4]->setText( tr("Z 轴变量号")   );
+	m_ShowAllQBtn = new RS_CustomBtn( this );
+	m_ShowAllQBtn->setText( tr("所有探点坐标"));
+	m_ShowAllQBtn->setFocusPolicy( Qt::NoFocus );
+	m_Layout[MEASURE]->addWidget( m_ShowAllQBtn, 2, 2, 1, 2);
+	connect( m_ShowAllQBtn, SIGNAL( clicked() ), this, SLOT( slotShowAllQ() ));
+	
 
 	//< 计算模块的控件
 	m_CalOffTitleLbl = new QLabel( this );
@@ -126,6 +117,7 @@ ParaSetWdt::ParaSetWdt(QWidget *parent)
 
 	//< 探针提示的弹窗
 	m_DetPointDlg = NULL;
+	m_DetPointSettingDlg = NULL;
 
 }
 
@@ -153,17 +145,17 @@ void ParaSetWdt::resizeEvent( QResizeEvent * event )
 
 	float fVGapPer = 0.01f;
 	float fGrpTopPer1 = fTopPer + fHlpLblHgt + fVGapPer;
-	float fGrpHgt1 = 0.29f;
+	float fGrpHgt1 = 0.32f;
 	m_DetGrpBox[DEMARCATE]->setGeometry( static_cast<int>( width * fLeftPer ), static_cast<int>( height * fGrpTopPer1)
 		                               , static_cast<int>( width * fHlpLblWth), static_cast<int>( height * fGrpHgt1 ));
 
 	float fGrpTopPer2 = fGrpTopPer1 + fGrpHgt1 + fVGapPer;
-	float fGrpHgt2 = 0.45f;
+	float fGrpHgt2 = 0.40f;
 	m_DetGrpBox[MEASURE]->setGeometry( static_cast<int>( width * fLeftPer ), static_cast<int>( height * fGrpTopPer2)
 		                             , static_cast<int>( width * fHlpLblWth), static_cast<int>( height * fGrpHgt2 ) );
 
 	float fGrpTopPer3 = fGrpTopPer2 + fGrpHgt2 + fVGapPer;
-	float fGrpHgt3 = 0.16f;
+	float fGrpHgt3 = 0.18f;
 	m_DetGrpBox[CALCULATE]->setGeometry( static_cast<int>( width * fLeftPer ), static_cast<int>( height * fGrpTopPer3)
 									   , static_cast<int>( width * fHlpLblWth), static_cast<int>( height * fGrpHgt3 ));
 
@@ -171,28 +163,39 @@ void ParaSetWdt::resizeEvent( QResizeEvent * event )
 	QDockWidget::resizeEvent( event );
 }
 
-void ParaSetWdt::slotCalAndSave()
+void ParaSetWdt::slotInputSetting()
 {
 	qDebug() << "liuyc calculate and save !";
+	if( m_DetPointSettingDlg == NULL )
+		m_DetPointSettingDlg = new DetPntSetDlg( this );
 
+	if( QDialog::Accepted == m_DetPointSettingDlg->exec() )
+	{
+		emit sglCountChanged();
+		m_bIsRdyToCalc = true;
+	}
+}
+
+void ParaSetWdt::slotShowAllQ()
+{
+	if( m_showAllQDlg == NULL )
+		m_showAllQDlg = new ShowAllQDlg( this );
+
+	m_showAllQDlg->exec();
+}
+
+void ParaSetWdt::slotCalAndSave()
+{
 	g_InputMode = ui_input;
-
-	if( isInputLegel( ui_input ) )
-	    qDebug() << "liuyc input x/y/z succeed!";
+	
+	if( m_bIsRdyToCalc )
+		qDebug() << "liuyc input x/y/z succeed!";
 	else
 	{
-		QString msgContent = "变量号输入有误，请按照规则输入合理的变量号后重新点击计算！规则：\n";
-		msgContent += "1. 每组变量下限不大于上限\n";
-		msgContent += "2. XY所有变量连续\n";
-		msgContent += "3. XY变量最终范围与Z变量范围无重合部分\n";
-		msgContent += "4. 输入的变量号必须已经包含通过G100指令保存的数据号";
-		popMessageBox( "Lynuc CAD Warning", msgContent, 5, QColor(255, 0, 0), true );
-
 		emit sglSetMsg( tr("  变量输入有误，未进行计算！"));
-
 		return;
 	}
-		
+
 	//< 获取变量，计算X,Y,Z方向上的偏移
 	for( int i = offX; i <= offZ; ++i )
 	{
@@ -245,138 +248,137 @@ void ParaSetWdt::slotCalAndSave()
 
 bool ParaSetWdt::isInputLegel( int inputmode )
 {
-	//< 获取输入的变量号
-	QList<unsigned short> tmpList;
-	if( inputmode == ui_input )  //< 如果是UI输入，则直接通过UI获取各边index的值，否则不用处理index
-	{
-		for( int i = 0; i < MEA_MACRO_COUNT; ++i )
-		{
-			g_Index[i] = m_MeaLEdit[i]->text().toUInt();
-		}
-	}
-	
+	////< 获取输入的变量号
+	//QList<unsigned short> tmpList;
+	//if( inputmode == ui_input )  //< 如果是UI输入，则直接通过UI获取各边index的值，否则不用处理index
+	//{
+	//	for( int i = 0; i < MEA_MACRO_COUNT; ++i )
+	//	{
+	//		g_Index[i] = m_MeaLEdit[i]->text().toUInt();
+	//	}
+	//}
+	//
+	//for( int i = 0; i <= XY_MAX_BTM; i+=2 )
+	//{
+	//	if( g_Index[i] != 0 && g_Index[i+1] != 0 ) //< 一个边上的变量起始点和终止点变量号都不为0
+	//	{
+	//		if( g_Index[i] > g_Index[i+1] )  //< 起始点变量号不大于终止点变量号
+	//			return false;
 
-	for( int i = 0; i <= XY_MAX_BTM; i+=2 )
-	{
-		if( g_Index[i] != 0 && g_Index[i+1] != 0 ) //< 一个边上的变量起始点和终止点变量号都不为0
-		{
-			if( g_Index[i] > g_Index[i+1] )  //< 起始点变量号不大于终止点变量号
-				return false;
+	//		tmpList.append( g_Index[i] );
+	//		tmpList.append( g_Index[i+1] );
+	//	}
+	//}
+	////< 以下都为了判断输入是否合法
+	//if( tmpList.count() == 0 )  
+	//	return false;
+	////< Z轴不是必须要探测的，单如果两个输入框都输数据输入，必须判断是否合法！
+	//if((g_Index[Z_MAX] != 0 && g_Index[Z_MIN] != 0 ) && g_Index[Z_MAX] < g_Index[Z_MIN])
+	//{
+	//	qDebug() << "liuyc: Z data is ilegal!!";
+	//	return false;
+	//}
 
-			tmpList.append( g_Index[i] );
-			tmpList.append( g_Index[i+1] );
-		}
-	}
-	//< 以下都为了判断输入是否合法
-	if( tmpList.count() == 0 )  
-		return false;
-	//< Z轴不是必须要探测的，单如果两个输入框都输数据输入，必须判断是否合法！
-	if((g_Index[Z_MAX] != 0 && g_Index[Z_MIN] != 0 ) && g_Index[Z_MAX] < g_Index[Z_MIN])
-	{
-		qDebug() << "liuyc: Z data is ilegal!!";
-		return false;
-	}
+	//qDebug() << "liuyc: tmpList count " << tmpList.count();
+	//cout << "liuyc: tmp list :";
+	//for( int i = 0; i < tmpList.count(); ++i )
+	//{
+	//	cout << " " << tmpList.at( i );
+	//}
+	//cout << endl;
 
-	qDebug() << "liuyc: tmpList count " << tmpList.count();
-	cout << "liuyc: tmp list :";
-	for( int i = 0; i < tmpList.count(); ++i )
-	{
-		cout << " " << tmpList.at( i );
-	}
-	cout << endl;
+	//if( tmpList.count() % 2 != 0 )  //< 如果链表中保存的变量号的个数非偶数个，则直接返回
+	//	return false;
+	//else
+	//{
+	//	for( int i = 0; i < tmpList.count(); i += 2 )
+	//	{
+	//		for( int j = 0; j < tmpList.count(); j += 2)
+	//		{
+	//			if( i == j )
+	//				continue;
+	//			if( (tmpList.at(i) >= tmpList.at(j) && tmpList.at(i) <= tmpList.at(j+1)) 
+	//				|| (tmpList.at(i+1) >= tmpList.at(j) && tmpList.at(i+1) <= tmpList.at(j+1)))  //< 所有边上的变量号不能交叉
+	//			{
+	//				qDebug() << "liuyc index ilegal!";
+	//				return false;
+	//			}
+	//		}
+	//	}
+	//	//< 排序后判断区域是否连续
+	//	qSort( tmpList.begin(), tmpList.end() );
+	//	//< sotred list
+	//	cout << "liuyc sorted list:";
+	//	for( int i = 0; i < tmpList.count(); ++i )
+	//	{
+	//		cout << " " << tmpList.at( i );
+	//	}
+	//	cout << endl;
 
-	if( tmpList.count() % 2 != 0 )  //< 如果链表中保存的变量号的个数非偶数个，则直接返回
-		return false;
-	else
-	{
-		for( int i = 0; i < tmpList.count(); i += 2 )
-		{
-			for( int j = 0; j < tmpList.count(); j += 2)
-			{
-				if( i == j )
-					continue;
-				if( (tmpList.at(i) >= tmpList.at(j) && tmpList.at(i) <= tmpList.at(j+1)) 
-					|| (tmpList.at(i+1) >= tmpList.at(j) && tmpList.at(i+1) <= tmpList.at(j+1)))  //< 所有边上的变量号不能交叉
-				{
-					qDebug() << "liuyc index ilegal!";
-					return false;
-				}
-			}
-		}
-		//< 排序后判断区域是否连续
-		qSort( tmpList.begin(), tmpList.end() );
-		//< sotred list
-		cout << "liuyc sorted list:";
-		for( int i = 0; i < tmpList.count(); ++i )
-		{
-			cout << " " << tmpList.at( i );
-		}
-		cout << endl;
+	//	for( int i = 2; i < tmpList.count(); i += 2)
+	//	{
+	//		if( tmpList.at(i) != tmpList.at(i-1) + 1 )
+	//		{
+	//			qDebug() << "liuyc : index ilegal !";
+	//			return false;
+	//		}
+	//	}
+	//}
+	////< X/Y变量范围是否和Z变量范围有重合，如果Z有范围的话
+	//if( g_Index[Z_MIN] != 0 && g_Index[Z_MAX] != 0 )
+	//{
+	//	if( (tmpList.first() >= g_Index[Z_MIN] && tmpList.first() <= g_Index[Z_MAX]) 
+	//		|| (tmpList.last() >= g_Index[Z_MIN] && tmpList.last() <= g_Index[Z_MAX]))
+	//	{
+	//		qDebug() << "liuyc: z index ilegal !";
+	//		return false;
+	//	}
 
-		for( int i = 2; i < tmpList.count(); i += 2)
-		{
-			if( tmpList.at(i) != tmpList.at(i-1) + 1 )
-			{
-				qDebug() << "liuyc : index ilegal !";
-				return false;
-			}
-		}
-	}
-	//< X/Y变量范围是否和Z变量范围有重合，如果Z有范围的话
-	if( g_Index[Z_MIN] != 0 && g_Index[Z_MAX] != 0 )
-	{
-		if( (tmpList.first() >= g_Index[Z_MIN] && tmpList.first() <= g_Index[Z_MAX]) 
-			|| (tmpList.last() >= g_Index[Z_MIN] && tmpList.last() <= g_Index[Z_MAX]))
-		{
-			qDebug() << "liuyc: z index ilegal !";
-			return false;
-		}
+	//	if( (g_Index[Z_MIN] >= tmpList.first() && g_Index[Z_MIN] <= tmpList.last()) 
+	//		|| (g_Index[Z_MAX] >= tmpList.first() && g_Index[Z_MAX] <= tmpList.last()) )
+	//	{
+	//		qDebug() << "liuyc: z index ilegal !";
+	//		return false;
+	//	}
+	//}
 
-		if( (g_Index[Z_MIN] >= tmpList.first() && g_Index[Z_MIN] <= tmpList.last()) 
-			|| (g_Index[Z_MAX] >= tmpList.first() && g_Index[Z_MAX] <= tmpList.last()) )
-		{
-			qDebug() << "liuyc: z index ilegal !";
-			return false;
-		}
-	}
+	////< 判断输入的变量号是否保存过坐标值
+	//for( int i = tmpList.first(); i <= tmpList.last(); ++i )  //< X, Y
+	//{
+	//	if( !g_SavedData.contains(i) )
+	//	{
+	//		qDebug() << "liuyc: do not contain this index - X/Y!";
+	//		return false;
+	//	}
+	//}
+	//if( g_Index[Z_MIN] != 0 && g_Index[Z_MAX] != 0 )
+	//{
+	//	for( int i = g_Index[Z_MIN]; i <= g_Index[Z_MAX]; ++i )   //< Z
+	//	{
+	//		if( !g_SavedData.contains(i) )
+	//		{
+	//			qDebug() << "liuyc: do not contain this index - Z!";
+	//			return false;
+	//		}
+	//	}
 
-	//< 判断输入的变量号是否保存过坐标值
-	for( int i = tmpList.first(); i <= tmpList.last(); ++i )  //< X, Y
-	{
-		if( !g_SavedData.contains(i) )
-		{
-			qDebug() << "liuyc: do not contain this index - X/Y!";
-			return false;
-		}
-	}
-	if( g_Index[Z_MIN] != 0 && g_Index[Z_MAX] != 0 )
-	{
-		for( int i = g_Index[Z_MIN]; i <= g_Index[Z_MAX]; ++i )   //< Z
-		{
-			if( !g_SavedData.contains(i) )
-			{
-				qDebug() << "liuyc: do not contain this index - Z!";
-				return false;
-			}
-		}
+	//	g_ZSrcDataBeginNum = g_Index[Z_MIN];
+	//	g_ZSrcDataEndNum   = g_Index[Z_MAX];
+	//	g_ZDataCount = g_ZSrcDataEndNum - g_ZSrcDataBeginNum + 1;
+	//}
+	//else
+	//	g_ZDataCount = 0;
+	//
+	////< end
+	//g_XYSrcDataBeginNum = tmpList.first();
+	//g_XYSrcDataEndNum   = tmpList.last();
+	//g_XYSrcDataCount    = g_XYSrcDataEndNum - g_XYSrcDataBeginNum + 1;
+	//g_XYDesDataCount    = g_XYSrcDataCount;
+	//qDebug() << "liuyc xy : " << g_XYSrcDataBeginNum << "~" << g_XYSrcDataEndNum << "  count = " << g_XYSrcDataCount;
 
-		g_ZSrcDataBeginNum = g_Index[Z_MIN];
-		g_ZSrcDataEndNum   = g_Index[Z_MAX];
-		g_ZDataCount = g_ZSrcDataEndNum - g_ZSrcDataBeginNum + 1;
-	}
-	else
-		g_ZDataCount = 0;
-	
-	//< end
-	g_XYSrcDataBeginNum = tmpList.first();
-	g_XYSrcDataEndNum   = tmpList.last();
-	g_XYSrcDataCount    = g_XYSrcDataEndNum - g_XYSrcDataBeginNum + 1;
-	g_XYDesDataCount    = g_XYSrcDataCount;
-	qDebug() << "liuyc xy : " << g_XYSrcDataBeginNum << "~" << g_XYSrcDataEndNum << "  count = " << g_XYSrcDataCount;
+	// emit sglCountChanged();
 
-	emit sglCountChanged();
-
-	return true;
+	return m_DetPointSettingDlg->inputLegal( inputmode );
 }
 
 void ParaSetWdt::slotRadSetFinish()
@@ -393,12 +395,6 @@ void ParaSetWdt::slotRadSetFinish()
 
 void ParaSetWdt::slotConfig()
 {
-	for( int i = 0; i < MEA_MACRO_COUNT; ++i )
-	{
-		if( g_Index[i] != 0 )
-			m_MeaLEdit[i]->setText( QString::number( g_Index[i] ) );
-	}
-
 	m_DetRadLEdit->setText( QString::number( g_DecRadius, 'd', 4 ) );
 	slotRadSetFinish();
 }
@@ -419,14 +415,11 @@ void ParaSetWdt::slotInOrOut()
 		else
 			g_nInOrOut = -1;
 	}
-
-	//qDebug() << "liuyc: g_ninorout = " << g_nInOrOut;
 }
 
 double ParaSetWdt::getOffOfAxis( offFlag flg )
 {
 	double offset = 0.;
-
 
 	double tmp  = 0.;
 	double tmp2 = 0.;

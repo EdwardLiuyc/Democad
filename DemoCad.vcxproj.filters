@@ -860,6 +860,24 @@
     <ClCompile Include="GeneratedFiles\Release\moc_hidelabeln3.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="detpntsetdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_detpntsetdlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_detpntsetdlg.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="showallqdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_showallqdlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_showallqdlg.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="democad.h">
@@ -1166,6 +1184,12 @@
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="hidelabeln3.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="detpntsetdlg.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="showallqdlg.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>

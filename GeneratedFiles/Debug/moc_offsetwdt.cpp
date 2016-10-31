@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'offsetwdt.h'
 **
-** Created: Mon Sep 26 14:56:07 2016
+** Created: Tue Oct 25 14:48:37 2016
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!

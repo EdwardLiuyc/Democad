@@ -15,7 +15,7 @@ Hotman 全局变量初始化源文件
 #endif
 							       
 //QErrorMessage     *g_QErrorMessage    = new QErrorMessage();						// 错误信息显示
-QPublicSignal       *g_pQPublicSignal   = new QPublicSignal();						// 公共信号类 
+QPublicSignal       *g_pQPublicSignal;						// 公共信号类 
 ENUM_LOCATION_STATE g_enumLocationState = LOCATION_INIT;							// 定位模块状态，即定位模块所执行的操作;
 ENUM_LOCATION_STATE g_enumLocationStatePre = LOCATION_INIT;							// 
 ENUM_PROM_STATE     g_enumProMState     = PROM_INIT;								// 程序加工模块子操作状态
@@ -30,6 +30,8 @@ double g_ManOff[3]   = {0.};
 double g_CalRadOff = 0.;
 double g_DecRadius = 0.;
 unsigned short g_Index[MEA_MACRO_COUNT] = { 0 };
+unsigned short g_XYIndex[_rightBtmE+1] = { 0 };
+unsigned short g_ZIndex[2] = { 0 };
 unsigned short g_XYSrcDataBeginNum = 0;
 unsigned short g_XYSrcDataEndNum   = 0;
 unsigned short g_XYDesDataBeginNum = 0;
@@ -52,11 +54,7 @@ inputMode g_InputMode = ui_input;
 RS_EntityContainer * g_ContainerPtr = NULL;
 
 
-#ifdef _WIN32
-	bool g_bMouseWheel   = true;													// 响应鼠标滚轮事件标志,false，不响应;
-#else
-	bool g_bMouseWheel   = true;													// 响应鼠标滚轮事件标志,false，不响应;
-#endif
+bool g_bMouseWheel   = true;													// 响应鼠标滚轮事件标志,false，不响应;
 
 bool g_bOffset_NCGte = true;														// 生成的NC程序是否设置补正,fales,不设置;
 bool g_bABSCrdClr    = false;														// 定位模块中的绝对坐标清零的标志，true:清零；false:不清零；
@@ -310,8 +308,8 @@ QString qstrToHTML( QString content, int fontSize, QColor contentColor, bool isL
 {
 	QString strColor = contentColor.name();
 #ifdef __arm__   //< N3的字体很特殊，大一点的字体会显示的很丑，只能限制大小
-	if( fontSize > 4 )
-		fontSize = 4;
+	if( fontSize > 3 )
+		fontSize = 3;
 #endif
 
 	QString contentFont = "<font color=" + strColor + " size=\"" + QString::number(fontSize) + "\"";

@@ -106,6 +106,9 @@ protected:
 
 	void saveConfig();
 	void readConfig();
+	void clearIndex();
+
+	XYZ_DIR getDetDir( int pointIndex );
 
 private:
 	QWidget   * m_TitleWdt;
@@ -147,8 +150,13 @@ private:
 	double m_dNCFileROff;			   //< 读入的NC文件已有的径补偿
 	double m_dNCFileFspd;              //< 读入的NC文件里的进给速度
 
-	int * m_ncLineNumXY;
-	int * m_ncLineNumZ;
+	int * m_ncLineNumXY;  //< 补偿点的NC行号
+	int * m_ncLineNumZ;   //< Z轴补偿点的NC行号
+
+	//< ***************与进退刀判断有关的部分变量*************************
+	int  m_nCutFirstPointIndex, m_nCutLastPointIndex;  //< 进退刀点的编号
+	long m_lActFstOffPnt, m_lActLstOffPnt;  //< 实际上加补偿的第一个点和最后一个点，因为进退刀段可能会有重合的部分，所以可能进退刀点并不一定是实际的补偿点起始或者结束的点
+	bool m_bIsClose;  //< 是否是封闭的图形(根据探点来判断，不能根据DXF来判断)
 
 	ShowFinalNcDlg * m_NewNCPntDlg;
 };

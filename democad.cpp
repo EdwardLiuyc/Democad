@@ -18,6 +18,7 @@
 #endif
 #include <limits>
 #include <QFontDatabase>
+#include <QTimer>
 
 QAction* DemoCad::undoButton=NULL;
 QAction* DemoCad::redoButton=NULL;
@@ -79,7 +80,7 @@ DemoCad::DemoCad(QWidget *parent)
 						} \
 						QScrollBar:vertical{ \
 						    width: 14px; \
-							background-color: rgba(0,0,0,0%); \
+							background-color: rgba(0,0,0,0); \
 							padding-top: 10px; \
 							padding-bottom: 10px; \
 							} \
@@ -134,8 +135,10 @@ DemoCad::DemoCad(QWidget *parent)
 	} \ */
 	
 	
-	this->setWindowTitle("Lynuc CAD V1.1.0921");
+	this->setWindowTitle("Lynuc CAD V1.2." + QString(__DATE__));
 	gMainWindow = this;
+	pDemocadSignal = new DemocadSignal( this );
+	g_pQPublicSignal  = new QPublicSignal( this );
 	//this->setFont( FONT_10_SIMHEI_LIGHT );
 
 	g_rsvDemoCadS.x  = geometry().x();
@@ -372,6 +375,13 @@ void DemoCad::slotThisVis( bool flag )
 	this->setVisible( flag );
 	if( flag )
 		this->raise();
+}
+
+void DemoCad::slotReset232()
+{
+#ifndef Q_OS_WIN
+	SetMacroVal( g_CIAddress, MACRO_P151L11_W, 0. );
+#endif
 }
 
 void DemoCad::slotSetMsg( QString msg )
@@ -656,6 +666,7 @@ void DemoCad::timerEvent(QTimerEvent * event)
 		double flagG100P151L51 = 0.;
 		double flagG100P151L10 = 0.;
 		double flagG100P151L11 = 0.;
+		double flagG100P151L12 = 0.;
 		double flagG100P151L21 = 0.;
 		double flagG100P151L60 = 0.;
 		double flagG100P151L61 = 0.;
@@ -749,6 +760,13 @@ void DemoCad::timerEvent(QTimerEvent * event)
 		{
 			SetMacroVal( g_CIAddress, MACRO_P151L11_FLAG, 0. );
 			qDebug() << "G100P151L11 flag reset!";
+		}
+
+		GetMacroVal( g_CIAddress, MACRO_P151L12_FLAG, flagG100P151L12 );
+		if( fabs( flagG100P151L12 - 1. ) < 10e-3 && getArcPoints_P151L12() )
+		{
+			SetMacroVal( g_CIAddress, MACRO_P151L12_FLAG, 0. );
+			qDebug() << "G100P151L12 flag reset!";
 		}
 
 		GetMacroVal( g_CIAddress, MACRO_P151L21_FLAG, flagG100P151L21 );
@@ -899,6 +917,22 @@ void DemoCad::clearData_L10()
 {
 	g_InputMode = motion_input;
 	g_SavedData.clear();
+
+	for( int i = 0; i < MEA_MACRO_COUNT; ++i )
+	{
+		g_Index[i] = 0;
+	}
+	for( int i = 0; i <= _rightBtmE; ++i )
+	{
+		g_XYIndex[i] = 0;
+	}
+	g_ZIndex[0] = 0;
+	g_ZIndex[1] = 0;
+
+	g_XYSrcDataBeginNum = g_XYSrcDataEndNum = g_XYSrcDataCount = 0;
+	g_XYDesDataBeginNum = g_XYDesDataEndNum = g_XYSrcDataCount = 0;
+	g_ZSrcDataBeginNum = g_ZSrcDataEndNum = g_ZDataCount = 0;
+	g_ZDesDataBeginNum = g_ZDesDataEndNum = 0;
 }
 
 bool DemoCad::clearDataAccIndex_L11()
@@ -1169,6 +1203,32 @@ bool DemoCad::getXYOffset_P151L11()
 	return true;
 }
 
+bool DemoCad::getArcPoints_P151L12()
+{
+	g_InputMode = motion_input;
+
+	//< step1 先从宏变量中获取四个圆弧角的探针点编号
+	for( int i = 0; i < 8; ++i )
+	{
+        g_XYIndex[i+_leftTopB] = getMacroInt( MACRO_P151L10L11_I + i );
+	}
+
+#ifndef Q_OS_WIN
+	SetMacroVal( g_CIAddress, MACRO_P151L11_W, 0. );  //< 不管输入是否合法，#232都需要置 0 
+#endif
+	if( !m_ParaSetWdt->isInputLegel( motion_input ) )
+	{
+		qDebug() << __FUNCTION__ << " liuyc: arc input is ilegal! ";
+#ifndef Q_OS_WIN
+		
+		SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 1. );
+#endif
+		return false;
+	}
+
+	return true;
+}
+
 bool DemoCad::getZOffset_P151L21()
 {
 	g_InputMode = motion_input;
@@ -1184,7 +1244,7 @@ bool DemoCad::getZOffset_P151L21()
 		if( !g_SavedData.contains( i ))
 		{
 #ifndef Q_OS_WIN
-			SetMacroVal( g_CIAddress, MACRO_P151L10_INDEXWRONG, 1. );
+			SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 1. );
 #endif
 			return false;
 		}
@@ -1192,10 +1252,23 @@ bool DemoCad::getZOffset_P151L21()
 		d_zoff += g_SavedData[i].z;
 	}
 
+	g_ZIndex[0] = g_Index[Z_MIN] = tmpBegin;
+	g_ZIndex[1] = g_Index[Z_MAX] = tmpEnd;
+
 	d_zoff /= static_cast<double>( tmpCount );
 #ifndef Q_OS_WIN
 	SetMacroVal( g_CIAddress, MACRO_Z_GET_DATA, d_zoff );
 #endif
+
+	if( !m_ParaSetWdt->isInputLegel( motion_input ) )
+	{
+#ifndef Q_OS_WIN
+		SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 1. );
+#endif
+		g_Index[Z_MIN] = g_Index[Z_MAX] = 0;
+		g_ZIndex[0] = g_ZIndex[1] = 0;
+		return false;
+	}
 
 	return true;
 }
@@ -1216,7 +1289,7 @@ bool DemoCad::rmOffXY_P151L60()
 		{
 			qDebug() << "liuyc input index ilegal!";
 #ifndef Q_OS_WIN
-			SetMacroVal( g_CIAddress, MACRO_P151L10_INDEXWRONG, 1. );
+			SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 1. );
 #endif
 			return false;
 		}
@@ -1263,7 +1336,7 @@ bool DemoCad::rmOffZ_P151L61()
 		{
 			qDebug() << "liuyc input index ilegal!";
 #ifndef Q_OS_WIN
-			SetMacroVal( g_CIAddress, MACRO_P151L10_INDEXWRONG, 1. );
+			SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 1. );
 #endif
 			return false;
 		}
@@ -1307,17 +1380,26 @@ bool DemoCad::genNewNC_P152L11()
 		return false;
 	}
 
-	QString srcFileName = QString( NCFilePath ) + "O" + QString::number( n_L11I ) + ".NC"; // eg: "..../NCFiles/O110.NC"
-	QString newFileName = QString( NCFilePath ) + "O" + QString::number( n_L11J ) + ".NC"; // eg: "..../NCFiles/O110.NC"
-    QFile srcFile( srcFileName );
-	if( !srcFile.exists() )
+	//< step2 打开NC文件
+	QString srcFileName = QString( NCFilePath ) + "O" + QString::number( n_L11I ) + ".NC";    // eg: "..../NCFiles/O110.NC"
+	QString srcFileNameBig = QString( NCFilePath ) + "O" + QString::number( n_L11I ) + ".nc"; // eg: "..../NCFiles/O110.nc"
+	QString newFileName = QString( NCFilePath ) + "O" + QString::number( n_L11J ) + ".NC";    // eg: "..../NCFiles/O110.NC"
+	if( QFile::exists( srcFileName ) )  //< 输入的NC文件无论大小写都有效
 	{
+		m_OffsetWdt->openSrcNcFile( srcFileName );
+	}
+	else if( QFile::exists( srcFileNameBig ) )
+	{
+		m_OffsetWdt->openSrcNcFile( srcFileNameBig );
+	}
+	else  //< NC文件未找到
+	{
+#ifndef Q_OS_WIN
+		SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 6. );  //< #231 == 6 时报错，未找到原NC文件
+#endif
 		qDebug() << "liuyc: src nc is not found!";
 		return false;
 	}
-
-	//< step2 补偿部分获取NC文件名，并分析NC点位信息
-	m_OffsetWdt->openSrcNcFile( srcFileName );
 
 	//< step3 获取手动补偿的坐标值
 #ifndef Q_OS_WIN
@@ -1385,14 +1467,23 @@ bool DemoCad::getDxfDataFromFile_P155L31()
 		return false;
 
 	QString filename = QString( NCFilePath ) + QString::number( n_l31q ) + ".dxf";
+	QString filenameBig = QString( NCFilePath ) + QString::number( n_l31q ) + ".DXF";  //< DXF 大写
 	QFile file( filename );
-	if( !file.exists() )
+	QFile fileBig( filenameBig );
+
+	if( file.exists() )  //< 小写文件名 20.dxf
+	{
+		return openFile( filename );
+	}
+	else if ( fileBig.exists() )  //< 大写文件名 20.DXF
+	{
+		return openFile( filenameBig );  //< 大小写文件都没找到
+	}
+	else
 	{
 		qDebug() << "liuyc: dxf file is not found!";
 		return false;
 	}
-
-	return openFile( filename );
 }
 
 bool DemoCad::getXYOffset_P151L10()
@@ -1406,10 +1497,20 @@ bool DemoCad::getXYOffset_P151L10()
 		TMP_COUNT
 	};
 
+	//< step1 从宏变量中获取点位编号并判断合法性
 	double indexArray[8] = {0.};
 	int    n_indexAry[8] = {0};
 	double d_calOff[TMP_COUNT] = {0.};
 	bool   b_needToCal[TMP_COUNT] = { true, true };
+
+	int    n_hasArcFlag = getMacroInt( MACRO_P151L11_W );
+	qDebug() << __FUNCTION__ << "liuyc: #232 = " << n_hasArcFlag;
+	if( n_hasArcFlag != 0 )
+	{
+		//< 单次定时器，触发复位232的值
+		QTimer::singleShot( 10000, this, SLOT( slotReset232() ));
+	}
+
 	for( int i = XY_MIN_LEFT; i <= XY_MAX_BTM; ++i )
 	{
 #ifndef Q_OS_WIN
@@ -1417,17 +1518,20 @@ bool DemoCad::getXYOffset_P151L10()
 #endif
 		n_indexAry[i] = static_cast<int>( indexArray[i] + 10e-3 );
 		g_Index[i]    = n_indexAry[i];
+		g_XYIndex[i]  = g_Index[i];
 	}
 
-	if( !m_ParaSetWdt->isInputLegel( motion_input ) )
+	//< 如果存在圆弧探点，则暂时不去判断输入是否合法，因为此函数只输入了直线段上的探点信息
+	if( n_hasArcFlag == 0 && !m_ParaSetWdt->isInputLegel( motion_input ) )
 	{
 		qDebug() << "liuyc: index input in motion is ilegal!";
 #ifndef Q_OS_WIN
-		SetMacroVal( g_CIAddress, MACRO_P151L10_INDEXWRONG, 1. );
+		SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 1. );
 #endif
 		return false;
 	}
 
+	//< step2 计算偏移量只需要直线段上的点位信息，不需要圆弧上的点，所以这里直接计算
 	//< 计算X轴偏移量
 	double tmp = 0.;
 	double tmp2 = 0.;
