@@ -58,6 +58,15 @@ public:
 		INSERT_PNT
 	};
 
+	enum ZOOM_DIR
+	{
+		ZOOM_LEFT,
+		ZOOM_RIGHT,
+		ZOOM_TOP,
+		ZOOM_BTM,
+		ZOOM_DIR_COUNT
+	};
+
 	OffsetWdt(QWidget *parent);
 	~OffsetWdt();
 
@@ -127,7 +136,9 @@ private:
 
 	QLabel * m_ManHlpLbl;               //< 手动补偿模块的控件
 	QLabel * m_ManTipLbl;
+	QLabel * m_ManZoomLbl;
 	QLineEdit * m_ManOffLEdit[3];       //< x,y,z轴补偿值输出
+	QLineEdit * m_ManOffZoom[ZOOM_DIR_COUNT];  //< x,y轴缩放
 
 	bool m_bHasRmXY;
 	bool m_bHasRmZ;

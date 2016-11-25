@@ -2,9 +2,9 @@
 #include <QtGui/QApplication>
 #include <QTextCodec>
 #include <stdio.h>
-#ifdef Q_OS_WIN
-#  include <vld.h>
-#endif
+//#ifdef Q_OS_WIN
+//#  include <vld.h>
+//#endif
 
 int main(int argc, char *argv[])
 {

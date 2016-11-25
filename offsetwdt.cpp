@@ -7,6 +7,11 @@
 #include <cctype>
 #include <list>
 
+#define arraydelete(a) delete [] a; \
+	                   a = NULL
+#define xdelete(a)     delete a; \
+	                   a = NULL;
+
 /************************************************************************/
 /* OffsetWdt constructor
 /* parameter init
@@ -41,7 +46,7 @@ OffsetWdt::OffsetWdt(QWidget *parent)
 
 	QRegExp regExp("^(500|[1-4]?\\d?\\d?)$");  //< 最大输入值500
 	QRegExpValidator *pReg = new QRegExpValidator(regExp, this); 
-	QRegExp regExp2("^(\\-?)(2(\\.[0]{0,4})?|([0-1]?)(\\.\\d{0,4})?)$");  //< 最大值2.0000
+	QRegExp regExp2("^(\\-?)(2(\\.[0]{0,4})?|([0-1]?)(\\.\\d{0,3})?)$");  //< 最大值2.0000
 	QRegExpValidator *pReg2 = new QRegExpValidator(regExp2, this); 
 
 #ifdef TEST_SCROLL
@@ -71,7 +76,7 @@ OffsetWdt::OffsetWdt(QWidget *parent)
 	//< 移除偏移量模块
 	m_RmHlpLbl = new QLabel( this );
 	m_RmHlpLbl->setWordWrap( true );
-    m_RmHlpLbl->setText( tr("    测量数据消除偏移量后存到新的一组变量中去，以备补偿计算：") );
+    m_RmHlpLbl->setText( tr("测量数据消除偏移量后存到新的一组变量中去，以备补偿计算：") );
 	m_Layout[RM_OFFSET]->addWidget( m_RmHlpLbl, 0, 0, 1, 4 );
 	for( int i = 0; i < RM_Axis_Count; ++i )
 	{
@@ -107,7 +112,7 @@ OffsetWdt::OffsetWdt(QWidget *parent)
 	//< 读取DXF模块
 	m_ReadHlpLbl = new QLabel( this );
 	m_ReadHlpLbl->setWordWrap( true );
-	m_ReadHlpLbl->setText( tr("    若您还未打开DXF文件，请利用窗口最左边的“打开文件”按钮打开DXF文件:") );
+	m_ReadHlpLbl->setText( tr("窗口左边“打开文件”按钮打开DXF文件:") );
 	m_Layout[READ_DXF]->addWidget( m_ReadHlpLbl, 0, 0, 1, 1 );
 	m_ReadFnameLbl = new QLabel( this );
 	m_ReadFnameLbl->setWordWrap( true );
@@ -117,25 +122,37 @@ OffsetWdt::OffsetWdt(QWidget *parent)
 	//< 手动补偿模块
 	m_ManHlpLbl = new QLabel( this ); 
 	m_ManHlpLbl->setWordWrap( true );
-	m_ManHlpLbl->setText( tr("    若补偿后的NC加工仍有一些问题，可尝试手动偏移补偿的方式，单位mm：") );
-	m_Layout[MANUAL]->addWidget( m_ManHlpLbl, 0, 0, 1, 4);
+	m_ManHlpLbl->setText( tr("若补偿后的NC加工仍有一些问题，可尝试手动偏移或缩放补偿的方式，单位mm：") );
+	m_Layout[MANUAL]->addWidget( m_ManHlpLbl, 0, 0, 1, 5);
 	m_ManTipLbl = new QLabel( this );
 	m_ManTipLbl->setText( tr("各轴补偿量") );
 	m_Layout[MANUAL]->addWidget( m_ManTipLbl, 1, 0, 1, 1);
+	m_ManZoomLbl = new QLabel( this );
+	m_ManZoomLbl->setText( tr("xy轴缩放") );
+	m_Layout[MANUAL]->addWidget( m_ManZoomLbl, 2, 0, 1, 1);
 	for( int i = 0; i < 3; ++i )
 	{
 		m_ManOffLEdit[i] = new QLineEdit( this );
-		m_ManOffLEdit[i]->setText( QString::number( 0., 'f', 4) );
+		m_ManOffLEdit[i]->setText( QString::number( 0., 'f', 3) );
 		m_ManOffLEdit[i]->setValidator( pReg2 );
 		m_ManOffLEdit[i]->setAlignment( Qt::AlignVCenter | Qt::AlignRight );
 		m_Layout[MANUAL]->addWidget( m_ManOffLEdit[i], 1, i+1, 1, 1 );
 		connect( m_ManOffLEdit[i], SIGNAL(editingFinished()), this, SLOT(slotFormatManualOff()) );
 	}
+	for( int i = 0; i < ZOOM_DIR_COUNT; ++i )
+	{
+		m_ManOffZoom[i] = new QLineEdit( this );
+		m_ManOffZoom[i]->setText( QString::number( 0., 'f', 3) );
+		m_ManOffZoom[i]->setValidator( pReg2 );
+		m_ManOffZoom[i]->setAlignment( Qt::AlignVCenter | Qt::AlignRight );
+		m_Layout[MANUAL]->addWidget( m_ManOffZoom[i], 2, i+1, 1, 1 );
+		connect( m_ManOffZoom[i], SIGNAL(editingFinished()), this, SLOT(slotFormatManualOff()) );
+	}
 
 	//< 生成新的NC文件
 	m_NewHlpLbl = new QLabel( this );
 	m_NewHlpLbl->setWordWrap( true );
-	m_NewHlpLbl->setText( tr("    “浏览”选择原NC文件，点击“生成”后等待生成补偿的NC！") );
+	m_NewHlpLbl->setText( tr("“浏览”选择原NC文件，点击“生成”后等待生成补偿的NC！") );
 	m_Layout[NEW_NC]->addWidget( m_NewHlpLbl, 0, 0, 1, 4 );
 	for( int i = 0; i < FILE_COUNT; ++i )
 	{
@@ -208,22 +225,22 @@ void OffsetWdt::resizeEvent( QResizeEvent * event )
 	
 	float fVGapPer = 0.01f;
 	float fGrpTopPer1 = fTopPer + fHlpLblHgt + fVGapPer;
-	float fGrpHgt1 = 0.27f;
+	float fGrpHgt1 = 0.25f;
 	m_GrpBox[RM_OFFSET]->setGeometry( static_cast<int>( width * fLeftPer ), static_cast<int>( height * fGrpTopPer1)
 									, static_cast<int>( width * fHlpLblWth), static_cast<int>( height * fGrpHgt1 ));
 
 	float fGrpTopPer2 = fGrpTopPer1 + fGrpHgt1 + fVGapPer;
-	float fGrpHgt2 = 0.18f;
+	float fGrpHgt2 = 0.14f;
 	m_GrpBox[READ_DXF]->setGeometry( static_cast<int>( width * fLeftPer ), static_cast<int>( height * fGrpTopPer2)
 								   , static_cast<int>( width * fHlpLblWth), static_cast<int>( height * fGrpHgt2 ) );
 
 	float fGrpTopPer3 = fGrpTopPer2 + fGrpHgt2 + fVGapPer;
-	float fGrpHgt3 = 0.20f;
+	float fGrpHgt3 = 0.25f;
 	m_GrpBox[MANUAL]->setGeometry( static_cast<int>( width * fLeftPer ), static_cast<int>( height * fGrpTopPer3)
 								 , static_cast<int>( width * fHlpLblWth), static_cast<int>( height * fGrpHgt3 ));
 
 	float fGrpTopPer4 = fGrpTopPer3 + fGrpHgt3 + fVGapPer;
-	float fGrpHgt4 = 0.24f;
+	float fGrpHgt4 = 0.25f;
 	m_GrpBox[NEW_NC]->setGeometry( static_cast<int>( width * fLeftPer ), static_cast<int>( height * fGrpTopPer4)
 		, static_cast<int>( width * fHlpLblWth), static_cast<int>( height * fGrpHgt4 ));
 
@@ -270,12 +287,19 @@ void OffsetWdt::slotGenNewNC()
 	if( !isRdyToGen() )
 		return;
 
+	RS_Vector sizeVec = container->getMax() - container->getMin();
+	sizeVec.x = fabs( sizeVec.x ) + g_nInOrOut * m_dNCFileROff * 2;
+	sizeVec.y = fabs( sizeVec.y ) + g_nInOrOut * m_dNCFileROff * 2;
+
 	//< step1 获取三个轴的手动补偿值
 	for( int i = 0; i < 3; ++i )
 	{
 		g_ManOff[i] = m_ManOffLEdit[i]->text().toDouble();
 	}
-
+	for( int i = 0; i < ZOOM_DIR_COUNT; ++i )
+	{
+		g_ManOffZoom[i] = m_ManOffZoom[i]->text().toDouble();
+	}
 	//< step2 设定输出文件名
 	m_NewNCFile = QFileDialog::getSaveFileName( this, tr("打开文件"), QString( NCFilePath ), ("NC (*.NC *.nc)") );
 	if( m_NewNCFile.isNull() || m_NewNCFile.isEmpty() )
@@ -302,9 +326,12 @@ void OffsetWdt::slotGenNewNC()
 	
 }
 
+/************************************************************************/
+/* 获取当前补偿点的方向，上下左右或者是四个边角
+/************************************************************************/
 XYZ_DIR OffsetWdt::getDetDir( int pointIndex )
 {
-	qDebug() << __FUNCTION__;
+	//qDebug() << __FUNCTION__;
 
 	//< step1 将输入的编号转移到探针原始数据的范围中，这样可以直接通过输入的情况来判断探针点方向
 	int tmpIndex = 0;
@@ -346,17 +373,15 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 	timeval starttime, endtime;
 	gettimeofday(&starttime, 0);
 #endif
-	qDebug() << "liuyc : g_xydesbegin = " << g_XYDesDataBeginNum << "g_xydesend = " << g_XYDesDataEndNum;
-	qDebug() << "liuyc : g_xydescount = " << g_XYDesDataCount;
-
-	qDebug() << "liuyc : g_xysrcbegin = " << g_XYSrcDataBeginNum << "g_xysrcend = " << g_XYSrcDataEndNum;
-	qDebug() << "liuyc : g_xysrccount = " << g_XYSrcDataCount;
 
 	if( g_XYDesDataCount != g_XYSrcDataCount )
 	{
 		qDebug() << " liuyc : counts not match! ";
 #ifndef Q_OS_WIN
-		SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 2. );  //< #231 == 2 时报错，输入的数据个数与去偏移的数据个数不符
+		if( inputmd == motion_input )
+			SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 2. );  //< #231 == 2 时报错，输入的数据个数与去偏移的数据个数不符
+		else
+			popMessageBox( "Lynuc CAD Warning", tr("数据个数不匹配！"), 5, QColor(255,0,0), true );
 #endif
 		return;
 	}
@@ -367,14 +392,20 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 	if( g_XYDesDataCount <= 0 || g_XYSrcDataCount <= 0)
 	{
 #ifndef Q_OS_WIN
-		SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 3. );
+		if( inputmd == motion_input )
+			SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 3. );
+		else
+			popMessageBox( "Lynuc CAD Warning", tr("原数据个数为0！"), 5, QColor(255,0,0), true );
 #endif
 		return;
 	}
 	if( container == NULL )
 	{
 #ifndef Q_OS_WIN
-		SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 4. );
+		if( inputmd == motion_input )
+			SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 4. );
+		else
+			popMessageBox( "Lynuc CAD Warning", tr("没有载入DXF图档！"), 5, QColor(255,0,0), true );
 #endif
 		return;
 	}
@@ -384,53 +415,6 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 	{
 		dataWthoutR[i] = g_SavedData[i+g_XYDesDataBeginNum];  //< 复制一份数据
 	}
-	qDebug() << "liuyc : copy data finished!";
-
-#if 0  //< 第一种方法，判断上下左右然后直接去减去探针半径
-		//qDebug() << "liuyc: det radius bigger than 0!";
-		int tmpindex = 0;
-		if( g_Index[XY_MIN_LEFT] != 0 && g_Index[XY_MAX_LEFT] != 0 )  //< 左边
-		{
-			tmpindex = 0;
-			for( int i = g_Index[XY_MIN_LEFT]; i <= g_Index[XY_MAX_LEFT]; ++i )
-			{
-				tmpindex = i - g_XYSrcDataBeginNum;
-				dataWthoutR[tmpindex].x = g_SavedData[g_XYDesDataBeginNum + tmpindex].x + g_DecRadius;
-				dataDir[tmpindex] = XY_LEFT;
-			}
-		}
-		if( g_Index[XY_MIN_RIGHT] != 0 && g_Index[XY_MAX_RIGHT] != 0 )  //< 右边
-		{
-			tmpindex = 0;
-			for( int i = g_Index[XY_MIN_RIGHT]; i <= g_Index[XY_MAX_RIGHT]; ++i )
-			{
-				tmpindex = i - g_XYSrcDataBeginNum;
-				dataWthoutR[tmpindex].x = g_SavedData[g_XYDesDataBeginNum + tmpindex].x - g_DecRadius;
-				dataDir[tmpindex] = XY_RIGHT;
-			}
-		}
-		if( g_Index[XY_MIN_TOP] != 0 && g_Index[XY_MAX_TOP] != 0 )
-		{
-			tmpindex = 0;
-			for( int i = g_Index[XY_MIN_TOP]; i <= g_Index[XY_MAX_TOP]; ++i )
-			{
-				tmpindex = i - g_XYSrcDataBeginNum;
-				dataWthoutR[tmpindex].y = g_SavedData[g_XYDesDataBeginNum + tmpindex].y - g_DecRadius;
-				dataDir[tmpindex] = XY_TOP;
-			}
-		}
-		if( g_Index[XY_MIN_BTM] != 0 && g_Index[XY_MAX_BTM] != 0 )
-		{
-			tmpindex = 0;
-			for( int i = g_Index[XY_MIN_BTM]; i <= g_Index[XY_MAX_BTM]; ++i )
-			{
-				tmpindex = i - g_XYSrcDataBeginNum;
-				dataWthoutR[tmpindex].y = g_SavedData[g_XYDesDataBeginNum + tmpindex].y + g_DecRadius;
-				dataDir[tmpindex] = XY_BTM;
-			}
-		}
-
-#else
 
 	RS_Vector tmpNearestPnt;  
 	int tmpIndex = 0;
@@ -448,7 +432,6 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 		dataWthoutR[tmpIndex] = g_SavedData.value(i) + tmpNearestPnt * g_DecRadius;
 	}
 
-#endif
 	qDebug() << "liuyc : get data without det R finished!";
 	for( int i = 0; i < g_XYDesDataCount; ++i )
 	{
@@ -460,17 +443,39 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 	RS_Vector * finalOffsetXY = new RS_Vector[g_XYDesDataCount];  //< XY方向上的补偿      checked leak
 	if( m_ncLineNumXY != NULL )
 	{
-		delete [] m_ncLineNumXY;
-		m_ncLineNumXY = NULL;
+		//delete [] m_ncLineNumXY;
+		//m_ncLineNumXY = NULL;
+		arraydelete( m_ncLineNumXY );
 	}
 
+	//< step1.2.1 计算补偿值之前，要把XY方向上的缩放加进去考虑
+	for( int i = 0; i < g_XYDesDataCount; ++i )
+	{
+		switch( dataDir[i] )
+		{
+		case XY_LEFT:
+			dataWthoutR[i].x += g_ManOffZoom[ZOOM_LEFT];
+			break;
+		case XY_RIGHT:
+			dataWthoutR[i].x += g_ManOffZoom[ZOOM_RIGHT];
+			break;
+		case XY_TOP:
+			dataWthoutR[i].y += g_ManOffZoom[ZOOM_TOP];
+			break;
+		case XY_BTM:
+			dataWthoutR[i].y += g_ManOffZoom[ZOOM_BTM];
+			break;
+		default:
+			break;
+		}
+	}
 	if( g_XYDesDataCount > 0 )
 	{
 		m_ncLineNumXY = new int[g_XYDesDataCount];  //< checked leak
 		calculataXYOff( dataWthoutR, dataDir, finalOffsetXY, g_XYDesDataCount, inputmd);  //< 这中间有修改NC点位信息，但是没有加入补偿
         for( int i = 0; i < g_XYDesDataCount; ++i )
 		{
-			if( finalOffsetXY[i].magnitude() > 5. )  //< 补偿过大，就可能是数据有问题
+			if( finalOffsetXY[i].magnitude() > 20. )  //< 补偿过大，就可能是数据有问题
 			{
 				if( inputmd = ui_input )
 				{
@@ -487,10 +492,10 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 					qDebug() << "liuyc: offset is to big!";
 				}
 
-				delete [] dataWthoutR;
-				delete [] dataDir;
-				delete [] finalOffsetXY;
-
+				arraydelete( m_ncLineNumXY );
+				arraydelete( finalOffsetXY );
+				arraydelete( dataDir );
+				arraydelete( dataWthoutR );
 				return;
 			}
 		}	
@@ -500,7 +505,11 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 	qDebug() << "\n\nliuyc step 1.3...";
 	RS_Vector * finalOffsetZ = new RS_Vector[g_ZDataCount];   //< checked leak
 	if( m_ncLineNumZ != NULL )
-		delete [] m_ncLineNumZ;
+	{
+		arraydelete( m_ncLineNumZ );
+		/*delete [] m_ncLineNumZ;
+		m_ncLineNumZ = NULL;*/
+	}
 	if( g_ZDataCount > 0 )
 	{
 		m_ncLineNumZ = new int[g_ZDataCount];         //< checked leak
@@ -546,6 +555,18 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 			if( offLNumFirXY < cutLNumFir || offLNumLstXY > cutLNumLst )
 			{
 				qDebug() << __FUNCTION__ << " : liuyc failed to find cut in point!";
+#ifndef Q_OS_WIN
+				if( motion_input == inputmd )
+					SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 7. );
+				else
+					popMessageBox( "Lynuc CAD Warning", tr("未找到封闭NC的进刀点或退刀点！"), 5, QColor(255,0,0), true );
+#endif
+				arraydelete( m_ncLineNumZ );
+				arraydelete( finalOffsetZ );
+				arraydelete( m_ncLineNumXY );
+				arraydelete( finalOffsetXY );
+				arraydelete( dataDir );
+				arraydelete( dataWthoutR );
 				return;
 			}
 
@@ -726,17 +747,12 @@ void OffsetWdt::genNewNC( QString filename, int inputmd )
 	}
 
 	//< end
-	delete [] m_ncLineNumZ;
-	m_ncLineNumZ = NULL;
-	delete [] finalOffsetZ;
-	finalOffsetZ = NULL;
-
-	delete [] finalOffsetXY;
-	delete [] dataDir;
-	delete [] dataWthoutR;
-	delete [] m_ncLineNumXY;
-	m_ncLineNumXY = NULL;
-
+	arraydelete( m_ncLineNumZ );
+	arraydelete( finalOffsetZ );
+	arraydelete( m_ncLineNumXY );
+    arraydelete( finalOffsetXY );
+	arraydelete( dataDir );
+	arraydelete( dataWthoutR );
 	qDebug() << "\n\nliuyc: generate new nc file succeed!**********************\n";
 	return;
 }
@@ -769,7 +785,7 @@ void OffsetWdt::calculataXYOff(RS_Vector * dataWthoutR, int * dataDir
 		if( inputmd == motion_input )
 			g_nInOrOut = getSrcNCOffDir();
 
-		qDebug() << "liuyc offdir : " << g_nInOrOut;
+		//qDebug() << "liuyc offdir : " << g_nInOrOut;
 		//< 2016.10.20 liu.y.c 之前的版本中只支持四条边，所以选择这这种方法来，其实也没有必要，算法可以更简单
 	//	if( tmpEnt->rtti() == RS2::EntityLine )
 	//	{
@@ -832,7 +848,7 @@ void OffsetWdt::calculataXYOff(RS_Vector * dataWthoutR, int * dataDir
 		cout << "liuyc dir : " << dataDir[i] << "  normal vec : " << normalVec << endl;
 		//< 在探测点上加上NC本身带的径补偿后，再与NC里的点位作比较，找出相应的NC行号
 		RS_Vector ncVector = decPntOnEnt[i] + normalVec * m_dNCFileROff * g_nInOrOut;
-		cout << "point with tool R : " << ncVector << endl;
+		//cout << "point with tool R : " << ncVector << endl;
 
 		insertFlag = NOT_INSERT_PNT;
 		m_ncLineNumXY[i] = findNearestNCLineXY( ncVector, insertFlag );  //< 是否为插入的点
@@ -925,7 +941,9 @@ void OffsetWdt::ncHeadAndTailMod( QString & qstrLine, double x /* = 0. */, doubl
 	{
 		QString xStr = qstrLine.section( expX, 1, 1 ).section( expSplit, 0, 0 );
 		qDebug() << "liuyc strX = " << xStr;
-		qstrLine.replace( "x" + xStr, "X" + QString::number( xStr.toDouble() + x, 'd', 6 ), Qt::CaseInsensitive );
+		qstrLine.replace( "x" + xStr
+			, "X" + QString::number( xStr.toDouble() + x, 'd', 6 )
+			, Qt::CaseInsensitive );
 	}
 
 	if( qstrLine.contains('y', Qt::CaseInsensitive) 
@@ -933,7 +951,9 @@ void OffsetWdt::ncHeadAndTailMod( QString & qstrLine, double x /* = 0. */, doubl
 	{
 		QString yStr = qstrLine.section( expY, 1, 1 ).section( expSplit, 0, 0 );
 		qDebug() << "liuyc strY = " << yStr;
-		qstrLine.replace( "y" + yStr, "Y" + QString::number( yStr.toDouble() + y, 'd', 6 ), Qt::CaseInsensitive );
+		qstrLine.replace( "y" + yStr
+			, "Y" + QString::number( yStr.toDouble() + y, 'd', 6 )
+			, Qt::CaseInsensitive );
 	}
 }
 
@@ -962,10 +982,11 @@ void OffsetWdt::newNCOutput(QString filename, RS_Vector headOff, RS_Vector tailo
 	{
 		qstrLine = contentList.at(i);
 		if( !(qstrLine.contains("G28", Qt::CaseInsensitive)) )  //< 找到了G28，直接跳过这一行不做操作！
-			ncHeadAndTailMod( qstrLine, headOff.x + g_ManOff[0], headOff.y + g_ManOff[1] );
+			ncHeadAndTailMod( qstrLine
+			                 , headOff.x + g_ManOff[0]
+		                     , headOff.y + g_ManOff[1] );
 
 		out << qstrLine << "\n";
-
 	}
 
 	//< G01第一行，要加上F进给速度
@@ -994,7 +1015,9 @@ void OffsetWdt::newNCOutput(QString filename, RS_Vector headOff, RS_Vector tailo
 	{
 		qstrLine = contentList.at(i);
 		if( !(qstrLine.contains("G28", Qt::CaseInsensitive)) )  //< 找到了G28，直接跳过这一行不做操作！
-			ncHeadAndTailMod( qstrLine, tailoff.x + g_ManOff[0], tailoff.y + g_ManOff[1] );
+			ncHeadAndTailMod( qstrLine
+			                 , tailoff.x + g_ManOff[0]
+		                     , tailoff.y + g_ManOff[1] );
 
 		out << qstrLine << "\n";
 	}
@@ -2180,18 +2203,21 @@ void OffsetWdt::slotRemoveOffsetXY()
 
 	qDebug() << "liuyc: des xy : " << g_XYDesDataBeginNum << " : " << g_XYDesDataEndNum;
 
+	//< step2 消除偏移
 	rmOffsetXY( g_CalOff[0], g_CalOff[1], g_CalRadOff );
 	
 }
 
 void OffsetWdt::rmOffsetXY( double xoff, double yoff, double angleoff )
 {
-	//< step2 消除偏移
 	for( int i = 0; i < g_XYDesDataCount; ++i )
 	{
 		//< 先去除X/Y偏移
-		g_SavedData[i+g_XYDesDataBeginNum].x = g_SavedData[i+g_XYSrcDataBeginNum].x - xoff;
-		g_SavedData[i+g_XYDesDataBeginNum].y = g_SavedData[i+g_XYSrcDataBeginNum].y - yoff;
+		g_SavedData[i+g_XYDesDataBeginNum].x = 
+			g_SavedData[i+g_XYSrcDataBeginNum].x + g_QTableExtraDataMap[i+g_XYSrcDataBeginNum].QMicroAdjust.x - xoff;
+		g_SavedData[i+g_XYDesDataBeginNum].y = 
+			g_SavedData[i+g_XYSrcDataBeginNum].y + g_QTableExtraDataMap[i+g_XYSrcDataBeginNum].QMicroAdjust.y - yoff;
+
 		//< 再去除偏角
 		g_SavedData[i+g_XYDesDataBeginNum].rotate( -angleoff );
 		cout << "points without offset: " << g_SavedData[i+g_XYDesDataBeginNum] << endl;
@@ -2223,7 +2249,9 @@ void OffsetWdt::rmOffsetZ( double zoff )
 	for( int i = 0; i < g_ZDataCount; ++i )
 	{
 		g_SavedData[i+g_ZDesDataBeginNum] = g_SavedData[i+g_ZSrcDataBeginNum];
-		g_SavedData[i+g_ZDesDataBeginNum].z -= zoff;  //< 只有Z轴去除偏移量，获取补偿量
+
+		g_SavedData[i+g_ZDesDataBeginNum].z = g_SavedData[i+g_ZSrcDataBeginNum].z
+			+ g_QTableExtraDataMap[i+g_XYSrcDataBeginNum].QMicroAdjust.z - zoff;  //< 只有Z轴去除偏移量，获取补偿量
 		cout << "points without offset: " << g_SavedData[i+g_ZDesDataBeginNum] << endl;
 	}
 
@@ -2239,7 +2267,7 @@ void OffsetWdt::rmOffsetZ( double zoff )
 void OffsetWdt::slotSetDXFFile( QString & filename )
 {
 	m_dxfFilename = filename;
-	qDebug() << "liuyc open dxf file : " << m_dxfFilename;
+	//qDebug() << "liuyc open dxf file : " << m_dxfFilename;
 	if( m_dxfFilename != "" && m_SrcNCFile != "" )
 	{
 		m_NewBtn[FILE_NEW]->setEnabled( true );
@@ -2275,9 +2303,9 @@ void OffsetWdt::slotGetNewContainer(RS_EntityContainer * cont)
 
 void OffsetWdt::slotCountChanged()
 {
-	qDebug() << "liuyc: offset widget show!";
-	qDebug() << "liuyc: xy count = " << g_XYDesDataCount;
-	qDebug() << "liuyc: z  count = " << g_ZDataCount;
+	//qDebug() << "liuyc: offset widget show!";
+	//qDebug() << "liuyc: xy count = " << g_XYDesDataCount;
+	//qDebug() << "liuyc: z  count = " << g_ZDataCount;
 
 	m_RmPntCntLbl[RM_Axis_XY]->setText( tr("点数： ") + "<font color=#0000FF style=\"font-weight:bold;\">"
 		+ QString::number( g_XYDesDataCount ) + "</font>" + " " );
@@ -2299,7 +2327,7 @@ void OffsetWdt::slotCountChanged()
 void OffsetWdt::slotFormatManualOff()
 {
 	QLineEdit * tmpLineEdit = dynamic_cast<QLineEdit *>( sender() );
-	tmpLineEdit->setText( QString::number( tmpLineEdit->text().toFloat(), 'f', 4 ) );
+	tmpLineEdit->setText( QString::number( tmpLineEdit->text().toFloat(), 'f', 3 ) );
 }
 
 int OffsetWdt::isDxfToNC()
@@ -2325,10 +2353,12 @@ int OffsetWdt::isDxfToNC()
 	for( int i = 0; i < judgePntCnt; ++i )
 	{
 		tmpVec = container->getNearestPointOnEntity( m_NCPoints[i+headerPntCnt], true, tmpDist );
+		//cout << "liuyc: nearset point = " << tmpVec << endl;
 		//< 将探测点和DXF实体上的点拉到同一平面上，然后求距离就是纯粹的XY平面上的径补偿，否则求出来的径补偿不准确
 		tmpVec.z = m_NCPoints[i+headerPntCnt].z;  
 		dist[i] = tmpVec.distanceTo( m_NCPoints[i+headerPntCnt] );
 		distAvg += dist[i];
+		//qDebug() << "liuyc: dist = " << dist[i];
 	}
 	delete tmpDist;
 	distAvg /= static_cast<double>( judgePntCnt );
@@ -2560,10 +2590,10 @@ bool OffsetWdt::isRdyToGen()
 		return false;
 	}
 
-	//< 如果是内框高光的话，这里会有问题，因为补偿都是往外
 	if( m_dNCFileROff <= 0. )
 	{
 		qDebug() << "liuyc: src nc file has a r offset that is less than 0.";
+		popMessageBox( "Lynuc CAD Warning", tr("计算出的原始NC刀补信息异常！"), 5, QColor(255, 0, 0), true );
 		return false;
 	}
 	qDebug() << "liuyc: src nc file has a r offset: " << m_dNCFileROff;
@@ -2653,14 +2683,13 @@ void OffsetWdt::saveConfig()
 			}
 			else
 			{
-				qDebug() << "liuyc remove GGBC_SET node!";
 				//< 如果发现该文件的信息，直接删除
 				needToDel.prepend( i );
 			}
 		}
 		else if( tagName.compare( "GLOBAL_SET", Qt::CaseInsensitive ) == 0 )
 		{
-			qDebug() << "liuyc remove GLOBAL_SET node!";
+			//qDebug() << "liuyc remove GLOBAL_SET node!";
 			needToDel.prepend( i );
 		}
 		else
@@ -2671,7 +2700,7 @@ void OffsetWdt::saveConfig()
 
 	for( int i = 0; i < needToDel.count(); ++i )
 	{
-		qDebug() << "liuyc: need to del " << needToDel.at(i);
+		//qDebug() << "liuyc: need to del " << needToDel.at(i);
 		root.removeChild( nodes_1st.at( needToDel.at(i) ) );
 	}
 
@@ -2684,20 +2713,6 @@ void OffsetWdt::saveConfig()
 	newElem.setAttribute( "src_nc_file", m_SrcNCFile );
 	newElem.setAttribute( "is_cur" , "true" );
 	root.appendChild( newElem );
-
-
-	//< 结构有所变化 2016.10.20 liu.y.c
-	/*for( int i = XY_LEFT; i <= Z_DIR; ++i )
-	{
-		if( g_Index[i*2] != 0 && g_Index[i*2+1] != 0 )
-		{
-			QDomElement offElement = doc.createElement( "INDEX_SRC" );
-			offElement.setAttribute( "dir", dirStr[i] );
-			offElement.setAttribute( "index_min", g_Index[i*2]);
-			offElement.setAttribute( "index_max", g_Index[i*2+1]);
-			newElem.appendChild( offElement );
-		}
-	}*/
 
 	QString _xy_dirStr[8] = 
 	{
@@ -2881,6 +2896,9 @@ void OffsetWdt::readConfig()
 				{
 					g_ZIndex[0] = elem_2st.attribute( "index_min" ).toUShort();
 					g_ZIndex[1] = elem_2st.attribute( "index_max" ).toUShort();
+					g_ZSrcDataBeginNum = g_ZIndex[0];
+					g_ZSrcDataEndNum = g_ZIndex[1];
+					g_ZDataCount = g_ZSrcDataEndNum - g_ZSrcDataBeginNum + 1;
 					continue;
 				}
 
@@ -2916,6 +2934,9 @@ void OffsetWdt::readConfig()
 		bHasConfig = true;
 	}
 
+	if( !bHasConfig )
+		return;
+
 	//< 将值映射过来到g_Index中
 	for( int i = XY_MIN_LEFT; i <= XY_MAX_BTM; ++i )
 	{
@@ -2924,16 +2945,31 @@ void OffsetWdt::readConfig()
 	g_Index[Z_MIN] = g_ZIndex[0];
 	g_Index[Z_MAX] = g_ZIndex[1];
 
-	if( !bHasConfig )
-		return;
+	//< 找到XY轴index中的最小最大值
+	int tmpMin = 501;
+	int tmpMax = -1;
+	for( int i = 0; i <= _rightBtmE; ++i )
+	{
+		if( g_XYIndex[i] > 0 )
+		{
+			tmpMin = tmpMin < g_XYIndex[i] ? tmpMin : g_XYIndex[i];
+			tmpMax = tmpMax > g_XYIndex[i] ? tmpMax : g_XYIndex[i];
+		}
+	}
+	g_XYSrcDataBeginNum = tmpMin;
+	g_XYSrcDataEndNum = tmpMax;
+	g_XYSrcDataCount = g_XYSrcDataEndNum - g_XYSrcDataBeginNum + 1;
+	g_XYDesDataCount = g_XYSrcDataCount;
 
 	//< 设定移除的两个输入框的值
 	m_RmMacroLEdit[RM_Axis_XY]->setText( QString::number(g_XYDesDataBeginNum) );
 	m_RmMacroLEdit[RM_Axis_Z]->setText( QString::number(g_ZDesDataBeginNum) );
+	m_RmPntCntLbl[RM_Axis_XY]->setText( tr("点数：") + QString::number(g_XYDesDataCount) );
+	m_RmPntCntLbl[RM_Axis_Z]->setText( tr("点数：") + QString::number(g_ZDataCount) );
 
 	for( int i = 0; i < 3; ++i )
 	{
-		m_ManOffLEdit[i]->setText( QString::number( g_ManOff[i], 'd', 4 ) );
+		m_ManOffLEdit[i]->setText( QString::number( g_ManOff[i], 'd', 3 ) );
 	}
 
 	qDebug() << "liuyc read config finished!";

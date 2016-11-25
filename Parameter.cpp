@@ -25,8 +25,10 @@ COLORINFO           g_ColorInfo[8]      = {cl_white, cl_red, cl_orange, cl_yello
 
 int g_CIAddress      = 0;
 QMap<int, RS_Vector> g_SavedData;
+QMap<int, QParaTableExtraData> g_QTableExtraDataMap;
 double g_CalOff[3]   = {0.};
 double g_ManOff[3]   = {0.};
+double g_ManOffZoom[4] = {0.};
 double g_CalRadOff = 0.;
 double g_DecRadius = 0.;
 unsigned short g_Index[MEA_MACRO_COUNT] = { 0 };
@@ -347,8 +349,8 @@ double getAngleOfLine( int indexB, int indexE, int flag )
 			delete [] x;
 			return 0.;
 		}
-		x[i-indexB] = g_SavedData[i].x;
-		y[i-indexB] = g_SavedData[i].y;
+		x[i-indexB] = g_SavedData[i].x + g_QTableExtraDataMap[i].QMicroAdjust.x;
+		y[i-indexB] = g_SavedData[i].y + g_QTableExtraDataMap[i].QMicroAdjust.y;
 	}
 	FIT::curvefit( size, x, y, order, a );
 

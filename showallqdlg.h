@@ -7,6 +7,7 @@
 #include <QSortFilterProxyModel>
 #include <QItemDelegate>
 #include <QPainter>
+#include <QLineEdit>
 #include "Parameter.h"
 
 class DetQTable;
@@ -18,8 +19,12 @@ enum TableHeader
 {
 	_Q_index,
 	_x_coor,
+	_x_micro_adjust,
 	_y_coor,
+	_y_micro_adjust,
 	_z_coor,
+	_z_micro_adjust,
+	_dir_,
 	table_header_count
 };
 
@@ -48,6 +53,7 @@ public:
 
 protected:
 	void resizeEvent( QResizeEvent *event );
+	void keyPressEvent( QKeyEvent * event );
 
 private:
 	QSortFilterProxyModel * m_proxyModel;
@@ -80,13 +86,7 @@ public:
 	{
 		return table_header_count;
 	}
-	Qt::ItemFlags flags(const QModelIndex &index) const
-	{
-		Q_UNUSED(index);
-		Qt::ItemFlags flags = Qt::ItemIsSelectable | Qt::ItemIsEnabled;
-
-		return flags;
-	}
+	Qt::ItemFlags flags(const QModelIndex &index) const;
 
 	void resetModel()
 	{
@@ -108,8 +108,16 @@ public:
 
 	//< @brief 用于设置描画参数
 	void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const;
-
+	//< @brief 用于item的编辑代理
+	QWidget *createEditor(QWidget *parent, const QStyleOptionViewItem &option, const QModelIndex &index) const;
 private:
+
+	void setEditorData(QWidget *editor, const QModelIndex &index) const;
+	void setModelData(QWidget *editor, QAbstractItemModel *model, const QModelIndex &index) const;
+	void updateEditorGeometry(QWidget *editor, const QStyleOptionViewItem &option, const QModelIndex &index) const
+	{
+		editor->setGeometry(option.rect);
+	}
 
 
 };

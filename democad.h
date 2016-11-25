@@ -153,7 +153,7 @@ protected:
 	void closeEvent(QCloseEvent * event);
 
 	void clearData_L10();
-	bool clearDataAccIndex_L11();
+	bool clearDataAccordingIndex_L11();
 	bool clearSaveralData_L12();
 	bool saveDataAccIndex_L25();
 	bool saveDataAccOrder_L22();

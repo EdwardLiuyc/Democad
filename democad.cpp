@@ -37,10 +37,11 @@ DemoCad::DemoCad(QWidget *parent)
 	this->resize( 800, 600 );
 #else
 	g_CIAddress = CreateCIKernel();
-	qDebug() << "liuyc : DemoCAD get CIaddress = " << g_CIAddress;
+	//qDebug() << "liuyc : DemoCAD get CIaddress = " << g_CIAddress;
 	if( g_CIAddress == 0 ) //< CI共享内存获取失败
 	{
 		qDebug() << "liuyc : DemoCAD CreateCIKernel failed! ";
+		return;
 	}
 	//this->resize( 800, 580 );
 	//this->setMinimumSize( 800, 580 );
@@ -214,6 +215,10 @@ DemoCad::DemoCad(QWidget *parent)
 	m_HideLabelN3->setFocusPolicy( Qt::NoFocus );
 	m_HideLabelN3->move( QApplication::desktop()->width() * 0.67, 0 );
 	connect( m_HideLabelN3, SIGNAL( sglSetVisible(bool) ), this, SLOT( slotThisVis(bool) ) );
+#endif
+
+#ifndef Q_OS_WIN
+	SetMacroVal( g_CIAddress, MACRO_ALL_WRONG, 0. );
 #endif
 }
 
@@ -474,6 +479,7 @@ void DemoCad::openFile()			// 打开
 		return;
 	}
 
+	g_InputMode = ui_input;
 	openFile( fileName );
 }
 
@@ -484,7 +490,10 @@ bool DemoCad::openFile( QString filename )
 
 	if (!bOpen)					// 文件打开失败
 	{
-		popMessageBox( "Lynuc CAD Warning", tr("DXF文件打开失败！"), 5, QColor(255,0,0), true );
+		if( g_InputMode == ui_input )
+			popMessageBox( "Lynuc CAD Warning", tr("DXF文件打开失败！"), 5, QColor(255,0,0), true );
+		else
+			qDebug() << "liuyc: open dxf failed!";
 		return false;
 	}
 	else						// 打开成功
@@ -497,7 +506,8 @@ bool DemoCad::openFile( QString filename )
 		RS_EntityContainer * tmpCont = graphicView->getContainer();
 		g_pQPublicSignal->SendGetNewContainer( tmpCont );
 
-		emit sglOpenDXFFile( filename );
+		if( g_InputMode != motion_input )
+			emit sglOpenDXFFile( filename );
 	}
 
 	return true;
@@ -683,7 +693,7 @@ void DemoCad::timerEvent(QTimerEvent * event)
 		}
 
 		GetMacroVal( g_CIAddress, MACRO_P150L11_FLAG, flagG100P150L11 );
-		if( abs( flagG100P150L11 - 1. ) < 10e-3 && clearDataAccIndex_L11() )
+		if( abs( flagG100P150L11 - 1. ) < 10e-3 && clearDataAccordingIndex_L11() )
 		{
 			SetMacroVal( g_CIAddress, MACRO_P150L11_FLAG, 0. );
 		}
@@ -707,7 +717,7 @@ void DemoCad::timerEvent(QTimerEvent * event)
 			if( fabs( flagG100P150L22 - 1. ) < 10e-3 && saveDataAccOrder_L22())  //< 数据准备完成，存储到QMAP里面去
 			{
 				SetMacroVal( g_CIAddress, MACRO_P150L22_DATARDY, 0. );
-				qDebug() << "liuyc L22 flag reset!";
+				//qDebug() << "liuyc L22 flag reset!";
 			}
 
 			GetMacroVal( g_CIAddress, MACRO_P150L21_FLAG, flagG100P150L21 );  
@@ -935,7 +945,7 @@ void DemoCad::clearData_L10()
 	g_ZDesDataBeginNum = g_ZDesDataEndNum = 0;
 }
 
-bool DemoCad::clearDataAccIndex_L11()
+bool DemoCad::clearDataAccordingIndex_L11()
 {
 	g_InputMode = motion_input;
 
@@ -1159,15 +1169,12 @@ bool DemoCad::getXYOffset_P151L11()
 	switch( n_kData )
 	{
 	case L11_all:
-		//qDebug() << "l11 all!";
 		angle = getAngleOffOfAll( n_indexAry, 8 );
 		break;
 	case L11_left:
-		//qDebug() << "l11 left!";
 		angle = getAngleOfLine( n_indexAry[XY_MIN_LEFT], n_indexAry[XY_MAX_LEFT], LineY );
 		break;
 	case L11_right:
-		//qDebug() << "l11 right!";
 		angle = getAngleOfLine( n_indexAry[XY_MIN_RIGHT], n_indexAry[XY_MAX_RIGHT], LineY );
 		break;
 	case L11_top:
@@ -1381,12 +1388,24 @@ bool DemoCad::genNewNC_P152L11()
 	}
 
 	//< step2 打开NC文件
-	QString srcFileName = QString( NCFilePath ) + "O" + QString::number( n_L11I ) + ".NC";    // eg: "..../NCFiles/O110.NC"
-	QString srcFileNameBig = QString( NCFilePath ) + "O" + QString::number( n_L11I ) + ".nc"; // eg: "..../NCFiles/O110.nc"
+	// eg: "..../NCFiles/O110.nc" "..../NCFiles/o110.nc" 
+	QString srcFileName = QString( NCFilePath ) + "O" + QString::number( n_L11I ) + ".nc";   
+	QString srcFileName2 = QString( NCFilePath ) + "o" + QString::number( n_L11I ) + ".nc";
+	// eg: "..../NCFiles/O110.NC"
+	QString srcFileNameBig = QString( NCFilePath ) + "o" + QString::number( n_L11I ) + ".NC"; 
+	QString srcFileNameBig2 = QString( NCFilePath ) + "O" + QString::number( n_L11I ) + ".NC"; 
 	QString newFileName = QString( NCFilePath ) + "O" + QString::number( n_L11J ) + ".NC";    // eg: "..../NCFiles/O110.NC"
 	if( QFile::exists( srcFileName ) )  //< 输入的NC文件无论大小写都有效
 	{
 		m_OffsetWdt->openSrcNcFile( srcFileName );
+	}
+	else if( QFile::exists( srcFileName2 ) )
+	{
+		m_OffsetWdt->openSrcNcFile( srcFileName2 );
+	}
+	else if( QFile::exists( srcFileNameBig2 ) )
+	{
+		m_OffsetWdt->openSrcNcFile( srcFileNameBig2 );
 	}
 	else if( QFile::exists( srcFileNameBig ) )
 	{
@@ -1407,6 +1426,11 @@ bool DemoCad::genNewNC_P152L11()
 	GetMacroVal( g_CIAddress, MACRO_Y_DATA, g_ManOff[1] );
 	GetMacroVal( g_CIAddress, MACRO_Z_DATA, g_ManOff[2] );
 	GetMacroVal( g_CIAddress, MACRO_P152_DET_RAD, g_DecRadius);
+
+	GetMacroVal( g_CIAddress, MACRO_P152L11_A, g_ManOffZoom[0] );
+	GetMacroVal( g_CIAddress, MACRO_P152L11_B, g_ManOffZoom[1] );
+	GetMacroVal( g_CIAddress, MACRO_P152L11_U, g_ManOffZoom[2] );
+	GetMacroVal( g_CIAddress, MACRO_P152L11_V, g_ManOffZoom[3] );
 #endif
 
 	//< step4 生成新的NC
@@ -1498,13 +1522,14 @@ bool DemoCad::getXYOffset_P151L10()
 	};
 
 	//< step1 从宏变量中获取点位编号并判断合法性
-	double indexArray[8] = {0.};
-	int    n_indexAry[8] = {0};
-	double d_calOff[TMP_COUNT] = {0.};
+	double indexArray[8] = { 0. };
+	int    n_indexAry[8] = { 0 };
+	double d_calOff[TMP_COUNT] = { 0.};
 	bool   b_needToCal[TMP_COUNT] = { true, true };
 
 	int    n_hasArcFlag = getMacroInt( MACRO_P151L11_W );
 	qDebug() << __FUNCTION__ << "liuyc: #232 = " << n_hasArcFlag;
+	// 10秒后自动触发复位#232的值，不清楚原因，应该有更好的方法
 	if( n_hasArcFlag != 0 )
 	{
 		//< 单次定时器，触发复位232的值
@@ -1521,7 +1546,7 @@ bool DemoCad::getXYOffset_P151L10()
 		g_XYIndex[i]  = g_Index[i];
 	}
 
-	//< 如果存在圆弧探点，则暂时不去判断输入是否合法，因为此函数只输入了直线段上的探点信息
+	//< 如果存在圆弧探点，则暂时不去判断输入是否合法，因为此函数只处理了直线段上的探点信息，并没有收到圆弧上的探点数据，需要配合后面的NC输入圆弧信息后再去判断输入是否合法
 	if( n_hasArcFlag == 0 && !m_ParaSetWdt->isInputLegel( motion_input ) )
 	{
 		qDebug() << "liuyc: index input in motion is ilegal!";
@@ -1618,6 +1643,8 @@ void DemoCad::G100RWData( int flag, int index )
 
 		//qDebug() << xData << " " << yData << " " << zData;
 		g_SavedData.insert( index, vec );
+		QParaTableExtraData extraData;
+		g_QTableExtraDataMap.insert( index, extraData );
 	}
 	else if( flag == G100READ )
 	{

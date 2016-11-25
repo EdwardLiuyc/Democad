@@ -399,6 +399,11 @@ bool DetPntSetDlg::inputLegal( int inputmode /* = ui_input */ )
 		g_ZSrcDataBeginNum = g_Index[Z_MIN];
 		g_ZSrcDataEndNum   = g_Index[Z_MAX];
 		g_ZDataCount = g_ZSrcDataEndNum - g_ZSrcDataBeginNum + 1;
+		for( int i = g_ZSrcDataBeginNum; i <= g_ZSrcDataEndNum; ++i )
+		{
+			g_QTableExtraDataMap[i].isEditable[2] = true;  //< Z轴的探针值可做调整
+			g_QTableExtraDataMap[i].dir = Z_DIR;
+		}
 	}
 	else
 		g_ZDataCount = 0;
@@ -410,6 +415,48 @@ bool DetPntSetDlg::inputLegal( int inputmode /* = ui_input */ )
 	g_XYDesDataCount    = g_XYSrcDataCount;
 	qDebug() << "liuyc xy : " << g_XYSrcDataBeginNum << "~" << g_XYSrcDataEndNum << "  count = " << g_XYSrcDataCount;
 	qDebug() << "liuyc z  : " << g_ZSrcDataBeginNum  << "~" << g_ZSrcDataEndNum  << "  count = " << g_ZDataCount;
+	//< 整理所有编号对应的方向，主要是为了Q值显示的表格里面的显示和可编辑的定义
+	for( int i = g_XYSrcDataBeginNum; i <= g_XYSrcDataEndNum; ++i )
+	{
+		//< 8个范围整合
+		if( i >= g_XYIndex[_leftB] && i <= g_XYIndex[_leftE] )
+		{
+			g_QTableExtraDataMap[i].dir = XY_LEFT;
+		}
+		else if( i >= g_XYIndex[_rightB] && i <= g_XYIndex[_rightE] )
+		{
+			g_QTableExtraDataMap[i].dir = XY_RIGHT;
+		}
+		else if( i >= g_XYIndex[_topB] && i <= g_XYIndex[_topE] )
+		{
+			g_QTableExtraDataMap[i].dir = XY_TOP;
+		}
+		else if( i >= g_XYIndex[_btmB] && i <= g_XYIndex[_btmE] )
+		{
+			g_QTableExtraDataMap[i].dir = XY_BTM;
+		}
+		else if( i >= g_XYIndex[_leftTopB] && i <= g_XYIndex[_leftTopE] )
+		{
+			g_QTableExtraDataMap[i].dir = XY_LEFT_TOP;
+		}
+		else if( i >= g_XYIndex[_rightTopB] && i <= g_XYIndex[_rightTopE] )
+		{
+			g_QTableExtraDataMap[i].dir = XY_RIGHT_TOP;
+		}
+		else if( i >= g_XYIndex[_rightBtmB] && i <= g_XYIndex[_rightBtmE] )
+		{
+			g_QTableExtraDataMap[i].dir = XY_RIGHT_BTM;
+		}
+		else if( i >= g_XYIndex[_leftBtmB] && i <= g_XYIndex[_leftBtmE] )
+		{
+			g_QTableExtraDataMap[i].dir = XY_LEFT_BTM;
+		}
+
+		//< 暂时先做成所有的都能编辑
+		for( int j = 0; j < 3; ++j )
+			g_QTableExtraDataMap[i].isEditable[j] = true;
+
+	}
 	
 	//< 将直线上的探测点的部分赋值到之前的结构中去 
 	//< 2016.10.18 为了代码修改量较小而采用了另外一组全局变量保存数据之后，在存到原来的g_Index中去

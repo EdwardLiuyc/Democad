@@ -38,7 +38,8 @@ enum XYZ_DIR
 	XY_LEFT_TOP,
 	XY_RIGHT_TOP,
 	XY_LEFT_BTM,
-	XY_RIGHT_BTM
+	XY_RIGHT_BTM,
+	XYZ_DIR_COUNT
 };
 
 enum inputMode
@@ -108,14 +109,35 @@ struct LineNCInfo
 # define NCFilePath  "/home/Lynuc/Users/NCFiles/"
 #endif
 
+struct QParaTableExtraData
+{
+	RS_Vector QMicroAdjust;
+	bool isEditable[3];
+	int  dir;
+
+
+	QParaTableExtraData()
+		: dir( -1 )
+	{
+		for( int i = 0; i < 3; ++i )
+		{
+			isEditable[i] = false;
+		}
+	}
+};
+
 //< CI 共享内存首地址
 extern int g_CIAddress;
 //< 保存的数据
 extern QMap<int, RS_Vector> g_SavedData;
+//< Q变量的微调值
+extern QMap<int, QParaTableExtraData> g_QTableExtraDataMap;
 //< X/Y/Z轴偏移量
 extern double g_CalOff[3];
 //< 手动补偿
 extern double g_ManOff[3];
+//< 手动XY缩放补偿
+extern double g_ManOffZoom[4];
 //< 偏角
 extern double g_CalRadOff;
 //< 
@@ -207,6 +229,10 @@ extern RS_EntityContainer * g_ContainerPtr;
 #define MACRO_P152L11_I          266
 #define MACRO_P152L11_J          267
 #define MACRO_NcNotMatch_FLAG    268
+#define MACRO_P152L11_A          190
+#define MACRO_P152L11_B          191
+#define MACRO_P152L11_U          192
+#define MACRO_P152L11_V          193
 
 #define MACRO_P152_XYBEGIN       271
 #define MACRO_P152_XYEND         272
